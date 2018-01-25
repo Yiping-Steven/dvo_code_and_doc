@@ -1,0 +1,83 @@
+\hypertarget{classdvo_1_1visualization_1_1_point_cloud_aggregator}{}\section{dvo\+:\+:visualization\+:\+:Point\+Cloud\+Aggregator Class Reference}
+\label{classdvo_1_1visualization_1_1_point_cloud_aggregator}\index{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator@{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator}}
+
+
+{\ttfamily \#include $<$point\+\_\+cloud\+\_\+aggregator.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::function$<$ dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder\+::\+Point\+Cloud\+::\+Ptr()$>$ \mbox{\hyperlink{classdvo_1_1visualization_1_1_point_cloud_aggregator_ae1b18727d90a4dd9bdca6305a1910919}{Point\+Cloud\+Builder\+Callable}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo_1_1visualization_1_1_point_cloud_aggregator_a26c848965856175b7ed7e0e9d59a30f7}{Point\+Cloud\+Aggregator}} ()
+\item 
+virtual \mbox{\hyperlink{classdvo_1_1visualization_1_1_point_cloud_aggregator_a0180b6085e6959bbf5552b0893455836}{$\sim$\+Point\+Cloud\+Aggregator}} ()
+\item 
+void \mbox{\hyperlink{classdvo_1_1visualization_1_1_point_cloud_aggregator_ae4459e1bdd53f8e814975a1a549eac76}{add}} (const std\+::string \&name, const dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder\+::\+Point\+Cloud\+::\+Ptr \&cloud)
+\item 
+void \mbox{\hyperlink{classdvo_1_1visualization_1_1_point_cloud_aggregator_ab211ac0660dbb93373a4708ad370f697}{add}} (const std\+::string \&name, const \mbox{\hyperlink{classdvo_1_1visualization_1_1_point_cloud_aggregator_ae1b18727d90a4dd9bdca6305a1910919}{Point\+Cloud\+Builder\+Callable}} \&cloud)
+\item 
+void \mbox{\hyperlink{classdvo_1_1visualization_1_1_point_cloud_aggregator_a32aec6fbd2cf1978e9ca57e5884ebbed}{remove}} (const std\+::string \&name)
+\item 
+dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder\+::\+Point\+Cloud\+::\+Ptr \mbox{\hyperlink{classdvo_1_1visualization_1_1_point_cloud_aggregator_a2d7faa969378d465e574fd41af8ffda0}{build}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_point_cloud_aggregator_ae1b18727d90a4dd9bdca6305a1910919}\label{classdvo_1_1visualization_1_1_point_cloud_aggregator_ae1b18727d90a4dd9bdca6305a1910919}} 
+\index{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator@{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator}!Point\+Cloud\+Builder\+Callable@{Point\+Cloud\+Builder\+Callable}}
+\index{Point\+Cloud\+Builder\+Callable@{Point\+Cloud\+Builder\+Callable}!dvo\+::visualization\+::\+Point\+Cloud\+Aggregator@{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator}}
+\subsubsection{\texorpdfstring{Point\+Cloud\+Builder\+Callable}{PointCloudBuilderCallable}}
+{\footnotesize\ttfamily typedef boost\+::function$<$dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder\+::\+Point\+Cloud\+::\+Ptr()$>$ \mbox{\hyperlink{classdvo_1_1visualization_1_1_point_cloud_aggregator_ae1b18727d90a4dd9bdca6305a1910919}{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator\+::\+Point\+Cloud\+Builder\+Callable}}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_point_cloud_aggregator_a26c848965856175b7ed7e0e9d59a30f7}\label{classdvo_1_1visualization_1_1_point_cloud_aggregator_a26c848965856175b7ed7e0e9d59a30f7}} 
+\index{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator@{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator}!Point\+Cloud\+Aggregator@{Point\+Cloud\+Aggregator}}
+\index{Point\+Cloud\+Aggregator@{Point\+Cloud\+Aggregator}!dvo\+::visualization\+::\+Point\+Cloud\+Aggregator@{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator}}
+\subsubsection{\texorpdfstring{Point\+Cloud\+Aggregator()}{PointCloudAggregator()}}
+{\footnotesize\ttfamily dvo\+::visualization\+::\+Point\+Cloud\+Aggregator\+::\+Point\+Cloud\+Aggregator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_point_cloud_aggregator_a0180b6085e6959bbf5552b0893455836}\label{classdvo_1_1visualization_1_1_point_cloud_aggregator_a0180b6085e6959bbf5552b0893455836}} 
+\index{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator@{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator}!````~Point\+Cloud\+Aggregator@{$\sim$\+Point\+Cloud\+Aggregator}}
+\index{````~Point\+Cloud\+Aggregator@{$\sim$\+Point\+Cloud\+Aggregator}!dvo\+::visualization\+::\+Point\+Cloud\+Aggregator@{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator}}
+\subsubsection{\texorpdfstring{$\sim$\+Point\+Cloud\+Aggregator()}{~PointCloudAggregator()}}
+{\footnotesize\ttfamily dvo\+::visualization\+::\+Point\+Cloud\+Aggregator\+::$\sim$\+Point\+Cloud\+Aggregator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_point_cloud_aggregator_ae4459e1bdd53f8e814975a1a549eac76}\label{classdvo_1_1visualization_1_1_point_cloud_aggregator_ae4459e1bdd53f8e814975a1a549eac76}} 
+\index{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator@{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator}!add@{add}}
+\index{add@{add}!dvo\+::visualization\+::\+Point\+Cloud\+Aggregator@{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void dvo\+::visualization\+::\+Point\+Cloud\+Aggregator\+::add (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder\+::\+Point\+Cloud\+::\+Ptr \&}]{cloud }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_point_cloud_aggregator_ab211ac0660dbb93373a4708ad370f697}\label{classdvo_1_1visualization_1_1_point_cloud_aggregator_ab211ac0660dbb93373a4708ad370f697}} 
+\index{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator@{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator}!add@{add}}
+\index{add@{add}!dvo\+::visualization\+::\+Point\+Cloud\+Aggregator@{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator}}
+\subsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void dvo\+::visualization\+::\+Point\+Cloud\+Aggregator\+::add (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const \mbox{\hyperlink{classdvo_1_1visualization_1_1_point_cloud_aggregator_ae1b18727d90a4dd9bdca6305a1910919}{Point\+Cloud\+Builder\+Callable}} \&}]{cloud }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_point_cloud_aggregator_a2d7faa969378d465e574fd41af8ffda0}\label{classdvo_1_1visualization_1_1_point_cloud_aggregator_a2d7faa969378d465e574fd41af8ffda0}} 
+\index{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator@{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator}!build@{build}}
+\index{build@{build}!dvo\+::visualization\+::\+Point\+Cloud\+Aggregator@{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator}}
+\subsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily Async\+Point\+Cloud\+Builder\+::\+Point\+Cloud\+::\+Ptr dvo\+::visualization\+::\+Point\+Cloud\+Aggregator\+::build (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_point_cloud_aggregator_a32aec6fbd2cf1978e9ca57e5884ebbed}\label{classdvo_1_1visualization_1_1_point_cloud_aggregator_a32aec6fbd2cf1978e9ca57e5884ebbed}} 
+\index{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator@{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator}!remove@{remove}}
+\index{remove@{remove}!dvo\+::visualization\+::\+Point\+Cloud\+Aggregator@{dvo\+::visualization\+::\+Point\+Cloud\+Aggregator}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void dvo\+::visualization\+::\+Point\+Cloud\+Aggregator\+::remove (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/include/dvo/visualization/\mbox{\hyperlink{point__cloud__aggregator_8h}{point\+\_\+cloud\+\_\+aggregator.\+h}}\item 
+dvo\+\_\+core/src/visualization/\mbox{\hyperlink{point__cloud__aggregator_8cpp}{point\+\_\+cloud\+\_\+aggregator.\+cpp}}\end{DoxyCompactItemize}

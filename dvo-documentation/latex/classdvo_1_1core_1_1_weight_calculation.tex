@@ -1,0 +1,77 @@
+\hypertarget{classdvo_1_1core_1_1_weight_calculation}{}\section{dvo\+:\+:core\+:\+:Weight\+Calculation Class Reference}
+\label{classdvo_1_1core_1_1_weight_calculation}\index{dvo\+::core\+::\+Weight\+Calculation@{dvo\+::core\+::\+Weight\+Calculation}}
+
+
+{\ttfamily \#include $<$weight\+\_\+calculation.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation_a253d03713e9f61c4ffafc18eb8f2d620}{Weight\+Calculation}} ()
+\item 
+\mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation_a6a12b73a656c81bfc0a97bcd88eb43a4}{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}} (\mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation}{Weight\+Calculation}}, \mbox{\hyperlink{classdvo_1_1core_1_1_scale_estimator}{Scale\+Estimator}} $\ast$, scale\+Estimator)
+\item 
+\mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation_af54b17f9cf42a43beb7556ea1ef78082}{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}} (\mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation}{Weight\+Calculation}}, \mbox{\hyperlink{classdvo_1_1core_1_1_influence_function}{Influence\+Function}} $\ast$, influence\+Function)
+\item 
+void \mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation_ac393845a22a31961ef9a5e2725a24a0a}{calculate\+Scale}} (const cv\+::\+Mat \&errors)
+\item 
+float \mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation_a224b958c290618f44627cb4368784019}{calculate\+Weight}} (const float error) const
+\item 
+void \mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation_a13b02fbc5bd70393d7108ef7b6e1cf40}{calculate\+Weights}} (const cv\+::\+Mat \&errors, cv\+::\+Mat \&weights)
+\item 
+\mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation_ae3d2c55437f00625058a67bd37d80826}{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}} (\mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation}{Weight\+Calculation}}, float, scale)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_weight_calculation_a253d03713e9f61c4ffafc18eb8f2d620}\label{classdvo_1_1core_1_1_weight_calculation_a253d03713e9f61c4ffafc18eb8f2d620}} 
+\index{dvo\+::core\+::\+Weight\+Calculation@{dvo\+::core\+::\+Weight\+Calculation}!Weight\+Calculation@{Weight\+Calculation}}
+\index{Weight\+Calculation@{Weight\+Calculation}!dvo\+::core\+::\+Weight\+Calculation@{dvo\+::core\+::\+Weight\+Calculation}}
+\subsubsection{\texorpdfstring{Weight\+Calculation()}{WeightCalculation()}}
+{\footnotesize\ttfamily dvo\+::core\+::\+Weight\+Calculation\+::\+Weight\+Calculation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_weight_calculation_ac393845a22a31961ef9a5e2725a24a0a}\label{classdvo_1_1core_1_1_weight_calculation_ac393845a22a31961ef9a5e2725a24a0a}} 
+\index{dvo\+::core\+::\+Weight\+Calculation@{dvo\+::core\+::\+Weight\+Calculation}!calculate\+Scale@{calculate\+Scale}}
+\index{calculate\+Scale@{calculate\+Scale}!dvo\+::core\+::\+Weight\+Calculation@{dvo\+::core\+::\+Weight\+Calculation}}
+\subsubsection{\texorpdfstring{calculate\+Scale()}{calculateScale()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Weight\+Calculation\+::calculate\+Scale (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{errors }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_weight_calculation_a224b958c290618f44627cb4368784019}\label{classdvo_1_1core_1_1_weight_calculation_a224b958c290618f44627cb4368784019}} 
+\index{dvo\+::core\+::\+Weight\+Calculation@{dvo\+::core\+::\+Weight\+Calculation}!calculate\+Weight@{calculate\+Weight}}
+\index{calculate\+Weight@{calculate\+Weight}!dvo\+::core\+::\+Weight\+Calculation@{dvo\+::core\+::\+Weight\+Calculation}}
+\subsubsection{\texorpdfstring{calculate\+Weight()}{calculateWeight()}}
+{\footnotesize\ttfamily float dvo\+::core\+::\+Weight\+Calculation\+::calculate\+Weight (\begin{DoxyParamCaption}\item[{const float}]{error }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_weight_calculation_a13b02fbc5bd70393d7108ef7b6e1cf40}\label{classdvo_1_1core_1_1_weight_calculation_a13b02fbc5bd70393d7108ef7b6e1cf40}} 
+\index{dvo\+::core\+::\+Weight\+Calculation@{dvo\+::core\+::\+Weight\+Calculation}!calculate\+Weights@{calculate\+Weights}}
+\index{calculate\+Weights@{calculate\+Weights}!dvo\+::core\+::\+Weight\+Calculation@{dvo\+::core\+::\+Weight\+Calculation}}
+\subsubsection{\texorpdfstring{calculate\+Weights()}{calculateWeights()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Weight\+Calculation\+::calculate\+Weights (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{errors,  }\item[{cv\+::\+Mat \&}]{weights }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_weight_calculation_a6a12b73a656c81bfc0a97bcd88eb43a4}\label{classdvo_1_1core_1_1_weight_calculation_a6a12b73a656c81bfc0a97bcd88eb43a4}} 
+\index{dvo\+::core\+::\+Weight\+Calculation@{dvo\+::core\+::\+Weight\+Calculation}!F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}}
+\index{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}!dvo\+::core\+::\+Weight\+Calculation@{dvo\+::core\+::\+Weight\+Calculation}}
+\subsubsection{\texorpdfstring{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E()}{FI\_ATTRIBUTE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily dvo\+::core\+::\+Weight\+Calculation\+::\+F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation}{Weight\+Calculation}}}]{,  }\item[{\mbox{\hyperlink{classdvo_1_1core_1_1_scale_estimator}{Scale\+Estimator}} $\ast$}]{,  }\item[{scale\+Estimator}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_weight_calculation_af54b17f9cf42a43beb7556ea1ef78082}\label{classdvo_1_1core_1_1_weight_calculation_af54b17f9cf42a43beb7556ea1ef78082}} 
+\index{dvo\+::core\+::\+Weight\+Calculation@{dvo\+::core\+::\+Weight\+Calculation}!F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}}
+\index{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}!dvo\+::core\+::\+Weight\+Calculation@{dvo\+::core\+::\+Weight\+Calculation}}
+\subsubsection{\texorpdfstring{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E()}{FI\_ATTRIBUTE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily dvo\+::core\+::\+Weight\+Calculation\+::\+F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation}{Weight\+Calculation}}}]{,  }\item[{\mbox{\hyperlink{classdvo_1_1core_1_1_influence_function}{Influence\+Function}} $\ast$}]{,  }\item[{influence\+Function}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_weight_calculation_ae3d2c55437f00625058a67bd37d80826}\label{classdvo_1_1core_1_1_weight_calculation_ae3d2c55437f00625058a67bd37d80826}} 
+\index{dvo\+::core\+::\+Weight\+Calculation@{dvo\+::core\+::\+Weight\+Calculation}!F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}}
+\index{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}!dvo\+::core\+::\+Weight\+Calculation@{dvo\+::core\+::\+Weight\+Calculation}}
+\subsubsection{\texorpdfstring{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E()}{FI\_ATTRIBUTE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily dvo\+::core\+::\+Weight\+Calculation\+::\+F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation}{Weight\+Calculation}}}]{,  }\item[{float}]{,  }\item[{scale}]{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/include/dvo/core/\mbox{\hyperlink{weight__calculation_8h}{weight\+\_\+calculation.\+h}}\item 
+dvo\+\_\+core/src/core/\mbox{\hyperlink{weight__calculation_8cpp}{weight\+\_\+calculation.\+cpp}}\end{DoxyCompactItemize}

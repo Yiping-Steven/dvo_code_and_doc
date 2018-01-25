@@ -1,0 +1,131 @@
+\hypertarget{classdvo_1_1visualization_1_1_visualizer_impl}{}\section{dvo\+:\+:visualization\+:\+:Visualizer\+Impl Class Reference}
+\label{classdvo_1_1visualization_1_1_visualizer_impl}\index{dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdvo_1_1visualization_1_1_visualizer_impl_1_1_create_histogram_func}{Create\+Histogram\+Func}}
+\item 
+struct \mbox{\hyperlink{structdvo_1_1visualization_1_1_visualizer_impl_1_1_named_image}{Named\+Image}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, cv\+::\+Size $>$ \mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_impl_a06868ed07bf4f004fd6446e92f4cda7a}{Name\+Size\+Map}}
+\item 
+typedef std\+::map$<$ std\+::string, int $>$ \mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_impl_ad1bbf4cb3b9cfbb104f6a568c605119e}{Name\+Sequence\+Map}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_impl_ac9bacd20873b2204c007d8ae897dd793}{Visualizer\+Impl}} ()
+\item 
+\mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_impl_ab2671b8d7b177f4833e308034eeee6a5}{$\sim$\+Visualizer\+Impl}} ()
+\item 
+void \mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_impl_a2076b6b3056314a8bacacdf2fbbfff71}{show}} (std\+::string \&name, const cv\+::\+Mat\+Expr \&img, \mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_ac33e0b53e7ef7be64e3230f6c91084a0}{Visualizer\+::\+Image\+Modifier}} modifier)
+\item 
+void \mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_impl_a3afe414ca4a899c77458a1a0f1139dbc}{show\+Histogram}} (std\+::string \&name, const cv\+::\+Mat \&img, float binsize, float min, float max)
+\item 
+void \mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_impl_ab7dc97f7e3e3444fb5337fd0e393a237}{internal\+Show}} (std\+::string \&name, const cv\+::\+Mat\+Expr \&img, \mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_ac33e0b53e7ef7be64e3230f6c91084a0}{Visualizer\+::\+Image\+Modifier}} modifier=\mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_ac33e0b53e7ef7be64e3230f6c91084a0}{Visualizer\+::\+Image\+Modifier}}())
+\item 
+bool \mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_impl_a0401f138611fc10aa4c8ef3bfb37d02f}{check\+Image\+Size}} (std\+::string \&name, const cv\+::\+Mat \&img)
+\item 
+void \mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_impl_acc30618615be0c6b9d54959a1beaf5e7}{vis\+Worker}} ()
+\item 
+void \mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_impl_aaa9bdf78dde7df4c88fa61c05bfb13bd}{histogram\+Worker}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_impl_ae8de60588232e3a67c19e840f8363e2c}{external\+\_\+wait\+\_\+}}
+\item 
+bool \mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_impl_a9142982073b53d888e0533ccf552d903}{save\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_visualizer_impl_ad1bbf4cb3b9cfbb104f6a568c605119e}\label{classdvo_1_1visualization_1_1_visualizer_impl_ad1bbf4cb3b9cfbb104f6a568c605119e}} 
+\index{dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}!Name\+Sequence\+Map@{Name\+Sequence\+Map}}
+\index{Name\+Sequence\+Map@{Name\+Sequence\+Map}!dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{Name\+Sequence\+Map}{NameSequenceMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, int$>$ \mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_impl_ad1bbf4cb3b9cfbb104f6a568c605119e}{dvo\+::visualization\+::\+Visualizer\+Impl\+::\+Name\+Sequence\+Map}}}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_visualizer_impl_a06868ed07bf4f004fd6446e92f4cda7a}\label{classdvo_1_1visualization_1_1_visualizer_impl_a06868ed07bf4f004fd6446e92f4cda7a}} 
+\index{dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}!Name\+Size\+Map@{Name\+Size\+Map}}
+\index{Name\+Size\+Map@{Name\+Size\+Map}!dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{Name\+Size\+Map}{NameSizeMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, cv\+::\+Size$>$ \mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_impl_a06868ed07bf4f004fd6446e92f4cda7a}{dvo\+::visualization\+::\+Visualizer\+Impl\+::\+Name\+Size\+Map}}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_visualizer_impl_ac9bacd20873b2204c007d8ae897dd793}\label{classdvo_1_1visualization_1_1_visualizer_impl_ac9bacd20873b2204c007d8ae897dd793}} 
+\index{dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}!Visualizer\+Impl@{Visualizer\+Impl}}
+\index{Visualizer\+Impl@{Visualizer\+Impl}!dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{Visualizer\+Impl()}{VisualizerImpl()}}
+{\footnotesize\ttfamily dvo\+::visualization\+::\+Visualizer\+Impl\+::\+Visualizer\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_visualizer_impl_ab2671b8d7b177f4833e308034eeee6a5}\label{classdvo_1_1visualization_1_1_visualizer_impl_ab2671b8d7b177f4833e308034eeee6a5}} 
+\index{dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}!````~Visualizer\+Impl@{$\sim$\+Visualizer\+Impl}}
+\index{````~Visualizer\+Impl@{$\sim$\+Visualizer\+Impl}!dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{$\sim$\+Visualizer\+Impl()}{~VisualizerImpl()}}
+{\footnotesize\ttfamily dvo\+::visualization\+::\+Visualizer\+Impl\+::$\sim$\+Visualizer\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_visualizer_impl_a0401f138611fc10aa4c8ef3bfb37d02f}\label{classdvo_1_1visualization_1_1_visualizer_impl_a0401f138611fc10aa4c8ef3bfb37d02f}} 
+\index{dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}!check\+Image\+Size@{check\+Image\+Size}}
+\index{check\+Image\+Size@{check\+Image\+Size}!dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{check\+Image\+Size()}{checkImageSize()}}
+{\footnotesize\ttfamily bool dvo\+::visualization\+::\+Visualizer\+Impl\+::check\+Image\+Size (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{const cv\+::\+Mat \&}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_visualizer_impl_aaa9bdf78dde7df4c88fa61c05bfb13bd}\label{classdvo_1_1visualization_1_1_visualizer_impl_aaa9bdf78dde7df4c88fa61c05bfb13bd}} 
+\index{dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}!histogram\+Worker@{histogram\+Worker}}
+\index{histogram\+Worker@{histogram\+Worker}!dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{histogram\+Worker()}{histogramWorker()}}
+{\footnotesize\ttfamily void dvo\+::visualization\+::\+Visualizer\+Impl\+::histogram\+Worker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_visualizer_impl_ab7dc97f7e3e3444fb5337fd0e393a237}\label{classdvo_1_1visualization_1_1_visualizer_impl_ab7dc97f7e3e3444fb5337fd0e393a237}} 
+\index{dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}!internal\+Show@{internal\+Show}}
+\index{internal\+Show@{internal\+Show}!dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{internal\+Show()}{internalShow()}}
+{\footnotesize\ttfamily void dvo\+::visualization\+::\+Visualizer\+Impl\+::internal\+Show (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{const cv\+::\+Mat\+Expr \&}]{img,  }\item[{\mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_ac33e0b53e7ef7be64e3230f6c91084a0}{Visualizer\+::\+Image\+Modifier}}}]{modifier = {\ttfamily \mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_ac33e0b53e7ef7be64e3230f6c91084a0}{Visualizer\+::\+Image\+Modifier}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_visualizer_impl_a2076b6b3056314a8bacacdf2fbbfff71}\label{classdvo_1_1visualization_1_1_visualizer_impl_a2076b6b3056314a8bacacdf2fbbfff71}} 
+\index{dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}!show@{show}}
+\index{show@{show}!dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void dvo\+::visualization\+::\+Visualizer\+Impl\+::show (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{const cv\+::\+Mat\+Expr \&}]{img,  }\item[{\mbox{\hyperlink{classdvo_1_1visualization_1_1_visualizer_ac33e0b53e7ef7be64e3230f6c91084a0}{Visualizer\+::\+Image\+Modifier}}}]{modifier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_visualizer_impl_a3afe414ca4a899c77458a1a0f1139dbc}\label{classdvo_1_1visualization_1_1_visualizer_impl_a3afe414ca4a899c77458a1a0f1139dbc}} 
+\index{dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}!show\+Histogram@{show\+Histogram}}
+\index{show\+Histogram@{show\+Histogram}!dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{show\+Histogram()}{showHistogram()}}
+{\footnotesize\ttfamily void dvo\+::visualization\+::\+Visualizer\+Impl\+::show\+Histogram (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{const cv\+::\+Mat \&}]{img,  }\item[{float}]{binsize,  }\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_visualizer_impl_acc30618615be0c6b9d54959a1beaf5e7}\label{classdvo_1_1visualization_1_1_visualizer_impl_acc30618615be0c6b9d54959a1beaf5e7}} 
+\index{dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}!vis\+Worker@{vis\+Worker}}
+\index{vis\+Worker@{vis\+Worker}!dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{vis\+Worker()}{visWorker()}}
+{\footnotesize\ttfamily void dvo\+::visualization\+::\+Visualizer\+Impl\+::vis\+Worker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_visualizer_impl_ae8de60588232e3a67c19e840f8363e2c}\label{classdvo_1_1visualization_1_1_visualizer_impl_ae8de60588232e3a67c19e840f8363e2c}} 
+\index{dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}!external\+\_\+wait\+\_\+@{external\+\_\+wait\+\_\+}}
+\index{external\+\_\+wait\+\_\+@{external\+\_\+wait\+\_\+}!dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{external\+\_\+wait\+\_\+}{external\_wait\_}}
+{\footnotesize\ttfamily bool dvo\+::visualization\+::\+Visualizer\+Impl\+::external\+\_\+wait\+\_\+}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_visualizer_impl_a9142982073b53d888e0533ccf552d903}\label{classdvo_1_1visualization_1_1_visualizer_impl_a9142982073b53d888e0533ccf552d903}} 
+\index{dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}!save\+\_\+@{save\+\_\+}}
+\index{save\+\_\+@{save\+\_\+}!dvo\+::visualization\+::\+Visualizer\+Impl@{dvo\+::visualization\+::\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{save\+\_\+}{save\_}}
+{\footnotesize\ttfamily bool dvo\+::visualization\+::\+Visualizer\+Impl\+::save\+\_\+}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/src/visualization/\mbox{\hyperlink{visualizer_8cpp}{visualizer.\+cpp}}\end{DoxyCompactItemize}

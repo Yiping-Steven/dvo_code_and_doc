@@ -1,0 +1,64 @@
+\hypertarget{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f}{}\section{dvo\+:\+:core\+:\+:Optimized\+Self\+Adjoint\+Matrix6x6f Class Reference}
+\label{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f}\index{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f@{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f}}
+
+
+{\ttfamily \#include $<$math\+\_\+sse.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f_a7492e92fafeb8571602abdedbfe28ebf}{Optimized\+Self\+Adjoint\+Matrix6x6f}} ()
+\item 
+void \mbox{\hyperlink{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f_a37a35da097b4bf2acbdbc5940c0742c8}{rank\+Update}} (const Eigen\+::\+Matrix$<$ float, 6, 1 $>$ \&u, const float \&alpha)
+\item 
+void \mbox{\hyperlink{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f_aba5627b7a649121f67fa7ba8b8bdc853}{operator+=}} (const \mbox{\hyperlink{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f}{Optimized\+Self\+Adjoint\+Matrix6x6f}} \&other)
+\item 
+void \mbox{\hyperlink{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f_a3883546f5cdada48519e418f6772c9e5}{set\+Zero}} ()
+\item 
+void \mbox{\hyperlink{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f_abfddccffb0b8e843140a2c7c3d0b4cc0}{to\+Eigen}} (Eigen\+::\+Matrix$<$ float, 6, 6 $>$ \&m) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A 6x6 self adjoint matrix with optimized \char`\"{}rank\+Update(u, scale)\char`\"{} (10x faster than Eigen impl, 1.\+8x faster than Math\+Sse\+::add\+Outer\+Product(...)). 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f_a7492e92fafeb8571602abdedbfe28ebf}\label{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f_a7492e92fafeb8571602abdedbfe28ebf}} 
+\index{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f@{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f}!Optimized\+Self\+Adjoint\+Matrix6x6f@{Optimized\+Self\+Adjoint\+Matrix6x6f}}
+\index{Optimized\+Self\+Adjoint\+Matrix6x6f@{Optimized\+Self\+Adjoint\+Matrix6x6f}!dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f@{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f}}
+\subsubsection{\texorpdfstring{Optimized\+Self\+Adjoint\+Matrix6x6f()}{OptimizedSelfAdjointMatrix6x6f()}}
+{\footnotesize\ttfamily dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f_aba5627b7a649121f67fa7ba8b8bdc853}\label{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f_aba5627b7a649121f67fa7ba8b8bdc853}} 
+\index{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f@{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f@{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f}{Optimized\+Self\+Adjoint\+Matrix6x6f}} \&}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f_a37a35da097b4bf2acbdbc5940c0742c8}\label{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f_a37a35da097b4bf2acbdbc5940c0742c8}} 
+\index{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f@{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f}!rank\+Update@{rank\+Update}}
+\index{rank\+Update@{rank\+Update}!dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f@{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f}}
+\subsubsection{\texorpdfstring{rank\+Update()}{rankUpdate()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f\+::rank\+Update (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Matrix$<$ float, 6, 1 $>$ \&}]{u,  }\item[{const float \&}]{alpha }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f_a3883546f5cdada48519e418f6772c9e5}\label{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f_a3883546f5cdada48519e418f6772c9e5}} 
+\index{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f@{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f}!set\+Zero@{set\+Zero}}
+\index{set\+Zero@{set\+Zero}!dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f@{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f}}
+\subsubsection{\texorpdfstring{set\+Zero()}{setZero()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f\+::set\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f_abfddccffb0b8e843140a2c7c3d0b4cc0}\label{classdvo_1_1core_1_1_optimized_self_adjoint_matrix6x6f_abfddccffb0b8e843140a2c7c3d0b4cc0}} 
+\index{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f@{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f}!to\+Eigen@{to\+Eigen}}
+\index{to\+Eigen@{to\+Eigen}!dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f@{dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f}}
+\subsubsection{\texorpdfstring{to\+Eigen()}{toEigen()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Optimized\+Self\+Adjoint\+Matrix6x6f\+::to\+Eigen (\begin{DoxyParamCaption}\item[{Eigen\+::\+Matrix$<$ float, 6, 6 $>$ \&}]{m }\end{DoxyParamCaption}) const}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/include/dvo/core/\mbox{\hyperlink{math__sse_8h}{math\+\_\+sse.\+h}}\item 
+dvo\+\_\+core/src/core/\mbox{\hyperlink{math__sse_8cpp}{math\+\_\+sse.\+cpp}}\end{DoxyCompactItemize}

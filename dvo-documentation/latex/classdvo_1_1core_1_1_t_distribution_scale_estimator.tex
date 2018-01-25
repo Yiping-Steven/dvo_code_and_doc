@@ -1,0 +1,112 @@
+\hypertarget{classdvo_1_1core_1_1_t_distribution_scale_estimator}{}\section{dvo\+:\+:core\+:\+:T\+Distribution\+Scale\+Estimator Class Reference}
+\label{classdvo_1_1core_1_1_t_distribution_scale_estimator}\index{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}}
+
+
+{\ttfamily \#include $<$weight\+\_\+calculation.\+h$>$}
+
+Inheritance diagram for dvo\+:\+:core\+:\+:T\+Distribution\+Scale\+Estimator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.781457cm]{classdvo_1_1core_1_1_t_distribution_scale_estimator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo_1_1core_1_1_t_distribution_scale_estimator_a1b50430701a4f6c103dedf40102e6506}{T\+Distribution\+Scale\+Estimator}} (const float \mbox{\hyperlink{classdvo_1_1core_1_1_t_distribution_scale_estimator_a4c5ece510a3315bad7ca711a27466eb9}{dof}}=\mbox{\hyperlink{classdvo_1_1core_1_1_t_distribution_scale_estimator_a031ff291023c516c23bce04b34b79957}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+OF}})
+\item 
+virtual \mbox{\hyperlink{classdvo_1_1core_1_1_t_distribution_scale_estimator_ae96b7b80f30e797a21f59f60cce22a3c}{$\sim$\+T\+Distribution\+Scale\+Estimator}} ()
+\item 
+virtual float \mbox{\hyperlink{classdvo_1_1core_1_1_t_distribution_scale_estimator_a0ed88ffeb9b71110e3ae69b681526bc4}{compute}} (const cv\+::\+Mat \&errors) const
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_t_distribution_scale_estimator_a34ec79e7811c148606817510a00aa585}{configure}} (const float \&param)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const float \mbox{\hyperlink{classdvo_1_1core_1_1_t_distribution_scale_estimator_a031ff291023c516c23bce04b34b79957}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+OF}} = 5.\+0f
+\item 
+static const float \mbox{\hyperlink{classdvo_1_1core_1_1_t_distribution_scale_estimator_a536ae191c3a6827914ecc22308ff87b7}{I\+N\+I\+T\+I\+A\+L\+\_\+\+S\+I\+G\+MA}} = 5.\+0f
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classdvo_1_1core_1_1_t_distribution_scale_estimator_a4c5ece510a3315bad7ca711a27466eb9}{dof}}
+\item 
+float \mbox{\hyperlink{classdvo_1_1core_1_1_t_distribution_scale_estimator_ab2b25d1856c4e51dfeeb1abd9aafbcb7}{initial\+\_\+sigma}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_t_distribution_scale_estimator_a1b50430701a4f6c103dedf40102e6506}\label{classdvo_1_1core_1_1_t_distribution_scale_estimator_a1b50430701a4f6c103dedf40102e6506}} 
+\index{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}!T\+Distribution\+Scale\+Estimator@{T\+Distribution\+Scale\+Estimator}}
+\index{T\+Distribution\+Scale\+Estimator@{T\+Distribution\+Scale\+Estimator}!dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}}
+\subsubsection{\texorpdfstring{T\+Distribution\+Scale\+Estimator()}{TDistributionScaleEstimator()}}
+{\footnotesize\ttfamily dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator\+::\+T\+Distribution\+Scale\+Estimator (\begin{DoxyParamCaption}\item[{const float}]{dof = {\ttfamily \mbox{\hyperlink{classdvo_1_1core_1_1_t_distribution_scale_estimator_a031ff291023c516c23bce04b34b79957}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+OF}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_t_distribution_scale_estimator_ae96b7b80f30e797a21f59f60cce22a3c}\label{classdvo_1_1core_1_1_t_distribution_scale_estimator_ae96b7b80f30e797a21f59f60cce22a3c}} 
+\index{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}!````~T\+Distribution\+Scale\+Estimator@{$\sim$\+T\+Distribution\+Scale\+Estimator}}
+\index{````~T\+Distribution\+Scale\+Estimator@{$\sim$\+T\+Distribution\+Scale\+Estimator}!dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}}
+\subsubsection{\texorpdfstring{$\sim$\+T\+Distribution\+Scale\+Estimator()}{~TDistributionScaleEstimator()}}
+{\footnotesize\ttfamily virtual dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator\+::$\sim$\+T\+Distribution\+Scale\+Estimator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_t_distribution_scale_estimator_a0ed88ffeb9b71110e3ae69b681526bc4}\label{classdvo_1_1core_1_1_t_distribution_scale_estimator_a0ed88ffeb9b71110e3ae69b681526bc4}} 
+\index{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}!compute@{compute}}
+\index{compute@{compute}!dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}}
+\subsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily float dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator\+::compute (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{errors }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classdvo_1_1core_1_1_scale_estimator_a6968ac2cd37c2ce1c966f0c9e17d1a3c}{dvo\+::core\+::\+Scale\+Estimator}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classdvo_1_1core_1_1_approximate_t_distribution_scale_estimator_aee2b37700df1eb0125b8e0d352f7ceab}{dvo\+::core\+::\+Approximate\+T\+Distribution\+Scale\+Estimator}}, and \mbox{\hyperlink{classdvo_1_1core_1_1_optimized_t_distribution_scale_estimator_ace9304a785bd16a6ef5cf4a52f3c6299}{dvo\+::core\+::\+Optimized\+T\+Distribution\+Scale\+Estimator}}.
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_t_distribution_scale_estimator_a34ec79e7811c148606817510a00aa585}\label{classdvo_1_1core_1_1_t_distribution_scale_estimator_a34ec79e7811c148606817510a00aa585}} 
+\index{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}!configure@{configure}}
+\index{configure@{configure}!dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator\+::configure (\begin{DoxyParamCaption}\item[{const float \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classdvo_1_1core_1_1_scale_estimator_a58b5d7926b08e85e7393436156f3ef43}{dvo\+::core\+::\+Scale\+Estimator}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_t_distribution_scale_estimator_a031ff291023c516c23bce04b34b79957}\label{classdvo_1_1core_1_1_t_distribution_scale_estimator_a031ff291023c516c23bce04b34b79957}} 
+\index{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}!D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+OF@{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+OF}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+OF@{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+OF}!dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}}
+\subsubsection{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+OF}{DEFAULT\_DOF}}
+{\footnotesize\ttfamily const float dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator\+::\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+OF = 5.\+0f\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_t_distribution_scale_estimator_a4c5ece510a3315bad7ca711a27466eb9}\label{classdvo_1_1core_1_1_t_distribution_scale_estimator_a4c5ece510a3315bad7ca711a27466eb9}} 
+\index{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}!dof@{dof}}
+\index{dof@{dof}!dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}}
+\subsubsection{\texorpdfstring{dof}{dof}}
+{\footnotesize\ttfamily float dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator\+::dof\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_t_distribution_scale_estimator_a536ae191c3a6827914ecc22308ff87b7}\label{classdvo_1_1core_1_1_t_distribution_scale_estimator_a536ae191c3a6827914ecc22308ff87b7}} 
+\index{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}!I\+N\+I\+T\+I\+A\+L\+\_\+\+S\+I\+G\+MA@{I\+N\+I\+T\+I\+A\+L\+\_\+\+S\+I\+G\+MA}}
+\index{I\+N\+I\+T\+I\+A\+L\+\_\+\+S\+I\+G\+MA@{I\+N\+I\+T\+I\+A\+L\+\_\+\+S\+I\+G\+MA}!dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}}
+\subsubsection{\texorpdfstring{I\+N\+I\+T\+I\+A\+L\+\_\+\+S\+I\+G\+MA}{INITIAL\_SIGMA}}
+{\footnotesize\ttfamily const float dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator\+::\+I\+N\+I\+T\+I\+A\+L\+\_\+\+S\+I\+G\+MA = 5.\+0f\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_t_distribution_scale_estimator_ab2b25d1856c4e51dfeeb1abd9aafbcb7}\label{classdvo_1_1core_1_1_t_distribution_scale_estimator_ab2b25d1856c4e51dfeeb1abd9aafbcb7}} 
+\index{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}!initial\+\_\+sigma@{initial\+\_\+sigma}}
+\index{initial\+\_\+sigma@{initial\+\_\+sigma}!dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator@{dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator}}
+\subsubsection{\texorpdfstring{initial\+\_\+sigma}{initial\_sigma}}
+{\footnotesize\ttfamily float dvo\+::core\+::\+T\+Distribution\+Scale\+Estimator\+::initial\+\_\+sigma\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/include/dvo/core/\mbox{\hyperlink{weight__calculation_8h}{weight\+\_\+calculation.\+h}}\item 
+dvo\+\_\+core/src/core/\mbox{\hyperlink{weight__calculation_8cpp}{weight\+\_\+calculation.\+cpp}}\end{DoxyCompactItemize}

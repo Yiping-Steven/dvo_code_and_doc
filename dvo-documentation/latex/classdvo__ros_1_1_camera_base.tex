@@ -1,0 +1,144 @@
+\hypertarget{classdvo__ros_1_1_camera_base}{}\section{dvo\+\_\+ros\+:\+:Camera\+Base Class Reference}
+\label{classdvo__ros_1_1_camera_base}\index{dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}}
+
+
+{\ttfamily \#include $<$camera\+\_\+base.\+h$>$}
+
+Inheritance diagram for dvo\+\_\+ros\+:\+:Camera\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdvo__ros_1_1_camera_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo__ros_1_1_camera_base_af3d3ae6aaad83055c752c114b2100104}{Camera\+Base}} (ros\+::\+Node\+Handle \&nh, ros\+::\+Node\+Handle \&nh\+\_\+private)
+\item 
+virtual \mbox{\hyperlink{classdvo__ros_1_1_camera_base_a022e9f3ea3010cf84bad64fa63f8e1b0}{$\sim$\+Camera\+Base}} ()
+\item 
+virtual void \mbox{\hyperlink{classdvo__ros_1_1_camera_base_aa8c983ab1bb8383aae1f375ea6808120}{handle\+Images}} (const sensor\+\_\+msgs\+::\+Image\+::\+Const\+Ptr \&rgb\+\_\+image\+\_\+msg, const sensor\+\_\+msgs\+::\+Image\+::\+Const\+Ptr \&depth\+\_\+image\+\_\+msg, const sensor\+\_\+msgs\+::\+Camera\+Info\+::\+Const\+Ptr \&rgb\+\_\+camera\+\_\+info\+\_\+msg, const sensor\+\_\+msgs\+::\+Camera\+Info\+::\+Const\+Ptr \&depth\+\_\+camera\+\_\+info\+\_\+msg)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classdvo__ros_1_1_camera_base_aca6d7ca1b4238565841cdab72e807765}{is\+Synchronized\+Image\+Stream\+Running}} ()
+\item 
+void \mbox{\hyperlink{classdvo__ros_1_1_camera_base_a00bdd483ef57eec8a4991c65fef30974}{start\+Synchronized\+Image\+Stream}} ()
+\item 
+void \mbox{\hyperlink{classdvo__ros_1_1_camera_base_a45929acddbac65ab20b3c0a0b9fb567a}{stop\+Synchronized\+Image\+Stream}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ros\+::\+Node\+Handle \mbox{\hyperlink{classdvo__ros_1_1_camera_base_a38fe2cd9f4b4aa6ca843ea317ddf8bad}{nh\+\_\+}}
+\item 
+ros\+::\+Node\+Handle \mbox{\hyperlink{classdvo__ros_1_1_camera_base_ad8c455ad2a0d51f0cea6072621058b77}{nh\+\_\+private\+\_\+}}
+\item 
+message\+\_\+filters\+::\+Subscriber$<$ sensor\+\_\+msgs\+::\+Image $>$ \mbox{\hyperlink{classdvo__ros_1_1_camera_base_a38d299b1c046830ef1552a0e4a31d7b2}{rgb\+\_\+image\+\_\+subscriber\+\_\+}}
+\item 
+message\+\_\+filters\+::\+Subscriber$<$ sensor\+\_\+msgs\+::\+Image $>$ \mbox{\hyperlink{classdvo__ros_1_1_camera_base_a9d2f9d7b4ef5d948d09610d7a518984b}{depth\+\_\+image\+\_\+subscriber\+\_\+}}
+\item 
+message\+\_\+filters\+::\+Subscriber$<$ sensor\+\_\+msgs\+::\+Camera\+Info $>$ \mbox{\hyperlink{classdvo__ros_1_1_camera_base_a3009d23f7083e4d2aa0c9b52068f96ca}{rgb\+\_\+camera\+\_\+info\+\_\+subscriber\+\_\+}}
+\item 
+message\+\_\+filters\+::\+Subscriber$<$ sensor\+\_\+msgs\+::\+Camera\+Info $>$ \mbox{\hyperlink{classdvo__ros_1_1_camera_base_aec2df412779aa6ef9643a54a5910424a}{depth\+\_\+camera\+\_\+info\+\_\+subscriber\+\_\+}}
+\item 
+message\+\_\+filters\+::\+Synchronizer$<$ \mbox{\hyperlink{namespacedvo__ros_ae8c4d74734d4ef3107bf429ef461e553}{R\+G\+B\+D\+With\+Camera\+Info\+Policy}} $>$ \mbox{\hyperlink{classdvo__ros_1_1_camera_base_aac780a822e3a2b6779a2a9598b0b52d2}{synchronizer\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_base_af3d3ae6aaad83055c752c114b2100104}\label{classdvo__ros_1_1_camera_base_af3d3ae6aaad83055c752c114b2100104}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}!Camera\+Base@{Camera\+Base}}
+\index{Camera\+Base@{Camera\+Base}!dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}}
+\subsubsection{\texorpdfstring{Camera\+Base()}{CameraBase()}}
+{\footnotesize\ttfamily dvo\+\_\+ros\+::\+Camera\+Base\+::\+Camera\+Base (\begin{DoxyParamCaption}\item[{ros\+::\+Node\+Handle \&}]{nh,  }\item[{ros\+::\+Node\+Handle \&}]{nh\+\_\+private }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_base_a022e9f3ea3010cf84bad64fa63f8e1b0}\label{classdvo__ros_1_1_camera_base_a022e9f3ea3010cf84bad64fa63f8e1b0}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}!````~Camera\+Base@{$\sim$\+Camera\+Base}}
+\index{````~Camera\+Base@{$\sim$\+Camera\+Base}!dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}}
+\subsubsection{\texorpdfstring{$\sim$\+Camera\+Base()}{~CameraBase()}}
+{\footnotesize\ttfamily dvo\+\_\+ros\+::\+Camera\+Base\+::$\sim$\+Camera\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_base_aa8c983ab1bb8383aae1f375ea6808120}\label{classdvo__ros_1_1_camera_base_aa8c983ab1bb8383aae1f375ea6808120}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}!handle\+Images@{handle\+Images}}
+\index{handle\+Images@{handle\+Images}!dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}}
+\subsubsection{\texorpdfstring{handle\+Images()}{handleImages()}}
+{\footnotesize\ttfamily virtual void dvo\+\_\+ros\+::\+Camera\+Base\+::handle\+Images (\begin{DoxyParamCaption}\item[{const sensor\+\_\+msgs\+::\+Image\+::\+Const\+Ptr \&}]{rgb\+\_\+image\+\_\+msg,  }\item[{const sensor\+\_\+msgs\+::\+Image\+::\+Const\+Ptr \&}]{depth\+\_\+image\+\_\+msg,  }\item[{const sensor\+\_\+msgs\+::\+Camera\+Info\+::\+Const\+Ptr \&}]{rgb\+\_\+camera\+\_\+info\+\_\+msg,  }\item[{const sensor\+\_\+msgs\+::\+Camera\+Info\+::\+Const\+Ptr \&}]{depth\+\_\+camera\+\_\+info\+\_\+msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classdvo__ros_1_1_camera_dense_tracker_ad1b549d802d0ebc3627603b3f9ef03b4}{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker}}.
+
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_base_aca6d7ca1b4238565841cdab72e807765}\label{classdvo__ros_1_1_camera_base_aca6d7ca1b4238565841cdab72e807765}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}!is\+Synchronized\+Image\+Stream\+Running@{is\+Synchronized\+Image\+Stream\+Running}}
+\index{is\+Synchronized\+Image\+Stream\+Running@{is\+Synchronized\+Image\+Stream\+Running}!dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}}
+\subsubsection{\texorpdfstring{is\+Synchronized\+Image\+Stream\+Running()}{isSynchronizedImageStreamRunning()}}
+{\footnotesize\ttfamily bool dvo\+\_\+ros\+::\+Camera\+Base\+::is\+Synchronized\+Image\+Stream\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_base_a00bdd483ef57eec8a4991c65fef30974}\label{classdvo__ros_1_1_camera_base_a00bdd483ef57eec8a4991c65fef30974}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}!start\+Synchronized\+Image\+Stream@{start\+Synchronized\+Image\+Stream}}
+\index{start\+Synchronized\+Image\+Stream@{start\+Synchronized\+Image\+Stream}!dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}}
+\subsubsection{\texorpdfstring{start\+Synchronized\+Image\+Stream()}{startSynchronizedImageStream()}}
+{\footnotesize\ttfamily void dvo\+\_\+ros\+::\+Camera\+Base\+::start\+Synchronized\+Image\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_base_a45929acddbac65ab20b3c0a0b9fb567a}\label{classdvo__ros_1_1_camera_base_a45929acddbac65ab20b3c0a0b9fb567a}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}!stop\+Synchronized\+Image\+Stream@{stop\+Synchronized\+Image\+Stream}}
+\index{stop\+Synchronized\+Image\+Stream@{stop\+Synchronized\+Image\+Stream}!dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}}
+\subsubsection{\texorpdfstring{stop\+Synchronized\+Image\+Stream()}{stopSynchronizedImageStream()}}
+{\footnotesize\ttfamily void dvo\+\_\+ros\+::\+Camera\+Base\+::stop\+Synchronized\+Image\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_base_aec2df412779aa6ef9643a54a5910424a}\label{classdvo__ros_1_1_camera_base_aec2df412779aa6ef9643a54a5910424a}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}!depth\+\_\+camera\+\_\+info\+\_\+subscriber\+\_\+@{depth\+\_\+camera\+\_\+info\+\_\+subscriber\+\_\+}}
+\index{depth\+\_\+camera\+\_\+info\+\_\+subscriber\+\_\+@{depth\+\_\+camera\+\_\+info\+\_\+subscriber\+\_\+}!dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}}
+\subsubsection{\texorpdfstring{depth\+\_\+camera\+\_\+info\+\_\+subscriber\+\_\+}{depth\_camera\_info\_subscriber\_}}
+{\footnotesize\ttfamily message\+\_\+filters\+::\+Subscriber$<$sensor\+\_\+msgs\+::\+Camera\+Info$>$ dvo\+\_\+ros\+::\+Camera\+Base\+::depth\+\_\+camera\+\_\+info\+\_\+subscriber\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_base_a9d2f9d7b4ef5d948d09610d7a518984b}\label{classdvo__ros_1_1_camera_base_a9d2f9d7b4ef5d948d09610d7a518984b}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}!depth\+\_\+image\+\_\+subscriber\+\_\+@{depth\+\_\+image\+\_\+subscriber\+\_\+}}
+\index{depth\+\_\+image\+\_\+subscriber\+\_\+@{depth\+\_\+image\+\_\+subscriber\+\_\+}!dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}}
+\subsubsection{\texorpdfstring{depth\+\_\+image\+\_\+subscriber\+\_\+}{depth\_image\_subscriber\_}}
+{\footnotesize\ttfamily message\+\_\+filters\+::\+Subscriber$<$sensor\+\_\+msgs\+::\+Image$>$ dvo\+\_\+ros\+::\+Camera\+Base\+::depth\+\_\+image\+\_\+subscriber\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_base_a38fe2cd9f4b4aa6ca843ea317ddf8bad}\label{classdvo__ros_1_1_camera_base_a38fe2cd9f4b4aa6ca843ea317ddf8bad}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}!nh\+\_\+@{nh\+\_\+}}
+\index{nh\+\_\+@{nh\+\_\+}!dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}}
+\subsubsection{\texorpdfstring{nh\+\_\+}{nh\_}}
+{\footnotesize\ttfamily ros\+::\+Node\+Handle dvo\+\_\+ros\+::\+Camera\+Base\+::nh\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_base_ad8c455ad2a0d51f0cea6072621058b77}\label{classdvo__ros_1_1_camera_base_ad8c455ad2a0d51f0cea6072621058b77}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}!nh\+\_\+private\+\_\+@{nh\+\_\+private\+\_\+}}
+\index{nh\+\_\+private\+\_\+@{nh\+\_\+private\+\_\+}!dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}}
+\subsubsection{\texorpdfstring{nh\+\_\+private\+\_\+}{nh\_private\_}}
+{\footnotesize\ttfamily ros\+::\+Node\+Handle dvo\+\_\+ros\+::\+Camera\+Base\+::nh\+\_\+private\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_base_a3009d23f7083e4d2aa0c9b52068f96ca}\label{classdvo__ros_1_1_camera_base_a3009d23f7083e4d2aa0c9b52068f96ca}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}!rgb\+\_\+camera\+\_\+info\+\_\+subscriber\+\_\+@{rgb\+\_\+camera\+\_\+info\+\_\+subscriber\+\_\+}}
+\index{rgb\+\_\+camera\+\_\+info\+\_\+subscriber\+\_\+@{rgb\+\_\+camera\+\_\+info\+\_\+subscriber\+\_\+}!dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}}
+\subsubsection{\texorpdfstring{rgb\+\_\+camera\+\_\+info\+\_\+subscriber\+\_\+}{rgb\_camera\_info\_subscriber\_}}
+{\footnotesize\ttfamily message\+\_\+filters\+::\+Subscriber$<$sensor\+\_\+msgs\+::\+Camera\+Info$>$ dvo\+\_\+ros\+::\+Camera\+Base\+::rgb\+\_\+camera\+\_\+info\+\_\+subscriber\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_base_a38d299b1c046830ef1552a0e4a31d7b2}\label{classdvo__ros_1_1_camera_base_a38d299b1c046830ef1552a0e4a31d7b2}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}!rgb\+\_\+image\+\_\+subscriber\+\_\+@{rgb\+\_\+image\+\_\+subscriber\+\_\+}}
+\index{rgb\+\_\+image\+\_\+subscriber\+\_\+@{rgb\+\_\+image\+\_\+subscriber\+\_\+}!dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}}
+\subsubsection{\texorpdfstring{rgb\+\_\+image\+\_\+subscriber\+\_\+}{rgb\_image\_subscriber\_}}
+{\footnotesize\ttfamily message\+\_\+filters\+::\+Subscriber$<$sensor\+\_\+msgs\+::\+Image$>$ dvo\+\_\+ros\+::\+Camera\+Base\+::rgb\+\_\+image\+\_\+subscriber\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_base_aac780a822e3a2b6779a2a9598b0b52d2}\label{classdvo__ros_1_1_camera_base_aac780a822e3a2b6779a2a9598b0b52d2}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}!synchronizer\+\_\+@{synchronizer\+\_\+}}
+\index{synchronizer\+\_\+@{synchronizer\+\_\+}!dvo\+\_\+ros\+::\+Camera\+Base@{dvo\+\_\+ros\+::\+Camera\+Base}}
+\subsubsection{\texorpdfstring{synchronizer\+\_\+}{synchronizer\_}}
+{\footnotesize\ttfamily message\+\_\+filters\+::\+Synchronizer$<$\mbox{\hyperlink{namespacedvo__ros_ae8c4d74734d4ef3107bf429ef461e553}{R\+G\+B\+D\+With\+Camera\+Info\+Policy}}$>$ dvo\+\_\+ros\+::\+Camera\+Base\+::synchronizer\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+ros/include/dvo\+\_\+ros/\mbox{\hyperlink{camera__base_8h}{camera\+\_\+base.\+h}}\item 
+dvo\+\_\+ros/src/\mbox{\hyperlink{camera__base_8cpp}{camera\+\_\+base.\+cpp}}\end{DoxyCompactItemize}

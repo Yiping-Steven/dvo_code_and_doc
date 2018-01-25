@@ -1,0 +1,131 @@
+\hypertarget{structdvo_1_1_dense_tracker_1_1_iteration_context}{}\section{dvo\+:\+:Dense\+Tracker\+:\+:Iteration\+Context Struct Reference}
+\label{structdvo_1_1_dense_tracker_1_1_iteration_context}\index{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}}
+
+
+{\ttfamily \#include $<$dense\+\_\+tracking.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context_ab2e12923bbbc9b540cf8139d3a4d3f33}{Iteration\+Context}} (const \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_config}{Config}} \&\mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context_a56d4fa3811b2b6d24243d2d0ea0d7348}{cfg}})
+\item 
+bool \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context_a67e450af240d213a8021d57bc11ac42a}{Is\+First\+Iteration}} () const
+\item 
+bool \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context_a419d0a3e80b785735eac4934fddf827f}{Is\+First\+Iteration\+On\+Level}} () const
+\item 
+bool \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context_a69730e1cd4e3c4bc183a181fe9026f40}{Is\+First\+Level}} () const
+\item 
+bool \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context_ac27dac99b037feb1e2bbce3b3315dd4a}{Is\+Last\+Level}} () const
+\item 
+bool \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context_aa15a70a3a1af2f73c07f7bc7eb933a9b}{Iterations\+Exceeded}} () const
+\item 
+double \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context_acc9cb928fcc0017d050d25393b4ed379}{Error\+Diff}} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_config}{Config}} \& \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context_a56d4fa3811b2b6d24243d2d0ea0d7348}{cfg}}
+\item 
+int \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context_a7efda75ce2066b72f0d7e94badb2d560}{Level}}
+\item 
+int \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context_afc12b998ec8732853a00ab396e20986d}{Iteration}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context_a69908efda33537ec90b69af2bcf4d3a1}{Num\+Constraints}}
+\item 
+double \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context_acaa2799f500e5b1029ecd13d6a384baf}{Error}}
+\item 
+double \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context_aed3ead8aa09b40e80a7e58249ff3a54d}{Last\+Error}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structdvo_1_1_dense_tracker_1_1_iteration_context_ab2e12923bbbc9b540cf8139d3a4d3f33}\label{structdvo_1_1_dense_tracker_1_1_iteration_context_ab2e12923bbbc9b540cf8139d3a4d3f33}} 
+\index{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}!Iteration\+Context@{Iteration\+Context}}
+\index{Iteration\+Context@{Iteration\+Context}!dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}}
+\subsubsection{\texorpdfstring{Iteration\+Context()}{IterationContext()}}
+{\footnotesize\ttfamily dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context\+::\+Iteration\+Context (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_config}{Config}} \&}]{cfg }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structdvo_1_1_dense_tracker_1_1_iteration_context_acc9cb928fcc0017d050d25393b4ed379}\label{structdvo_1_1_dense_tracker_1_1_iteration_context_acc9cb928fcc0017d050d25393b4ed379}} 
+\index{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}!Error\+Diff@{Error\+Diff}}
+\index{Error\+Diff@{Error\+Diff}!dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}}
+\subsubsection{\texorpdfstring{Error\+Diff()}{ErrorDiff()}}
+{\footnotesize\ttfamily double dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context\+::\+Error\+Diff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structdvo_1_1_dense_tracker_1_1_iteration_context_a67e450af240d213a8021d57bc11ac42a}\label{structdvo_1_1_dense_tracker_1_1_iteration_context_a67e450af240d213a8021d57bc11ac42a}} 
+\index{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}!Is\+First\+Iteration@{Is\+First\+Iteration}}
+\index{Is\+First\+Iteration@{Is\+First\+Iteration}!dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}}
+\subsubsection{\texorpdfstring{Is\+First\+Iteration()}{IsFirstIteration()}}
+{\footnotesize\ttfamily bool dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context\+::\+Is\+First\+Iteration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structdvo_1_1_dense_tracker_1_1_iteration_context_a419d0a3e80b785735eac4934fddf827f}\label{structdvo_1_1_dense_tracker_1_1_iteration_context_a419d0a3e80b785735eac4934fddf827f}} 
+\index{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}!Is\+First\+Iteration\+On\+Level@{Is\+First\+Iteration\+On\+Level}}
+\index{Is\+First\+Iteration\+On\+Level@{Is\+First\+Iteration\+On\+Level}!dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}}
+\subsubsection{\texorpdfstring{Is\+First\+Iteration\+On\+Level()}{IsFirstIterationOnLevel()}}
+{\footnotesize\ttfamily bool dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context\+::\+Is\+First\+Iteration\+On\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structdvo_1_1_dense_tracker_1_1_iteration_context_a69730e1cd4e3c4bc183a181fe9026f40}\label{structdvo_1_1_dense_tracker_1_1_iteration_context_a69730e1cd4e3c4bc183a181fe9026f40}} 
+\index{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}!Is\+First\+Level@{Is\+First\+Level}}
+\index{Is\+First\+Level@{Is\+First\+Level}!dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}}
+\subsubsection{\texorpdfstring{Is\+First\+Level()}{IsFirstLevel()}}
+{\footnotesize\ttfamily bool dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context\+::\+Is\+First\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structdvo_1_1_dense_tracker_1_1_iteration_context_ac27dac99b037feb1e2bbce3b3315dd4a}\label{structdvo_1_1_dense_tracker_1_1_iteration_context_ac27dac99b037feb1e2bbce3b3315dd4a}} 
+\index{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}!Is\+Last\+Level@{Is\+Last\+Level}}
+\index{Is\+Last\+Level@{Is\+Last\+Level}!dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}}
+\subsubsection{\texorpdfstring{Is\+Last\+Level()}{IsLastLevel()}}
+{\footnotesize\ttfamily bool dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context\+::\+Is\+Last\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structdvo_1_1_dense_tracker_1_1_iteration_context_aa15a70a3a1af2f73c07f7bc7eb933a9b}\label{structdvo_1_1_dense_tracker_1_1_iteration_context_aa15a70a3a1af2f73c07f7bc7eb933a9b}} 
+\index{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}!Iterations\+Exceeded@{Iterations\+Exceeded}}
+\index{Iterations\+Exceeded@{Iterations\+Exceeded}!dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}}
+\subsubsection{\texorpdfstring{Iterations\+Exceeded()}{IterationsExceeded()}}
+{\footnotesize\ttfamily bool dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context\+::\+Iterations\+Exceeded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structdvo_1_1_dense_tracker_1_1_iteration_context_a56d4fa3811b2b6d24243d2d0ea0d7348}\label{structdvo_1_1_dense_tracker_1_1_iteration_context_a56d4fa3811b2b6d24243d2d0ea0d7348}} 
+\index{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}!cfg@{cfg}}
+\index{cfg@{cfg}!dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}}
+\subsubsection{\texorpdfstring{cfg}{cfg}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_config}{Config}}\& dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context\+::cfg}
+
+\mbox{\Hypertarget{structdvo_1_1_dense_tracker_1_1_iteration_context_acaa2799f500e5b1029ecd13d6a384baf}\label{structdvo_1_1_dense_tracker_1_1_iteration_context_acaa2799f500e5b1029ecd13d6a384baf}} 
+\index{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}!Error@{Error}}
+\index{Error@{Error}!dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}}
+\subsubsection{\texorpdfstring{Error}{Error}}
+{\footnotesize\ttfamily double dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context\+::\+Error}
+
+\mbox{\Hypertarget{structdvo_1_1_dense_tracker_1_1_iteration_context_afc12b998ec8732853a00ab396e20986d}\label{structdvo_1_1_dense_tracker_1_1_iteration_context_afc12b998ec8732853a00ab396e20986d}} 
+\index{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}!Iteration@{Iteration}}
+\index{Iteration@{Iteration}!dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}}
+\subsubsection{\texorpdfstring{Iteration}{Iteration}}
+{\footnotesize\ttfamily int dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context\+::\+Iteration}
+
+\mbox{\Hypertarget{structdvo_1_1_dense_tracker_1_1_iteration_context_aed3ead8aa09b40e80a7e58249ff3a54d}\label{structdvo_1_1_dense_tracker_1_1_iteration_context_aed3ead8aa09b40e80a7e58249ff3a54d}} 
+\index{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}!Last\+Error@{Last\+Error}}
+\index{Last\+Error@{Last\+Error}!dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}}
+\subsubsection{\texorpdfstring{Last\+Error}{LastError}}
+{\footnotesize\ttfamily double dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context\+::\+Last\+Error}
+
+\mbox{\Hypertarget{structdvo_1_1_dense_tracker_1_1_iteration_context_a7efda75ce2066b72f0d7e94badb2d560}\label{structdvo_1_1_dense_tracker_1_1_iteration_context_a7efda75ce2066b72f0d7e94badb2d560}} 
+\index{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}!Level@{Level}}
+\index{Level@{Level}!dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}}
+\subsubsection{\texorpdfstring{Level}{Level}}
+{\footnotesize\ttfamily int dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context\+::\+Level}
+
+\mbox{\Hypertarget{structdvo_1_1_dense_tracker_1_1_iteration_context_a69908efda33537ec90b69af2bcf4d3a1}\label{structdvo_1_1_dense_tracker_1_1_iteration_context_a69908efda33537ec90b69af2bcf4d3a1}} 
+\index{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}!Num\+Constraints@{Num\+Constraints}}
+\index{Num\+Constraints@{Num\+Constraints}!dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context@{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}}
+\subsubsection{\texorpdfstring{Num\+Constraints}{NumConstraints}}
+{\footnotesize\ttfamily size\+\_\+t dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context\+::\+Num\+Constraints}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/include/dvo/\mbox{\hyperlink{dense__tracking_8h}{dense\+\_\+tracking.\+h}}\item 
+dvo\+\_\+core/src/\mbox{\hyperlink{dense__tracking__config_8cpp}{dense\+\_\+tracking\+\_\+config.\+cpp}}\end{DoxyCompactItemize}

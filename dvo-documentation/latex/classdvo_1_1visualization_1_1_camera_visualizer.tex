@@ -1,0 +1,128 @@
+\hypertarget{classdvo_1_1visualization_1_1_camera_visualizer}{}\section{dvo\+:\+:visualization\+:\+:Camera\+Visualizer Class Reference}
+\label{classdvo_1_1visualization_1_1_camera_visualizer}\index{dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}}
+
+
+{\ttfamily \#include $<$camera\+\_\+trajectory\+\_\+visualizer.\+h$>$}
+
+Inheritance diagram for dvo\+:\+:visualization\+:\+:Camera\+Visualizer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.181435cm]{classdvo_1_1visualization_1_1_camera_visualizer}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7}{Option}} \{ \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7a0ff8fc7d7283f27066e93ca0d4ef3f19}{Show\+Camera\+And\+Cloud}}, 
+\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7a98873907c6c7542969210d4aedf56e68}{Show\+Camera}}, 
+\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7abb664b1b198725856042bb30de426865}{Show\+Nothing}}
+ \}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer}{Camera\+Visualizer}} $>$ \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a473ebecc62e1d4edba21027d858789a2}{Ptr}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_afa7b81b6dd03ee4f79ce9fc55fce5b91}{$\sim$\+Camera\+Visualizer}} ()
+\item 
+\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a4c69b0f2b491852a9a639482e5619fb8}{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}} (\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer}{Camera\+Visualizer}}, std\+::string, name)
+\item 
+\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a5f834abd240232041d2c87deedae4d3c}{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}} (\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer}{Camera\+Visualizer}}, \mbox{\hyperlink{structdvo_1_1visualization_1_1_color}{Color}}, color)
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a646b21ea800d07f6a4174c80daf2bf50}{show}} (\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7}{Option}} option=\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7a0ff8fc7d7283f27066e93ca0d4ef3f19}{Show\+Camera\+And\+Cloud}})=0
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a45dbf0d449a7b7529f7da477c676ca85}{hide}} ()=0
+\item 
+virtual \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer}{Camera\+Visualizer}} \& \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_afd83119e63048b0229820045d54c95ec}{update}} (const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{dvo\+::core\+::\+Rgbd\+Image}} \&img, const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{dvo\+::core\+::\+Intrinsic\+Matrix}} \&intrinsics, const Eigen\+::\+Affine3d \&pose)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_visualizer_a473ebecc62e1d4edba21027d858789a2}\label{classdvo_1_1visualization_1_1_camera_visualizer_a473ebecc62e1d4edba21027d858789a2}} 
+\index{dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}!Ptr@{Ptr}}
+\index{Ptr@{Ptr}!dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}}
+\subsubsection{\texorpdfstring{Ptr}{Ptr}}
+{\footnotesize\ttfamily typedef boost\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer}{Camera\+Visualizer}}$>$ \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a473ebecc62e1d4edba21027d858789a2}{dvo\+::visualization\+::\+Camera\+Visualizer\+::\+Ptr}}}
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7}\label{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7}} 
+\index{dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}!Option@{Option}}
+\index{Option@{Option}!dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}}
+\subsubsection{\texorpdfstring{Option}{Option}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7}{dvo\+::visualization\+::\+Camera\+Visualizer\+::\+Option}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Show\+Camera\+And\+Cloud@{Show\+Camera\+And\+Cloud}!dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}}\index{dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}!Show\+Camera\+And\+Cloud@{Show\+Camera\+And\+Cloud}}}\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7a0ff8fc7d7283f27066e93ca0d4ef3f19}\label{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7a0ff8fc7d7283f27066e93ca0d4ef3f19}} 
+Show\+Camera\+And\+Cloud&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Show\+Camera@{Show\+Camera}!dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}}\index{dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}!Show\+Camera@{Show\+Camera}}}\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7a98873907c6c7542969210d4aedf56e68}\label{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7a98873907c6c7542969210d4aedf56e68}} 
+Show\+Camera&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Show\+Nothing@{Show\+Nothing}!dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}}\index{dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}!Show\+Nothing@{Show\+Nothing}}}\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7abb664b1b198725856042bb30de426865}\label{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7abb664b1b198725856042bb30de426865}} 
+Show\+Nothing&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_visualizer_afa7b81b6dd03ee4f79ce9fc55fce5b91}\label{classdvo_1_1visualization_1_1_camera_visualizer_afa7b81b6dd03ee4f79ce9fc55fce5b91}} 
+\index{dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}!````~Camera\+Visualizer@{$\sim$\+Camera\+Visualizer}}
+\index{````~Camera\+Visualizer@{$\sim$\+Camera\+Visualizer}!dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}}
+\subsubsection{\texorpdfstring{$\sim$\+Camera\+Visualizer()}{~CameraVisualizer()}}
+{\footnotesize\ttfamily virtual dvo\+::visualization\+::\+Camera\+Visualizer\+::$\sim$\+Camera\+Visualizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_visualizer_a4c69b0f2b491852a9a639482e5619fb8}\label{classdvo_1_1visualization_1_1_camera_visualizer_a4c69b0f2b491852a9a639482e5619fb8}} 
+\index{dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}!F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}}
+\index{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}!dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}}
+\subsubsection{\texorpdfstring{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E()}{FI\_ATTRIBUTE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily dvo\+::visualization\+::\+Camera\+Visualizer\+::\+F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer}{Camera\+Visualizer}}}]{,  }\item[{std\+::string}]{,  }\item[{name}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_visualizer_a5f834abd240232041d2c87deedae4d3c}\label{classdvo_1_1visualization_1_1_camera_visualizer_a5f834abd240232041d2c87deedae4d3c}} 
+\index{dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}!F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}}
+\index{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}!dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}}
+\subsubsection{\texorpdfstring{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E()}{FI\_ATTRIBUTE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily dvo\+::visualization\+::\+Camera\+Visualizer\+::\+F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer}{Camera\+Visualizer}}}]{,  }\item[{\mbox{\hyperlink{structdvo_1_1visualization_1_1_color}{Color}}}]{,  }\item[{color}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_visualizer_a45dbf0d449a7b7529f7da477c676ca85}\label{classdvo_1_1visualization_1_1_camera_visualizer_a45dbf0d449a7b7529f7da477c676ca85}} 
+\index{dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}!hide@{hide}}
+\index{hide@{hide}!dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}}
+\subsubsection{\texorpdfstring{hide()}{hide()}}
+{\footnotesize\ttfamily virtual void dvo\+::visualization\+::\+Camera\+Visualizer\+::hide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classdvo_1_1visualization_1_1internal_1_1_pcl_camera_visualizer_ad261307239a87bc10ba4d0662960cc72}{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Visualizer}}, \mbox{\hyperlink{classdvo__ros_1_1visualization_1_1internal_1_1_ros_camera_visualizer_a4812a8e3c5573a68fb74cabbf2f70422}{dvo\+\_\+ros\+::visualization\+::internal\+::\+Ros\+Camera\+Visualizer}}, and \mbox{\hyperlink{classdvo_1_1visualization_1_1_noop_camera_visualizer_a875ff591e3db513ddbec48478989639e}{dvo\+::visualization\+::\+Noop\+Camera\+Visualizer}}.
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_visualizer_a646b21ea800d07f6a4174c80daf2bf50}\label{classdvo_1_1visualization_1_1_camera_visualizer_a646b21ea800d07f6a4174c80daf2bf50}} 
+\index{dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}!show@{show}}
+\index{show@{show}!dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily virtual void dvo\+::visualization\+::\+Camera\+Visualizer\+::show (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7}{Option}}}]{option = {\ttfamily \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a0526f50be9f298c4f7d1f91018d50af7a0ff8fc7d7283f27066e93ca0d4ef3f19}{Show\+Camera\+And\+Cloud}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classdvo_1_1visualization_1_1internal_1_1_pcl_camera_visualizer_a09b5d8117f8ca15489ac42f6b6019030}{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Visualizer}}, and \mbox{\hyperlink{classdvo_1_1visualization_1_1_noop_camera_visualizer_acfb97efacfcb9e3dd30444e34c7bfd9c}{dvo\+::visualization\+::\+Noop\+Camera\+Visualizer}}.
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_visualizer_afd83119e63048b0229820045d54c95ec}\label{classdvo_1_1visualization_1_1_camera_visualizer_afd83119e63048b0229820045d54c95ec}} 
+\index{dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}!update@{update}}
+\index{update@{update}!dvo\+::visualization\+::\+Camera\+Visualizer@{dvo\+::visualization\+::\+Camera\+Visualizer}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer}{Camera\+Visualizer}}\& dvo\+::visualization\+::\+Camera\+Visualizer\+::update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{dvo\+::core\+::\+Rgbd\+Image}} \&}]{img,  }\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{dvo\+::core\+::\+Intrinsic\+Matrix}} \&}]{intrinsics,  }\item[{const Eigen\+::\+Affine3d \&}]{pose }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classdvo_1_1visualization_1_1internal_1_1_pcl_camera_visualizer_adfe2b8752f78ee0fa6ee193be70941eb}{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Visualizer}}, \mbox{\hyperlink{classdvo__ros_1_1visualization_1_1internal_1_1_ros_camera_visualizer_aa347218752bde73e09874771fe3b4410}{dvo\+\_\+ros\+::visualization\+::internal\+::\+Ros\+Camera\+Visualizer}}, and \mbox{\hyperlink{classdvo_1_1visualization_1_1_noop_camera_visualizer_a7983d8de9de45c5617c3e877d36d6ff3}{dvo\+::visualization\+::\+Noop\+Camera\+Visualizer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/include/dvo/visualization/\mbox{\hyperlink{camera__trajectory__visualizer_8h}{camera\+\_\+trajectory\+\_\+visualizer.\+h}}\end{DoxyCompactItemize}

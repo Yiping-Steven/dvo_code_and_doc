@@ -1,0 +1,239 @@
+\hypertarget{structdvo_1_1core_1_1_rgbd_image}{}\section{dvo\+:\+:core\+:\+:Rgbd\+Image Struct Reference}
+\label{structdvo_1_1core_1_1_rgbd_image}\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+
+
+{\ttfamily \#include $<$rgbd\+\_\+image.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Eigen\+::\+Matrix$<$ float, 4, Eigen\+::\+Dynamic, Eigen\+::\+Col\+Major $>$ \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{Point\+Cloud}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_aedc1a49823b9cc5afe16ace4b682fdb8}{has\+Intensity}} () const
+\item 
+bool \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_af939012f350c641cce1a7dc19c6a5967}{has\+Depth}} () const
+\item 
+bool \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a9971d723c09f5eab20f5487993eb6b71}{has\+Rgb}} () const
+\item 
+void \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_ae75d152196893d0a8e7ca64f9142da82}{initialize}} ()
+\item 
+void \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a7e92fbbf098e63f7eb9263775b99d606}{calculate\+Derivatives}} ()
+\item 
+bool \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a66f7d5b2cd026ac8ec0b2e6a131f7aa6}{calculate\+Intensity\+Derivatives}} ()
+\item 
+void \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_aeca20a5666f5c9a532451e969d94e7bc}{calculate\+Depth\+Derivatives}} ()
+\item 
+void \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_ac034e5b79b4f39525d9a1eab1f98ec70}{build\+Point\+Cloud}} (const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{Intrinsic\+Matrix}} \&intrinsics)
+\item 
+void \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a9f476f47d4970842c7e9f96f6ad1c7a3}{warp\+Intensity}} (const \mbox{\hyperlink{namespacedvo_1_1core_af89a8f837f3ae51ed196b7988e59e53d}{Affine\+Transform}} \&transformation, const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{Point\+Cloud}} \&reference\+\_\+pointcloud, const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{Intrinsic\+Matrix}} \&intrinsics, \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{Rgbd\+Image}} \&result, \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{Point\+Cloud}} \&transformed\+\_\+pointcloud)
+\item 
+void \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a055ec4d22938a6deb2b2fabfe083aca3}{warp\+Intensity\+Sse}} (const \mbox{\hyperlink{namespacedvo_1_1core_af89a8f837f3ae51ed196b7988e59e53d}{Affine\+Transform}} \&transformation, const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{Point\+Cloud}} \&reference\+\_\+pointcloud, const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{Intrinsic\+Matrix}} \&intrinsics, \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{Rgbd\+Image}} \&result, \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{Point\+Cloud}} \&transformed\+\_\+pointcloud)
+\item 
+void \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_af35a385488bc48bf81ebb5cb96f58449}{warp\+Intensity\+Sse}} (const \mbox{\hyperlink{namespacedvo_1_1core_af89a8f837f3ae51ed196b7988e59e53d}{Affine\+Transform}} \&transformation, const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{Point\+Cloud}} \&reference\+\_\+pointcloud, const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{Intrinsic\+Matrix}} \&intrinsics, \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{Rgbd\+Image}} \&result)
+\item 
+void \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a3da7245dc71cced4c4ea2d3e877a45b2}{warp\+Intensity\+Forward}} (const \mbox{\hyperlink{namespacedvo_1_1core_af89a8f837f3ae51ed196b7988e59e53d}{Affine\+Transform}} \&transformation, const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{Intrinsic\+Matrix}} \&intrinsics, \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{Rgbd\+Image}} \&result, cv\+::\+Mat\+\_\+$<$ cv\+::\+Vec3d $>$ \&cloud)
+\item 
+void \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a371d5f3f46499961ab301f507f67daf7}{warp\+Depth\+Forward}} (const \mbox{\hyperlink{namespacedvo_1_1core_af89a8f837f3ae51ed196b7988e59e53d}{Affine\+Transform}} \&transformation, const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{Intrinsic\+Matrix}} \&intrinsics, \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{Rgbd\+Image}} \&result, cv\+::\+Mat\+\_\+$<$ cv\+::\+Vec3d $>$ \&cloud)
+\item 
+void \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_acc3ee946610da287f2c5680bdc41cf07}{warp\+Depth\+Forward\+Advanced}} (const \mbox{\hyperlink{namespacedvo_1_1core_af89a8f837f3ae51ed196b7988e59e53d}{Affine\+Transform}} \&transformation, const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{Intrinsic\+Matrix}} \&intrinsics, \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{Rgbd\+Image}} \&result)
+\item 
+bool \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_ac6c56350e20356eac913fe2b0e7ea995}{in\+Image}} (const float \&x, const float \&y) const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a4befb13808afd51c10b7ee945517d693}{intensity}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a912335c9c06c351275647cbec274febf}{intensity\+\_\+dx}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_abf9856a4b48696a6ff80824be7815f1a}{intensity\+\_\+dy}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a95e43f3efef765278172153c02888d0a}{depth}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_adaa7647076295d4ea71566f2ea156572}{depth\+\_\+dx}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_acb9a7fe558cf86398e4677c5c2c7172a}{depth\+\_\+dy}}
+\item 
+cv\+::\+Mat \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a43f8cdc199b3d219251a97591ab2f247}{rgb}}
+\item 
+\mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{Point\+Cloud}} \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a651ebb5170880695e4f31a7ca1377720}{pointcloud}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a8f247a04dfd8f7540fc14131fb86bd21}{width}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a793644aa6797d96ee61315bd5e4c7c32}{height}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}\label{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!Point\+Cloud@{Point\+Cloud}}
+\index{Point\+Cloud@{Point\+Cloud}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{Point\+Cloud}{PointCloud}}
+{\footnotesize\ttfamily typedef Eigen\+::\+Matrix$<$float, 4, Eigen\+::\+Dynamic, Eigen\+::\+Col\+Major$>$ \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{dvo\+::core\+::\+Rgbd\+Image\+::\+Point\+Cloud}}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_ac034e5b79b4f39525d9a1eab1f98ec70}\label{structdvo_1_1core_1_1_rgbd_image_ac034e5b79b4f39525d9a1eab1f98ec70}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!build\+Point\+Cloud@{build\+Point\+Cloud}}
+\index{build\+Point\+Cloud@{build\+Point\+Cloud}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{build\+Point\+Cloud()}{buildPointCloud()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Rgbd\+Image\+::build\+Point\+Cloud (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{Intrinsic\+Matrix}} \&}]{intrinsics }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_aeca20a5666f5c9a532451e969d94e7bc}\label{structdvo_1_1core_1_1_rgbd_image_aeca20a5666f5c9a532451e969d94e7bc}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!calculate\+Depth\+Derivatives@{calculate\+Depth\+Derivatives}}
+\index{calculate\+Depth\+Derivatives@{calculate\+Depth\+Derivatives}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{calculate\+Depth\+Derivatives()}{calculateDepthDerivatives()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Rgbd\+Image\+::calculate\+Depth\+Derivatives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_a7e92fbbf098e63f7eb9263775b99d606}\label{structdvo_1_1core_1_1_rgbd_image_a7e92fbbf098e63f7eb9263775b99d606}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!calculate\+Derivatives@{calculate\+Derivatives}}
+\index{calculate\+Derivatives@{calculate\+Derivatives}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{calculate\+Derivatives()}{calculateDerivatives()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Rgbd\+Image\+::calculate\+Derivatives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_a66f7d5b2cd026ac8ec0b2e6a131f7aa6}\label{structdvo_1_1core_1_1_rgbd_image_a66f7d5b2cd026ac8ec0b2e6a131f7aa6}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!calculate\+Intensity\+Derivatives@{calculate\+Intensity\+Derivatives}}
+\index{calculate\+Intensity\+Derivatives@{calculate\+Intensity\+Derivatives}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{calculate\+Intensity\+Derivatives()}{calculateIntensityDerivatives()}}
+{\footnotesize\ttfamily bool dvo\+::core\+::\+Rgbd\+Image\+::calculate\+Intensity\+Derivatives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_af939012f350c641cce1a7dc19c6a5967}\label{structdvo_1_1core_1_1_rgbd_image_af939012f350c641cce1a7dc19c6a5967}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!has\+Depth@{has\+Depth}}
+\index{has\+Depth@{has\+Depth}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{has\+Depth()}{hasDepth()}}
+{\footnotesize\ttfamily bool dvo\+::core\+::\+Rgbd\+Image\+::has\+Depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_aedc1a49823b9cc5afe16ace4b682fdb8}\label{structdvo_1_1core_1_1_rgbd_image_aedc1a49823b9cc5afe16ace4b682fdb8}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!has\+Intensity@{has\+Intensity}}
+\index{has\+Intensity@{has\+Intensity}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{has\+Intensity()}{hasIntensity()}}
+{\footnotesize\ttfamily bool dvo\+::core\+::\+Rgbd\+Image\+::has\+Intensity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_a9971d723c09f5eab20f5487993eb6b71}\label{structdvo_1_1core_1_1_rgbd_image_a9971d723c09f5eab20f5487993eb6b71}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!has\+Rgb@{has\+Rgb}}
+\index{has\+Rgb@{has\+Rgb}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{has\+Rgb()}{hasRgb()}}
+{\footnotesize\ttfamily bool dvo\+::core\+::\+Rgbd\+Image\+::has\+Rgb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_ac6c56350e20356eac913fe2b0e7ea995}\label{structdvo_1_1core_1_1_rgbd_image_ac6c56350e20356eac913fe2b0e7ea995}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!in\+Image@{in\+Image}}
+\index{in\+Image@{in\+Image}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{in\+Image()}{inImage()}}
+{\footnotesize\ttfamily bool dvo\+::core\+::\+Rgbd\+Image\+::in\+Image (\begin{DoxyParamCaption}\item[{const float \&}]{x,  }\item[{const float \&}]{y }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_ae75d152196893d0a8e7ca64f9142da82}\label{structdvo_1_1core_1_1_rgbd_image_ae75d152196893d0a8e7ca64f9142da82}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!initialize@{initialize}}
+\index{initialize@{initialize}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Rgbd\+Image\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_a371d5f3f46499961ab301f507f67daf7}\label{structdvo_1_1core_1_1_rgbd_image_a371d5f3f46499961ab301f507f67daf7}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!warp\+Depth\+Forward@{warp\+Depth\+Forward}}
+\index{warp\+Depth\+Forward@{warp\+Depth\+Forward}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{warp\+Depth\+Forward()}{warpDepthForward()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Rgbd\+Image\+::warp\+Depth\+Forward (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacedvo_1_1core_af89a8f837f3ae51ed196b7988e59e53d}{Affine\+Transform}} \&}]{transformation,  }\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{Intrinsic\+Matrix}} \&}]{intrinsics,  }\item[{\mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{Rgbd\+Image}} \&}]{result,  }\item[{cv\+::\+Mat\+\_\+$<$ cv\+::\+Vec3d $>$ \&}]{cloud }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_acc3ee946610da287f2c5680bdc41cf07}\label{structdvo_1_1core_1_1_rgbd_image_acc3ee946610da287f2c5680bdc41cf07}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!warp\+Depth\+Forward\+Advanced@{warp\+Depth\+Forward\+Advanced}}
+\index{warp\+Depth\+Forward\+Advanced@{warp\+Depth\+Forward\+Advanced}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{warp\+Depth\+Forward\+Advanced()}{warpDepthForwardAdvanced()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Rgbd\+Image\+::warp\+Depth\+Forward\+Advanced (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacedvo_1_1core_af89a8f837f3ae51ed196b7988e59e53d}{Affine\+Transform}} \&}]{transformation,  }\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{Intrinsic\+Matrix}} \&}]{intrinsics,  }\item[{\mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{Rgbd\+Image}} \&}]{result }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_a9f476f47d4970842c7e9f96f6ad1c7a3}\label{structdvo_1_1core_1_1_rgbd_image_a9f476f47d4970842c7e9f96f6ad1c7a3}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!warp\+Intensity@{warp\+Intensity}}
+\index{warp\+Intensity@{warp\+Intensity}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{warp\+Intensity()}{warpIntensity()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Rgbd\+Image\+::warp\+Intensity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacedvo_1_1core_af89a8f837f3ae51ed196b7988e59e53d}{Affine\+Transform}} \&}]{transformation,  }\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{Point\+Cloud}} \&}]{reference\+\_\+pointcloud,  }\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{Intrinsic\+Matrix}} \&}]{intrinsics,  }\item[{\mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{Rgbd\+Image}} \&}]{result,  }\item[{\mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{Point\+Cloud}} \&}]{transformed\+\_\+pointcloud }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_a3da7245dc71cced4c4ea2d3e877a45b2}\label{structdvo_1_1core_1_1_rgbd_image_a3da7245dc71cced4c4ea2d3e877a45b2}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!warp\+Intensity\+Forward@{warp\+Intensity\+Forward}}
+\index{warp\+Intensity\+Forward@{warp\+Intensity\+Forward}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{warp\+Intensity\+Forward()}{warpIntensityForward()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Rgbd\+Image\+::warp\+Intensity\+Forward (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacedvo_1_1core_af89a8f837f3ae51ed196b7988e59e53d}{Affine\+Transform}} \&}]{transformation,  }\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{Intrinsic\+Matrix}} \&}]{intrinsics,  }\item[{\mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{Rgbd\+Image}} \&}]{result,  }\item[{cv\+::\+Mat\+\_\+$<$ cv\+::\+Vec3d $>$ \&}]{cloud }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_a055ec4d22938a6deb2b2fabfe083aca3}\label{structdvo_1_1core_1_1_rgbd_image_a055ec4d22938a6deb2b2fabfe083aca3}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!warp\+Intensity\+Sse@{warp\+Intensity\+Sse}}
+\index{warp\+Intensity\+Sse@{warp\+Intensity\+Sse}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{warp\+Intensity\+Sse()}{warpIntensitySse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Rgbd\+Image\+::warp\+Intensity\+Sse (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacedvo_1_1core_af89a8f837f3ae51ed196b7988e59e53d}{Affine\+Transform}} \&}]{transformation,  }\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{Point\+Cloud}} \&}]{reference\+\_\+pointcloud,  }\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{Intrinsic\+Matrix}} \&}]{intrinsics,  }\item[{\mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{Rgbd\+Image}} \&}]{result,  }\item[{\mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{Point\+Cloud}} \&}]{transformed\+\_\+pointcloud }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_af35a385488bc48bf81ebb5cb96f58449}\label{structdvo_1_1core_1_1_rgbd_image_af35a385488bc48bf81ebb5cb96f58449}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!warp\+Intensity\+Sse@{warp\+Intensity\+Sse}}
+\index{warp\+Intensity\+Sse@{warp\+Intensity\+Sse}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{warp\+Intensity\+Sse()}{warpIntensitySse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Rgbd\+Image\+::warp\+Intensity\+Sse (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacedvo_1_1core_af89a8f837f3ae51ed196b7988e59e53d}{Affine\+Transform}} \&}]{transformation,  }\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{Point\+Cloud}} \&}]{reference\+\_\+pointcloud,  }\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{Intrinsic\+Matrix}} \&}]{intrinsics,  }\item[{\mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{Rgbd\+Image}} \&}]{result }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_a95e43f3efef765278172153c02888d0a}\label{structdvo_1_1core_1_1_rgbd_image_a95e43f3efef765278172153c02888d0a}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!depth@{depth}}
+\index{depth@{depth}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{depth}{depth}}
+{\footnotesize\ttfamily cv\+::\+Mat dvo\+::core\+::\+Rgbd\+Image\+::depth}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_adaa7647076295d4ea71566f2ea156572}\label{structdvo_1_1core_1_1_rgbd_image_adaa7647076295d4ea71566f2ea156572}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!depth\+\_\+dx@{depth\+\_\+dx}}
+\index{depth\+\_\+dx@{depth\+\_\+dx}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{depth\+\_\+dx}{depth\_dx}}
+{\footnotesize\ttfamily cv\+::\+Mat dvo\+::core\+::\+Rgbd\+Image\+::depth\+\_\+dx}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_acb9a7fe558cf86398e4677c5c2c7172a}\label{structdvo_1_1core_1_1_rgbd_image_acb9a7fe558cf86398e4677c5c2c7172a}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!depth\+\_\+dy@{depth\+\_\+dy}}
+\index{depth\+\_\+dy@{depth\+\_\+dy}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{depth\+\_\+dy}{depth\_dy}}
+{\footnotesize\ttfamily cv\+::\+Mat dvo\+::core\+::\+Rgbd\+Image\+::depth\+\_\+dy}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_a793644aa6797d96ee61315bd5e4c7c32}\label{structdvo_1_1core_1_1_rgbd_image_a793644aa6797d96ee61315bd5e4c7c32}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!height@{height}}
+\index{height@{height}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily size\+\_\+t dvo\+::core\+::\+Rgbd\+Image\+::height}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_a4befb13808afd51c10b7ee945517d693}\label{structdvo_1_1core_1_1_rgbd_image_a4befb13808afd51c10b7ee945517d693}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!intensity@{intensity}}
+\index{intensity@{intensity}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{intensity}{intensity}}
+{\footnotesize\ttfamily cv\+::\+Mat dvo\+::core\+::\+Rgbd\+Image\+::intensity}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_a912335c9c06c351275647cbec274febf}\label{structdvo_1_1core_1_1_rgbd_image_a912335c9c06c351275647cbec274febf}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!intensity\+\_\+dx@{intensity\+\_\+dx}}
+\index{intensity\+\_\+dx@{intensity\+\_\+dx}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{intensity\+\_\+dx}{intensity\_dx}}
+{\footnotesize\ttfamily cv\+::\+Mat dvo\+::core\+::\+Rgbd\+Image\+::intensity\+\_\+dx}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_abf9856a4b48696a6ff80824be7815f1a}\label{structdvo_1_1core_1_1_rgbd_image_abf9856a4b48696a6ff80824be7815f1a}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!intensity\+\_\+dy@{intensity\+\_\+dy}}
+\index{intensity\+\_\+dy@{intensity\+\_\+dy}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{intensity\+\_\+dy}{intensity\_dy}}
+{\footnotesize\ttfamily cv\+::\+Mat dvo\+::core\+::\+Rgbd\+Image\+::intensity\+\_\+dy}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_a651ebb5170880695e4f31a7ca1377720}\label{structdvo_1_1core_1_1_rgbd_image_a651ebb5170880695e4f31a7ca1377720}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!pointcloud@{pointcloud}}
+\index{pointcloud@{pointcloud}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{pointcloud}{pointcloud}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{Point\+Cloud}} dvo\+::core\+::\+Rgbd\+Image\+::pointcloud}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_a43f8cdc199b3d219251a97591ab2f247}\label{structdvo_1_1core_1_1_rgbd_image_a43f8cdc199b3d219251a97591ab2f247}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!rgb@{rgb}}
+\index{rgb@{rgb}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{rgb}{rgb}}
+{\footnotesize\ttfamily cv\+::\+Mat dvo\+::core\+::\+Rgbd\+Image\+::rgb}
+
+\mbox{\Hypertarget{structdvo_1_1core_1_1_rgbd_image_a8f247a04dfd8f7540fc14131fb86bd21}\label{structdvo_1_1core_1_1_rgbd_image_a8f247a04dfd8f7540fc14131fb86bd21}} 
+\index{dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}!width@{width}}
+\index{width@{width}!dvo\+::core\+::\+Rgbd\+Image@{dvo\+::core\+::\+Rgbd\+Image}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily size\+\_\+t dvo\+::core\+::\+Rgbd\+Image\+::width}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/include/dvo/core/\mbox{\hyperlink{rgbd__image_8h}{rgbd\+\_\+image.\+h}}\item 
+dvo\+\_\+core/src/core/\mbox{\hyperlink{rgbd__image_8cpp}{rgbd\+\_\+image.\+cpp}}\item 
+dvo\+\_\+core/src/core/\mbox{\hyperlink{rgbd__image__sse_8cpp}{rgbd\+\_\+image\+\_\+sse.\+cpp}}\end{DoxyCompactItemize}

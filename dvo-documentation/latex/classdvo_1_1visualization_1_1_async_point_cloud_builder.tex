@@ -1,0 +1,80 @@
+\hypertarget{classdvo_1_1visualization_1_1_async_point_cloud_builder}{}\section{dvo\+:\+:visualization\+:\+:Async\+Point\+Cloud\+Builder Class Reference}
+\label{classdvo_1_1visualization_1_1_async_point_cloud_builder}\index{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder@{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder}}
+
+
+{\ttfamily \#include $<$async\+\_\+point\+\_\+cloud\+\_\+builder.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdvo_1_1visualization_1_1_async_point_cloud_builder_1_1_build_job}{Build\+Job}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef pcl\+::\+Point\+Cloud$<$ pcl\+::\+Point\+X\+Y\+Z\+R\+GB $>$ \mbox{\hyperlink{classdvo_1_1visualization_1_1_async_point_cloud_builder_adbe8a48427924927ac5deaaaf52fe5f3}{Point\+Cloud}}
+\item 
+typedef boost\+::function$<$ void(const Point\+Cloud\+::\+Ptr \&cloud)$>$ \mbox{\hyperlink{classdvo_1_1visualization_1_1_async_point_cloud_builder_aeea54b24aabbcfe12b2db923c8befc77}{Done\+Callback}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo_1_1visualization_1_1_async_point_cloud_builder_ab070aedbbd9aa5feef1d7808ca40b368}{Async\+Point\+Cloud\+Builder}} ()
+\item 
+virtual \mbox{\hyperlink{classdvo_1_1visualization_1_1_async_point_cloud_builder_a73217b33adf0d739b98fcec32756a6ed}{$\sim$\+Async\+Point\+Cloud\+Builder}} ()
+\item 
+void \mbox{\hyperlink{classdvo_1_1visualization_1_1_async_point_cloud_builder_a8347f241fd74e390aedaebfe4ce5c619}{build}} (const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{dvo\+::core\+::\+Rgbd\+Image}} \&image, const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{dvo\+::core\+::\+Intrinsic\+Matrix}} \&intrinsics, const Eigen\+::\+Affine3d pose=Eigen\+::\+Affine3d\+::\+Identity())
+\item 
+void \mbox{\hyperlink{classdvo_1_1visualization_1_1_async_point_cloud_builder_a64258774d1203a294842d2a45bccc121}{done}} (\mbox{\hyperlink{classdvo_1_1visualization_1_1_async_point_cloud_builder_aeea54b24aabbcfe12b2db923c8befc77}{Done\+Callback}} \&callback)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_async_point_cloud_builder_aeea54b24aabbcfe12b2db923c8befc77}\label{classdvo_1_1visualization_1_1_async_point_cloud_builder_aeea54b24aabbcfe12b2db923c8befc77}} 
+\index{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder@{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder}!Done\+Callback@{Done\+Callback}}
+\index{Done\+Callback@{Done\+Callback}!dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder@{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder}}
+\subsubsection{\texorpdfstring{Done\+Callback}{DoneCallback}}
+{\footnotesize\ttfamily typedef boost\+::function$<$void (const Point\+Cloud\+::\+Ptr\& cloud)$>$ \mbox{\hyperlink{classdvo_1_1visualization_1_1_async_point_cloud_builder_aeea54b24aabbcfe12b2db923c8befc77}{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder\+::\+Done\+Callback}}}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_async_point_cloud_builder_adbe8a48427924927ac5deaaaf52fe5f3}\label{classdvo_1_1visualization_1_1_async_point_cloud_builder_adbe8a48427924927ac5deaaaf52fe5f3}} 
+\index{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder@{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder}!Point\+Cloud@{Point\+Cloud}}
+\index{Point\+Cloud@{Point\+Cloud}!dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder@{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder}}
+\subsubsection{\texorpdfstring{Point\+Cloud}{PointCloud}}
+{\footnotesize\ttfamily typedef pcl\+::\+Point\+Cloud$<$pcl\+::\+Point\+X\+Y\+Z\+R\+GB$>$ \mbox{\hyperlink{classdvo_1_1visualization_1_1_async_point_cloud_builder_adbe8a48427924927ac5deaaaf52fe5f3}{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder\+::\+Point\+Cloud}}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_async_point_cloud_builder_ab070aedbbd9aa5feef1d7808ca40b368}\label{classdvo_1_1visualization_1_1_async_point_cloud_builder_ab070aedbbd9aa5feef1d7808ca40b368}} 
+\index{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder@{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder}!Async\+Point\+Cloud\+Builder@{Async\+Point\+Cloud\+Builder}}
+\index{Async\+Point\+Cloud\+Builder@{Async\+Point\+Cloud\+Builder}!dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder@{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder}}
+\subsubsection{\texorpdfstring{Async\+Point\+Cloud\+Builder()}{AsyncPointCloudBuilder()}}
+{\footnotesize\ttfamily dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder\+::\+Async\+Point\+Cloud\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_async_point_cloud_builder_a73217b33adf0d739b98fcec32756a6ed}\label{classdvo_1_1visualization_1_1_async_point_cloud_builder_a73217b33adf0d739b98fcec32756a6ed}} 
+\index{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder@{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder}!````~Async\+Point\+Cloud\+Builder@{$\sim$\+Async\+Point\+Cloud\+Builder}}
+\index{````~Async\+Point\+Cloud\+Builder@{$\sim$\+Async\+Point\+Cloud\+Builder}!dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder@{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder}}
+\subsubsection{\texorpdfstring{$\sim$\+Async\+Point\+Cloud\+Builder()}{~AsyncPointCloudBuilder()}}
+{\footnotesize\ttfamily dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder\+::$\sim$\+Async\+Point\+Cloud\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_async_point_cloud_builder_a8347f241fd74e390aedaebfe4ce5c619}\label{classdvo_1_1visualization_1_1_async_point_cloud_builder_a8347f241fd74e390aedaebfe4ce5c619}} 
+\index{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder@{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder}!build@{build}}
+\index{build@{build}!dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder@{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder}}
+\subsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily void dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder\+::build (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{dvo\+::core\+::\+Rgbd\+Image}} \&}]{image,  }\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{dvo\+::core\+::\+Intrinsic\+Matrix}} \&}]{intrinsics,  }\item[{const Eigen\+::\+Affine3d}]{pose = {\ttfamily Eigen\+:\+:Affine3d\+:\+:Identity()} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_async_point_cloud_builder_a64258774d1203a294842d2a45bccc121}\label{classdvo_1_1visualization_1_1_async_point_cloud_builder_a64258774d1203a294842d2a45bccc121}} 
+\index{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder@{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder}!done@{done}}
+\index{done@{done}!dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder@{dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder}}
+\subsubsection{\texorpdfstring{done()}{done()}}
+{\footnotesize\ttfamily void dvo\+::visualization\+::\+Async\+Point\+Cloud\+Builder\+::done (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvo_1_1visualization_1_1_async_point_cloud_builder_aeea54b24aabbcfe12b2db923c8befc77}{Done\+Callback}} \&}]{callback }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/include/dvo/visualization/\mbox{\hyperlink{async__point__cloud__builder_8h}{async\+\_\+point\+\_\+cloud\+\_\+builder.\+h}}\item 
+dvo\+\_\+core/src/visualization/\mbox{\hyperlink{async__point__cloud__builder_8cpp}{async\+\_\+point\+\_\+cloud\+\_\+builder.\+cpp}}\end{DoxyCompactItemize}

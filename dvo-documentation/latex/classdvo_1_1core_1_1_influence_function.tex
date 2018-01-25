@@ -1,0 +1,63 @@
+\hypertarget{classdvo_1_1core_1_1_influence_function}{}\section{dvo\+:\+:core\+:\+:Influence\+Function Class Reference}
+\label{classdvo_1_1core_1_1_influence_function}\index{dvo\+::core\+::\+Influence\+Function@{dvo\+::core\+::\+Influence\+Function}}
+
+
+{\ttfamily \#include $<$weight\+\_\+calculation.\+h$>$}
+
+Inheritance diagram for dvo\+:\+:core\+:\+:Influence\+Function\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.120000cm]{classdvo_1_1core_1_1_influence_function}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classdvo_1_1core_1_1_influence_function_afb3069251ce14c9213db1672c774e082}{$\sim$\+Influence\+Function}} ()
+\item 
+virtual float \mbox{\hyperlink{classdvo_1_1core_1_1_influence_function_a158082c763fa9de460e75a285bb91f1e}{value}} (const float \&x) const =0
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_influence_function_a4773b03ca609bc5d8391d09d92ab34ad}{configure}} (const float \&param)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for influence functions. An influence function is the first derivative of a symmetric robust function p(sqrt(x)). The errors are assumed to be normalized to unit variance.
+
+See\+: \char`\"{}\+Lucas-\/\+Kanade 20 Years On\+: A Unifying Framework\+: Part 2\char`\"{} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_influence_function_afb3069251ce14c9213db1672c774e082}\label{classdvo_1_1core_1_1_influence_function_afb3069251ce14c9213db1672c774e082}} 
+\index{dvo\+::core\+::\+Influence\+Function@{dvo\+::core\+::\+Influence\+Function}!````~Influence\+Function@{$\sim$\+Influence\+Function}}
+\index{````~Influence\+Function@{$\sim$\+Influence\+Function}!dvo\+::core\+::\+Influence\+Function@{dvo\+::core\+::\+Influence\+Function}}
+\subsubsection{\texorpdfstring{$\sim$\+Influence\+Function()}{~InfluenceFunction()}}
+{\footnotesize\ttfamily virtual dvo\+::core\+::\+Influence\+Function\+::$\sim$\+Influence\+Function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_influence_function_a4773b03ca609bc5d8391d09d92ab34ad}\label{classdvo_1_1core_1_1_influence_function_a4773b03ca609bc5d8391d09d92ab34ad}} 
+\index{dvo\+::core\+::\+Influence\+Function@{dvo\+::core\+::\+Influence\+Function}!configure@{configure}}
+\index{configure@{configure}!dvo\+::core\+::\+Influence\+Function@{dvo\+::core\+::\+Influence\+Function}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily virtual void dvo\+::core\+::\+Influence\+Function\+::configure (\begin{DoxyParamCaption}\item[{const float \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classdvo_1_1core_1_1_huber_influence_function_aab5a25ad6f632e829c8ad2ccf073fdec}{dvo\+::core\+::\+Huber\+Influence\+Function}}, \mbox{\hyperlink{classdvo_1_1core_1_1_t_distribution_influence_function_ad9030e81f013c14015c3ad97a2f821be}{dvo\+::core\+::\+T\+Distribution\+Influence\+Function}}, and \mbox{\hyperlink{classdvo_1_1core_1_1_tukey_influence_function_afa49d538d3eee4c545bb690a0aca0f11}{dvo\+::core\+::\+Tukey\+Influence\+Function}}.
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_influence_function_a158082c763fa9de460e75a285bb91f1e}\label{classdvo_1_1core_1_1_influence_function_a158082c763fa9de460e75a285bb91f1e}} 
+\index{dvo\+::core\+::\+Influence\+Function@{dvo\+::core\+::\+Influence\+Function}!value@{value}}
+\index{value@{value}!dvo\+::core\+::\+Influence\+Function@{dvo\+::core\+::\+Influence\+Function}}
+\subsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily virtual float dvo\+::core\+::\+Influence\+Function\+::value (\begin{DoxyParamCaption}\item[{const float \&}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classdvo_1_1core_1_1_huber_influence_function_af41e9e57eedcd25db690a1f41f3d6c8a}{dvo\+::core\+::\+Huber\+Influence\+Function}}, \mbox{\hyperlink{classdvo_1_1core_1_1_t_distribution_influence_function_a3210e7ab6f57975751e75845d3d22598}{dvo\+::core\+::\+T\+Distribution\+Influence\+Function}}, \mbox{\hyperlink{classdvo_1_1core_1_1_tukey_influence_function_a3a1829e6316ecffdceea8c54169c5ef1}{dvo\+::core\+::\+Tukey\+Influence\+Function}}, and \mbox{\hyperlink{classdvo_1_1core_1_1_unit_influence_function_a889eacebc6bcb0209a8ce37742dbbe71}{dvo\+::core\+::\+Unit\+Influence\+Function}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/include/dvo/core/\mbox{\hyperlink{weight__calculation_8h}{weight\+\_\+calculation.\+h}}\end{DoxyCompactItemize}

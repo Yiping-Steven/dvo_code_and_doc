@@ -1,0 +1,47 @@
+\hypertarget{benchmark_8cpp}{}\section{dvo\+\_\+benchmark/src/benchmark.cpp File Reference}
+\label{benchmark_8cpp}\index{dvo\+\_\+benchmark/src/benchmark.\+cpp@{dvo\+\_\+benchmark/src/benchmark.\+cpp}}
+{\ttfamily \#include $<$ros/ros.\+h$>$}\newline
+{\ttfamily \#include $<$dvo/core/intrinsic\+\_\+matrix.\+h$>$}\newline
+{\ttfamily \#include $<$dvo/core/rgbd\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$dvo/core/surface\+\_\+pyramid.\+h$>$}\newline
+{\ttfamily \#include $<$dvo/visualization/visualizer.\+h$>$}\newline
+{\ttfamily \#include $<$dvo/visualization/camera\+\_\+trajectory\+\_\+visualizer.\+h$>$}\newline
+{\ttfamily \#include $<$dvo/visualization/pcl\+\_\+camera\+\_\+trajectory\+\_\+visualizer.\+h$>$}\newline
+{\ttfamily \#include $<$dvo/dense\+\_\+tracking.\+h$>$}\newline
+{\ttfamily \#include $<$dvo\+\_\+ros/util/configtools.\+h$>$}\newline
+{\ttfamily \#include $<$dvo/util/stopwatch.\+h$>$}\newline
+{\ttfamily \#include $<$dvo/util/id\+\_\+generator.\+h$>$}\newline
+{\ttfamily \#include $<$dvo\+\_\+benchmark/file\+\_\+reader.\+h$>$}\newline
+{\ttfamily \#include $<$dvo\+\_\+benchmark/rgbd\+\_\+pair.\+h$>$}\newline
+{\ttfamily \#include $<$dvo\+\_\+benchmark/groundtruth.\+h$>$}\newline
+{\ttfamily \#include $<$dvo\+\_\+benchmark/tools.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_benchmark_node}{Benchmark\+Node}}
+\item 
+struct \mbox{\hyperlink{struct_benchmark_node_1_1_config}{Benchmark\+Node\+::\+Config}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_pyramid_a9033ebd4631ed39f36710700092edb26}{dvo\+::core\+::\+Rgbd\+Image\+Pyramid\+::\+Ptr}} \mbox{\hyperlink{benchmark_8cpp_a16492a3d847e21ed8d479d89ee5239dd}{load}} (std\+::string rgb\+\_\+file, std\+::string depth\+\_\+file)
+\item 
+int \mbox{\hyperlink{benchmark_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{benchmark_8cpp_a16492a3d847e21ed8d479d89ee5239dd}\label{benchmark_8cpp_a16492a3d847e21ed8d479d89ee5239dd}} 
+\index{benchmark.\+cpp@{benchmark.\+cpp}!load@{load}}
+\index{load@{load}!benchmark.\+cpp@{benchmark.\+cpp}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_pyramid_a9033ebd4631ed39f36710700092edb26}{dvo\+::core\+::\+Rgbd\+Image\+Pyramid\+::\+Ptr}} load (\begin{DoxyParamCaption}\item[{std\+::string}]{rgb\+\_\+file,  }\item[{std\+::string}]{depth\+\_\+file }\end{DoxyParamCaption})}
+
+load the rgb\+\_\+file and depth\+\_\+file, two images likely, and then construct an Rgbd\+Image\+Pyramid. \mbox{\Hypertarget{benchmark_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{benchmark_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{benchmark.\+cpp@{benchmark.\+cpp}!main@{main}}
+\index{main@{main}!benchmark.\+cpp@{benchmark.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+initialize ros and call the run function of the benchmark node 

@@ -1,0 +1,82 @@
+\hypertarget{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface}{}\section{dvo\+:\+:visualization\+:\+:Camera\+Trajectory\+Visualizer\+Interface Class Reference}
+\label{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface}\index{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface@{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}}
+
+
+{\ttfamily \#include $<$camera\+\_\+trajectory\+\_\+visualizer.\+h$>$}
+
+Inheritance diagram for dvo\+:\+:visualization\+:\+:Camera\+Trajectory\+Visualizer\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.131313cm]{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface_ac0b5599dd9994a0283eaaa227d609bfd}{$\sim$\+Camera\+Trajectory\+Visualizer\+Interface}} ()
+\item 
+virtual \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a473ebecc62e1d4edba21027d858789a2}{Camera\+Visualizer\+::\+Ptr}} \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface_a4d43cd43f26bd880eb07e8ee37a7154a}{camera}} (std\+::string name)=0
+\item 
+virtual \mbox{\hyperlink{classdvo_1_1visualization_1_1_trajectory_visualizer_aac33ef5979fe64ee33409f1afa977fd3}{Trajectory\+Visualizer\+::\+Ptr}} \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface_ac658e841335e51c50325267de10e64b3}{trajectory}} (std\+::string name)=0
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface_abcc7ddffc30b41eb9112c386f3e41aa7}{reset}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface_aa034546bfbdfa55855c56ab21df41b8e}{native}} (void $\ast$\&native\+\_\+visualizer)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface_ac0b5599dd9994a0283eaaa227d609bfd}\label{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface_ac0b5599dd9994a0283eaaa227d609bfd}} 
+\index{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface@{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}!````~Camera\+Trajectory\+Visualizer\+Interface@{$\sim$\+Camera\+Trajectory\+Visualizer\+Interface}}
+\index{````~Camera\+Trajectory\+Visualizer\+Interface@{$\sim$\+Camera\+Trajectory\+Visualizer\+Interface}!dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface@{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}}
+\subsubsection{\texorpdfstring{$\sim$\+Camera\+Trajectory\+Visualizer\+Interface()}{~CameraTrajectoryVisualizerInterface()}}
+{\footnotesize\ttfamily virtual dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface\+::$\sim$\+Camera\+Trajectory\+Visualizer\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface_a4d43cd43f26bd880eb07e8ee37a7154a}\label{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface_a4d43cd43f26bd880eb07e8ee37a7154a}} 
+\index{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface@{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}!camera@{camera}}
+\index{camera@{camera}!dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface@{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}}
+\subsubsection{\texorpdfstring{camera()}{camera()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a473ebecc62e1d4edba21027d858789a2}{Camera\+Visualizer\+::\+Ptr}} dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface\+::camera (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classdvo_1_1visualization_1_1_noop_camera_trajectory_visualizer_afaf7c129a6112015c81a2e25d0002966}{dvo\+::visualization\+::\+Noop\+Camera\+Trajectory\+Visualizer}}, \mbox{\hyperlink{classdvo_1_1visualization_1_1_pcl_camera_trajectory_visualizer_af808188bb664cdaac442f79fe67b40a6}{dvo\+::visualization\+::\+Pcl\+Camera\+Trajectory\+Visualizer}}, and \mbox{\hyperlink{classdvo__ros_1_1visualization_1_1_ros_camera_trajectory_visualizer_a9595c8a8bfceffb2da725b462569404c}{dvo\+\_\+ros\+::visualization\+::\+Ros\+Camera\+Trajectory\+Visualizer}}.
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface_aa034546bfbdfa55855c56ab21df41b8e}\label{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface_aa034546bfbdfa55855c56ab21df41b8e}} 
+\index{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface@{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}!native@{native}}
+\index{native@{native}!dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface@{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}}
+\subsubsection{\texorpdfstring{native()}{native()}}
+{\footnotesize\ttfamily virtual bool dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface\+::native (\begin{DoxyParamCaption}\item[{void $\ast$\&}]{native\+\_\+visualizer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classdvo__ros_1_1visualization_1_1_ros_camera_trajectory_visualizer_a2e5c80d7dc8308ac038be2e4b71f4e25}{dvo\+\_\+ros\+::visualization\+::\+Ros\+Camera\+Trajectory\+Visualizer}}.
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface_abcc7ddffc30b41eb9112c386f3e41aa7}\label{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface_abcc7ddffc30b41eb9112c386f3e41aa7}} 
+\index{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface@{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}!reset@{reset}}
+\index{reset@{reset}!dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface@{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily virtual void dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classdvo_1_1visualization_1_1_noop_camera_trajectory_visualizer_afa3b5e4aff0306755ca3b53ef70008c4}{dvo\+::visualization\+::\+Noop\+Camera\+Trajectory\+Visualizer}}, \mbox{\hyperlink{classdvo_1_1visualization_1_1_pcl_camera_trajectory_visualizer_a1dd833071b1343a97c0366d3ced0799b}{dvo\+::visualization\+::\+Pcl\+Camera\+Trajectory\+Visualizer}}, and \mbox{\hyperlink{classdvo__ros_1_1visualization_1_1_ros_camera_trajectory_visualizer_a1900ce8a2c17014fef1a4375d8fd6e92}{dvo\+\_\+ros\+::visualization\+::\+Ros\+Camera\+Trajectory\+Visualizer}}.
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface_ac658e841335e51c50325267de10e64b3}\label{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface_ac658e841335e51c50325267de10e64b3}} 
+\index{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface@{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}!trajectory@{trajectory}}
+\index{trajectory@{trajectory}!dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface@{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}}
+\subsubsection{\texorpdfstring{trajectory()}{trajectory()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classdvo_1_1visualization_1_1_trajectory_visualizer_aac33ef5979fe64ee33409f1afa977fd3}{Trajectory\+Visualizer\+::\+Ptr}} dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface\+::trajectory (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classdvo_1_1visualization_1_1_noop_camera_trajectory_visualizer_a73cd3c7ed8a3817c5f6d480d97aa24c5}{dvo\+::visualization\+::\+Noop\+Camera\+Trajectory\+Visualizer}}, \mbox{\hyperlink{classdvo_1_1visualization_1_1_pcl_camera_trajectory_visualizer_ad0ea0d8feefef54cd5dc15cd483b3610}{dvo\+::visualization\+::\+Pcl\+Camera\+Trajectory\+Visualizer}}, and \mbox{\hyperlink{classdvo__ros_1_1visualization_1_1_ros_camera_trajectory_visualizer_a3a015885211d1dfac2441ab5f0e26af5}{dvo\+\_\+ros\+::visualization\+::\+Ros\+Camera\+Trajectory\+Visualizer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/include/dvo/visualization/\mbox{\hyperlink{camera__trajectory__visualizer_8h}{camera\+\_\+trajectory\+\_\+visualizer.\+h}}\end{DoxyCompactItemize}

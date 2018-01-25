@@ -1,0 +1,206 @@
+\hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares}{}\section{dvo\+:\+:core\+:\+:Precomputed\+Normal\+Equations\+Least\+Squares Class Reference}
+\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares}\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+
+
+{\ttfamily \#include $<$least\+\_\+squares.\+h$>$}
+
+Inheritance diagram for dvo\+:\+:core\+:\+:Precomputed\+Normal\+Equations\+Least\+Squares\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_aaadc7769e3857383066d302426d3cf3a}{$\sim$\+Precomputed\+Normal\+Equations\+Least\+Squares}} ()
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a51e5717e0add36b37db3617d35c87c87}{initialize}} (const size\+\_\+t \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_aac9bca6070c75a91e4c2777b137df9a2}{maxnum\+\_\+constraints}})
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a8fda94e1f0b88e65f2f3c7e98597f662}{add\+Constraint}} (const size\+\_\+t \&idx, const \mbox{\hyperlink{namespacedvo_1_1core_a05327f3312d32a301bce9fccda9e5807}{Vector6}} \&J)
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a591e3030f4736c580e37338ba747bc83}{reset}} ()
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a514bd37f6bbfeb8cb1788e6fdabc0e32}{next}} ()
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a3abc1c62317598bbbacf3b021d39bff3}{ignore\+Constraint}} (const size\+\_\+t \&idx)
+\item 
+virtual bool \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a5eb65ee043d392def0ab917ec18cf6ef}{set\+Residual\+For\+Constraint}} (const size\+\_\+t \&idx, const \mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}} \&res, const \mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}} \&weight=1.\+0f)
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a57b83cc3f829f4416b09d4334206a592}{finish}} ()
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a9749ed4314ae7ed7dbfa05c35a9e4a51}{solve}} (\mbox{\hyperlink{namespacedvo_1_1core_a05327f3312d32a301bce9fccda9e5807}{Vector6}} \&x)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a5e379002dbbd2569ed4f0580eab97156}{E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW}}
+\item 
+\mbox{\hyperlink{namespacedvo_1_1core_a7b76cdc563f01ec2220fd58316004626}{Matrix6x6}} \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a95ecca09c734f950f5e6c03d2e1c5e76}{A}}
+\item 
+\mbox{\hyperlink{namespacedvo_1_1core_a05327f3312d32a301bce9fccda9e5807}{Vector6}} \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a81f932997bbc52fe2df57403e64fd6f6}{b}}
+\item 
+double \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_ab466793175fcae83f158540f07e0cdb2}{error}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_aac9bca6070c75a91e4c2777b137df9a2}{maxnum\+\_\+constraints}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a1895a0916656b67cdc410d627f779a94}{num\+\_\+constraints}}
+\item 
+const uchar $\ast$ \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a06ee504a39a8ebf770bcec527e22fd34}{mask\+\_\+ptr\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Builds normal equations and solves them with Cholesky decomposition. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_aaadc7769e3857383066d302426d3cf3a}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_aaadc7769e3857383066d302426d3cf3a}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!````~Precomputed\+Normal\+Equations\+Least\+Squares@{$\sim$\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\index{````~Precomputed\+Normal\+Equations\+Least\+Squares@{$\sim$\+Precomputed\+Normal\+Equations\+Least\+Squares}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{$\sim$\+Precomputed\+Normal\+Equations\+Least\+Squares()}{~PrecomputedNormalEquationsLeastSquares()}}
+{\footnotesize\ttfamily dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::$\sim$\+Precomputed\+Normal\+Equations\+Least\+Squares (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a8fda94e1f0b88e65f2f3c7e98597f662}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a8fda94e1f0b88e65f2f3c7e98597f662}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!add\+Constraint@{add\+Constraint}}
+\index{add\+Constraint@{add\+Constraint}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{add\+Constraint()}{addConstraint()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::add\+Constraint (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{idx,  }\item[{const \mbox{\hyperlink{namespacedvo_1_1core_a05327f3312d32a301bce9fccda9e5807}{Vector6}} \&}]{J }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_least_squares_interface_a216ce9b1040fe23557e7ef22d4369dad}{dvo\+::core\+::\+Precomputed\+Least\+Squares\+Interface}}.
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a57b83cc3f829f4416b09d4334206a592}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a57b83cc3f829f4416b09d4334206a592}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!finish@{finish}}
+\index{finish@{finish}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{finish()}{finish()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_least_squares_interface_a6b811d85e3fe6a8a054b639171f9b353}{dvo\+::core\+::\+Precomputed\+Least\+Squares\+Interface}}.
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a3abc1c62317598bbbacf3b021d39bff3}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a3abc1c62317598bbbacf3b021d39bff3}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!ignore\+Constraint@{ignore\+Constraint}}
+\index{ignore\+Constraint@{ignore\+Constraint}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{ignore\+Constraint()}{ignoreConstraint()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::ignore\+Constraint (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+J is already multiplied with normalizer, so it is\+:
+
+J\textquotesingle{} $\ast$ J\textquotesingle{}.transpose() $\ast$ normalizer $\ast$ normalizer
+
+multiplying with normalizer\+\_\+inverse gives\+:
+
+J\textquotesingle{} $\ast$ J\textquotesingle{}.transpose() $\ast$ normalizer $\ast$ normalizer $\ast$ normalizer\+\_\+inverse
+
+resulting in\+:
+
+J\textquotesingle{} $\ast$ J\textquotesingle{}.transpose() $\ast$ normalizer
+
+Implements \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_least_squares_interface_a9b879b6600b82a8b989770bf27dad7bc}{dvo\+::core\+::\+Precomputed\+Least\+Squares\+Interface}}.
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a51e5717e0add36b37db3617d35c87c87}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a51e5717e0add36b37db3617d35c87c87}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!initialize@{initialize}}
+\index{initialize@{initialize}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::initialize (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{maxnum\+\_\+constraints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_least_squares_interface_abfd7276b663ea0afda8358a2ec9c96fe}{dvo\+::core\+::\+Precomputed\+Least\+Squares\+Interface}}.
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a514bd37f6bbfeb8cb1788e6fdabc0e32}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a514bd37f6bbfeb8cb1788e6fdabc0e32}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!next@{next}}
+\index{next@{next}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_least_squares_interface_a0ba3c8b938301387103912a9609a68dc}{dvo\+::core\+::\+Precomputed\+Least\+Squares\+Interface}}.
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a591e3030f4736c580e37338ba747bc83}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a591e3030f4736c580e37338ba747bc83}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!reset@{reset}}
+\index{reset@{reset}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_least_squares_interface_ae4b138a17c7959e780a0e30e935596e8}{dvo\+::core\+::\+Precomputed\+Least\+Squares\+Interface}}.
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a5eb65ee043d392def0ab917ec18cf6ef}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a5eb65ee043d392def0ab917ec18cf6ef}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!set\+Residual\+For\+Constraint@{set\+Residual\+For\+Constraint}}
+\index{set\+Residual\+For\+Constraint@{set\+Residual\+For\+Constraint}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{set\+Residual\+For\+Constraint()}{setResidualForConstraint()}}
+{\footnotesize\ttfamily bool dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::set\+Residual\+For\+Constraint (\begin{DoxyParamCaption}\item[{const size\+\_\+t \&}]{idx,  }\item[{const \mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}} \&}]{res,  }\item[{const \mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}} \&}]{weight = {\ttfamily 1.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_least_squares_interface_a55870a4fa167484edf3e9b8120ad3232}{dvo\+::core\+::\+Precomputed\+Least\+Squares\+Interface}}.
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a9749ed4314ae7ed7dbfa05c35a9e4a51}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a9749ed4314ae7ed7dbfa05c35a9e4a51}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!solve@{solve}}
+\index{solve@{solve}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::solve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacedvo_1_1core_a05327f3312d32a301bce9fccda9e5807}{Vector6}} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classdvo_1_1core_1_1_precomputed_least_squares_interface_a036a293d0a53a7b019f8942776fb5d29}{dvo\+::core\+::\+Precomputed\+Least\+Squares\+Interface}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a95ecca09c734f950f5e6c03d2e1c5e76}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a95ecca09c734f950f5e6c03d2e1c5e76}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!A@{A}}
+\index{A@{A}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacedvo_1_1core_a7b76cdc563f01ec2220fd58316004626}{Matrix6x6}} dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::A}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a81f932997bbc52fe2df57403e64fd6f6}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a81f932997bbc52fe2df57403e64fd6f6}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!b@{b}}
+\index{b@{b}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacedvo_1_1core_a05327f3312d32a301bce9fccda9e5807}{Vector6}} dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::b}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a5e379002dbbd2569ed4f0580eab97156}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a5e379002dbbd2569ed4f0580eab97156}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW@{E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW}}
+\index{E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW@{E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW}{EIGEN\_MAKE\_ALIGNED\_OPERATOR\_NEW}}
+{\footnotesize\ttfamily dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::\+E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_ab466793175fcae83f158540f07e0cdb2}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_ab466793175fcae83f158540f07e0cdb2}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!error@{error}}
+\index{error@{error}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily double dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::error}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a06ee504a39a8ebf770bcec527e22fd34}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a06ee504a39a8ebf770bcec527e22fd34}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!mask\+\_\+ptr\+\_\+@{mask\+\_\+ptr\+\_\+}}
+\index{mask\+\_\+ptr\+\_\+@{mask\+\_\+ptr\+\_\+}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{mask\+\_\+ptr\+\_\+}{mask\_ptr\_}}
+{\footnotesize\ttfamily const uchar$\ast$ dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::mask\+\_\+ptr\+\_\+}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_aac9bca6070c75a91e4c2777b137df9a2}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_aac9bca6070c75a91e4c2777b137df9a2}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!maxnum\+\_\+constraints@{maxnum\+\_\+constraints}}
+\index{maxnum\+\_\+constraints@{maxnum\+\_\+constraints}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{maxnum\+\_\+constraints}{maxnum\_constraints}}
+{\footnotesize\ttfamily size\+\_\+t dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::maxnum\+\_\+constraints}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a1895a0916656b67cdc410d627f779a94}\label{classdvo_1_1core_1_1_precomputed_normal_equations_least_squares_a1895a0916656b67cdc410d627f779a94}} 
+\index{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}!num\+\_\+constraints@{num\+\_\+constraints}}
+\index{num\+\_\+constraints@{num\+\_\+constraints}!dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares@{dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares}}
+\subsubsection{\texorpdfstring{num\+\_\+constraints}{num\_constraints}}
+{\footnotesize\ttfamily size\+\_\+t dvo\+::core\+::\+Precomputed\+Normal\+Equations\+Least\+Squares\+::num\+\_\+constraints}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/include/dvo/core/\mbox{\hyperlink{least__squares_8h}{least\+\_\+squares.\+h}}\item 
+dvo\+\_\+core/src/core/\mbox{\hyperlink{least__squares_8cpp}{least\+\_\+squares.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,48 @@
+\hypertarget{dense__tracking_8h}{}\section{dvo\+\_\+core/include/dvo/dense\+\_\+tracking.h File Reference}
+\label{dense__tracking_8h}\index{dvo\+\_\+core/include/dvo/dense\+\_\+tracking.\+h@{dvo\+\_\+core/include/dvo/dense\+\_\+tracking.\+h}}
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
+{\ttfamily \#include $<$Eigen/\+Core$>$}\newline
+{\ttfamily \#include $<$Eigen/\+Geometry$>$}\newline
+{\ttfamily \#include $<$sophus/se3.\+h$>$}\newline
+{\ttfamily \#include $<$dvo/core/datatypes.\+h$>$}\newline
+{\ttfamily \#include $<$dvo/core/intrinsic\+\_\+matrix.\+h$>$}\newline
+{\ttfamily \#include $<$dvo/core/rgbd\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$dvo/core/least\+\_\+squares.\+h$>$}\newline
+{\ttfamily \#include $<$dvo/core/weight\+\_\+calculation.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdvo_1_1_dense_tracker}{dvo\+::\+Dense\+Tracker}}
+\item 
+struct \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_config}{dvo\+::\+Dense\+Tracker\+::\+Config}}
+\item 
+struct \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context}{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacedvo}{dvo}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{dense__tracking_8h_a2be8d2e26ecb8389f4db30dfb823be59}{operator$<$$<$}} (std\+::ostream \&out, \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_config}{dvo\+::\+Dense\+Tracker\+::\+Config}} \&config)
+\item 
+std\+::ostream \& \mbox{\hyperlink{dense__tracking_8h_a53cde00c4586877a4aebaaf7cdf71bf6}{operator$<$$<$}} (std\+::ostream \&out, \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context}{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}} \&ctx)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{dense__tracking_8h_a2be8d2e26ecb8389f4db30dfb823be59}\label{dense__tracking_8h_a2be8d2e26ecb8389f4db30dfb823be59}} 
+\index{dense\+\_\+tracking.\+h@{dense\+\_\+tracking.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!dense\+\_\+tracking.\+h@{dense\+\_\+tracking.\+h}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{\mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_config}{dvo\+::\+Dense\+Tracker\+::\+Config}} \&}]{config }\end{DoxyParamCaption})}
+
+output Dense\+Tracker\+::\+Config \mbox{\Hypertarget{dense__tracking_8h_a53cde00c4586877a4aebaaf7cdf71bf6}\label{dense__tracking_8h_a53cde00c4586877a4aebaaf7cdf71bf6}} 
+\index{dense\+\_\+tracking.\+h@{dense\+\_\+tracking.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!dense\+\_\+tracking.\+h@{dense\+\_\+tracking.\+h}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{\mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context}{dvo\+::\+Dense\+Tracker\+::\+Iteration\+Context}} \&}]{ctx }\end{DoxyParamCaption})}
+
+output Dense\+Tracker\+::\+Iteration\+Context 

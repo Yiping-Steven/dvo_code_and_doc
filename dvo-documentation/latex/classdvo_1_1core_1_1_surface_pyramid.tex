@@ -1,0 +1,58 @@
+\hypertarget{classdvo_1_1core_1_1_surface_pyramid}{}\section{dvo\+:\+:core\+:\+:Surface\+Pyramid Class Reference}
+\label{classdvo_1_1core_1_1_surface_pyramid}\index{dvo\+::core\+::\+Surface\+Pyramid@{dvo\+::core\+::\+Surface\+Pyramid}}
+
+
+{\ttfamily \#include $<$surface\+\_\+pyramid.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo_1_1core_1_1_surface_pyramid_a6305b39dff4dc0afc7f606ebdb9a74c6}{Surface\+Pyramid}} ()
+\item 
+virtual \mbox{\hyperlink{classdvo_1_1core_1_1_surface_pyramid_ac927314b7bd60a8c78d1fa8641aa91e1}{$\sim$\+Surface\+Pyramid}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classdvo_1_1core_1_1_surface_pyramid_a3dc09e63e7fa8c67d5a94b55f3c0f612}{convert\+Raw\+Depth\+Image}} (const cv\+::\+Mat \&input, cv\+::\+Mat \&output, float scale)
+\item 
+static void \mbox{\hyperlink{classdvo_1_1core_1_1_surface_pyramid_a227439a6f1891fdc29efaf69b1433068}{convert\+Raw\+Depth\+Image\+Sse}} (const cv\+::\+Mat \&input, cv\+::\+Mat \&output, float scale)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_surface_pyramid_a6305b39dff4dc0afc7f606ebdb9a74c6}\label{classdvo_1_1core_1_1_surface_pyramid_a6305b39dff4dc0afc7f606ebdb9a74c6}} 
+\index{dvo\+::core\+::\+Surface\+Pyramid@{dvo\+::core\+::\+Surface\+Pyramid}!Surface\+Pyramid@{Surface\+Pyramid}}
+\index{Surface\+Pyramid@{Surface\+Pyramid}!dvo\+::core\+::\+Surface\+Pyramid@{dvo\+::core\+::\+Surface\+Pyramid}}
+\subsubsection{\texorpdfstring{Surface\+Pyramid()}{SurfacePyramid()}}
+{\footnotesize\ttfamily dvo\+::core\+::\+Surface\+Pyramid\+::\+Surface\+Pyramid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_surface_pyramid_ac927314b7bd60a8c78d1fa8641aa91e1}\label{classdvo_1_1core_1_1_surface_pyramid_ac927314b7bd60a8c78d1fa8641aa91e1}} 
+\index{dvo\+::core\+::\+Surface\+Pyramid@{dvo\+::core\+::\+Surface\+Pyramid}!````~Surface\+Pyramid@{$\sim$\+Surface\+Pyramid}}
+\index{````~Surface\+Pyramid@{$\sim$\+Surface\+Pyramid}!dvo\+::core\+::\+Surface\+Pyramid@{dvo\+::core\+::\+Surface\+Pyramid}}
+\subsubsection{\texorpdfstring{$\sim$\+Surface\+Pyramid()}{~SurfacePyramid()}}
+{\footnotesize\ttfamily dvo\+::core\+::\+Surface\+Pyramid\+::$\sim$\+Surface\+Pyramid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_surface_pyramid_a3dc09e63e7fa8c67d5a94b55f3c0f612}\label{classdvo_1_1core_1_1_surface_pyramid_a3dc09e63e7fa8c67d5a94b55f3c0f612}} 
+\index{dvo\+::core\+::\+Surface\+Pyramid@{dvo\+::core\+::\+Surface\+Pyramid}!convert\+Raw\+Depth\+Image@{convert\+Raw\+Depth\+Image}}
+\index{convert\+Raw\+Depth\+Image@{convert\+Raw\+Depth\+Image}!dvo\+::core\+::\+Surface\+Pyramid@{dvo\+::core\+::\+Surface\+Pyramid}}
+\subsubsection{\texorpdfstring{convert\+Raw\+Depth\+Image()}{convertRawDepthImage()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Surface\+Pyramid\+::convert\+Raw\+Depth\+Image (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{input,  }\item[{cv\+::\+Mat \&}]{output,  }\item[{float}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts the given raw depth image (type C\+V\+\_\+16U) to a C\+V\+\_\+32F image rescaling every pixel with the given scale and replacing 0 with Na\+Ns.
+
+Converts the given raw depth image (type C\+V\+\_\+16\+U\+C1) to a C\+V\+\_\+32\+F\+C1 image rescaling every pixel with the given scale and replacing 0 with Na\+Ns. \mbox{\Hypertarget{classdvo_1_1core_1_1_surface_pyramid_a227439a6f1891fdc29efaf69b1433068}\label{classdvo_1_1core_1_1_surface_pyramid_a227439a6f1891fdc29efaf69b1433068}} 
+\index{dvo\+::core\+::\+Surface\+Pyramid@{dvo\+::core\+::\+Surface\+Pyramid}!convert\+Raw\+Depth\+Image\+Sse@{convert\+Raw\+Depth\+Image\+Sse}}
+\index{convert\+Raw\+Depth\+Image\+Sse@{convert\+Raw\+Depth\+Image\+Sse}!dvo\+::core\+::\+Surface\+Pyramid@{dvo\+::core\+::\+Surface\+Pyramid}}
+\subsubsection{\texorpdfstring{convert\+Raw\+Depth\+Image\+Sse()}{convertRawDepthImageSse()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Surface\+Pyramid\+::convert\+Raw\+Depth\+Image\+Sse (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{input,  }\item[{cv\+::\+Mat \&}]{output,  }\item[{float}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/include/dvo/core/\mbox{\hyperlink{surface__pyramid_8h}{surface\+\_\+pyramid.\+h}}\item 
+dvo\+\_\+core/src/core/\mbox{\hyperlink{surface__pyramid_8cpp}{surface\+\_\+pyramid.\+cpp}}\end{DoxyCompactItemize}

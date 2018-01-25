@@ -1,0 +1,72 @@
+\hypertarget{classdvo__ros_1_1_camera_dense_tracker}{}\section{dvo\+\_\+ros\+:\+:Camera\+Dense\+Tracker Class Reference}
+\label{classdvo__ros_1_1_camera_dense_tracker}\index{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker@{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker}}
+
+
+{\ttfamily \#include $<$camera\+\_\+dense\+\_\+tracking.\+h$>$}
+
+Inheritance diagram for dvo\+\_\+ros\+:\+:Camera\+Dense\+Tracker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdvo__ros_1_1_camera_dense_tracker}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo__ros_1_1_camera_dense_tracker_a85604036a34ea68a29dc80a3ea782ee7}{Camera\+Dense\+Tracker}} (ros\+::\+Node\+Handle \&nh, ros\+::\+Node\+Handle \&nh\+\_\+private)
+\item 
+virtual \mbox{\hyperlink{classdvo__ros_1_1_camera_dense_tracker_ae8ab4b242a3149461825976d4d310aaf}{$\sim$\+Camera\+Dense\+Tracker}} ()
+\item 
+virtual void \mbox{\hyperlink{classdvo__ros_1_1_camera_dense_tracker_ad1b549d802d0ebc3627603b3f9ef03b4}{handle\+Images}} (const sensor\+\_\+msgs\+::\+Image\+::\+Const\+Ptr \&rgb\+\_\+image\+\_\+msg, const sensor\+\_\+msgs\+::\+Image\+::\+Const\+Ptr \&depth\+\_\+image\+\_\+msg, const sensor\+\_\+msgs\+::\+Camera\+Info\+::\+Const\+Ptr \&rgb\+\_\+camera\+\_\+info\+\_\+msg, const sensor\+\_\+msgs\+::\+Camera\+Info\+::\+Const\+Ptr \&depth\+\_\+camera\+\_\+info\+\_\+msg)
+\item 
+void \mbox{\hyperlink{classdvo__ros_1_1_camera_dense_tracker_a385c851351c4ab22240409d2d340344f}{handle\+Pose}} (const geometry\+\_\+msgs\+::\+Pose\+With\+Covariance\+Stamped\+Const\+Ptr \&pose)
+\item 
+void \mbox{\hyperlink{classdvo__ros_1_1_camera_dense_tracker_a7fce574520d9ca9056636506db504912}{handle\+Config}} (dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker\+Config \&config, uint32\+\_\+t level)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_dense_tracker_a85604036a34ea68a29dc80a3ea782ee7}\label{classdvo__ros_1_1_camera_dense_tracker_a85604036a34ea68a29dc80a3ea782ee7}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker@{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker}!Camera\+Dense\+Tracker@{Camera\+Dense\+Tracker}}
+\index{Camera\+Dense\+Tracker@{Camera\+Dense\+Tracker}!dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker@{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker}}
+\subsubsection{\texorpdfstring{Camera\+Dense\+Tracker()}{CameraDenseTracker()}}
+{\footnotesize\ttfamily dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker\+::\+Camera\+Dense\+Tracker (\begin{DoxyParamCaption}\item[{ros\+::\+Node\+Handle \&}]{nh,  }\item[{ros\+::\+Node\+Handle \&}]{nh\+\_\+private }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_dense_tracker_ae8ab4b242a3149461825976d4d310aaf}\label{classdvo__ros_1_1_camera_dense_tracker_ae8ab4b242a3149461825976d4d310aaf}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker@{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker}!````~Camera\+Dense\+Tracker@{$\sim$\+Camera\+Dense\+Tracker}}
+\index{````~Camera\+Dense\+Tracker@{$\sim$\+Camera\+Dense\+Tracker}!dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker@{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker}}
+\subsubsection{\texorpdfstring{$\sim$\+Camera\+Dense\+Tracker()}{~CameraDenseTracker()}}
+{\footnotesize\ttfamily dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker\+::$\sim$\+Camera\+Dense\+Tracker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_dense_tracker_a7fce574520d9ca9056636506db504912}\label{classdvo__ros_1_1_camera_dense_tracker_a7fce574520d9ca9056636506db504912}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker@{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker}!handle\+Config@{handle\+Config}}
+\index{handle\+Config@{handle\+Config}!dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker@{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker}}
+\subsubsection{\texorpdfstring{handle\+Config()}{handleConfig()}}
+{\footnotesize\ttfamily void dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker\+::handle\+Config (\begin{DoxyParamCaption}\item[{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker\+Config \&}]{config,  }\item[{uint32\+\_\+t}]{level }\end{DoxyParamCaption})}
+
+dynamic reconfigure the tracker node. \mbox{\Hypertarget{classdvo__ros_1_1_camera_dense_tracker_ad1b549d802d0ebc3627603b3f9ef03b4}\label{classdvo__ros_1_1_camera_dense_tracker_ad1b549d802d0ebc3627603b3f9ef03b4}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker@{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker}!handle\+Images@{handle\+Images}}
+\index{handle\+Images@{handle\+Images}!dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker@{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker}}
+\subsubsection{\texorpdfstring{handle\+Images()}{handleImages()}}
+{\footnotesize\ttfamily void dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker\+::handle\+Images (\begin{DoxyParamCaption}\item[{const sensor\+\_\+msgs\+::\+Image\+::\+Const\+Ptr \&}]{rgb\+\_\+image\+\_\+msg,  }\item[{const sensor\+\_\+msgs\+::\+Image\+::\+Const\+Ptr \&}]{depth\+\_\+image\+\_\+msg,  }\item[{const sensor\+\_\+msgs\+::\+Camera\+Info\+::\+Const\+Ptr \&}]{rgb\+\_\+camera\+\_\+info\+\_\+msg,  }\item[{const sensor\+\_\+msgs\+::\+Camera\+Info\+::\+Const\+Ptr \&}]{depth\+\_\+camera\+\_\+info\+\_\+msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Important\+: The framework convert R\+GB image to Intensity, C\+V\+\_\+32F, depth image, reference pair is swapped by the current pair and current pair is reset by the new Rgbd\+Image\+Pyramid generated by the newly recieved intensity and depth image. then call the tracker-\/$>$match() function . 
+
+Implements \mbox{\hyperlink{classdvo__ros_1_1_camera_base_aa8c983ab1bb8383aae1f375ea6808120}{dvo\+\_\+ros\+::\+Camera\+Base}}.
+
+\mbox{\Hypertarget{classdvo__ros_1_1_camera_dense_tracker_a385c851351c4ab22240409d2d340344f}\label{classdvo__ros_1_1_camera_dense_tracker_a385c851351c4ab22240409d2d340344f}} 
+\index{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker@{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker}!handle\+Pose@{handle\+Pose}}
+\index{handle\+Pose@{handle\+Pose}!dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker@{dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker}}
+\subsubsection{\texorpdfstring{handle\+Pose()}{handlePose()}}
+{\footnotesize\ttfamily void dvo\+\_\+ros\+::\+Camera\+Dense\+Tracker\+::handle\+Pose (\begin{DoxyParamCaption}\item[{const geometry\+\_\+msgs\+::\+Pose\+With\+Covariance\+Stamped\+Const\+Ptr \&}]{pose }\end{DoxyParamCaption})}
+
+Just publish the pose. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+ros/include/dvo\+\_\+ros/\mbox{\hyperlink{camera__dense__tracking_8h}{camera\+\_\+dense\+\_\+tracking.\+h}}\item 
+dvo\+\_\+ros/src/\mbox{\hyperlink{camera__dense__tracking_8cpp}{camera\+\_\+dense\+\_\+tracking.\+cpp}}\end{DoxyCompactItemize}

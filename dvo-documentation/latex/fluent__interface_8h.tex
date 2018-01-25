@@ -1,0 +1,44 @@
+\hypertarget{fluent__interface_8h}{}\section{dvo\+\_\+core/include/dvo/util/fluent\+\_\+interface.h File Reference}
+\label{fluent__interface_8h}\index{dvo\+\_\+core/include/dvo/util/fluent\+\_\+interface.\+h@{dvo\+\_\+core/include/dvo/util/fluent\+\_\+interface.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{fluent__interface_8h_a3c0220e647590bdad3e07e5aba5303d5}{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}}(F\+I\+\_\+\+T\+Y\+PE,  A\+T\+T\+R\+\_\+\+T\+Y\+PE,  A\+T\+T\+R\+\_\+\+N\+A\+ME)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{fluent__interface_8h_a3c0220e647590bdad3e07e5aba5303d5}\label{fluent__interface_8h_a3c0220e647590bdad3e07e5aba5303d5}} 
+\index{fluent\+\_\+interface.\+h@{fluent\+\_\+interface.\+h}!F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}}
+\index{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}!fluent\+\_\+interface.\+h@{fluent\+\_\+interface.\+h}}
+\subsubsection{\texorpdfstring{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}{FI\_ATTRIBUTE}}
+{\footnotesize\ttfamily \#define F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE(\begin{DoxyParamCaption}\item[{}]{F\+I\+\_\+\+T\+Y\+PE,  }\item[{}]{A\+T\+T\+R\+\_\+\+T\+Y\+PE,  }\item[{}]{A\+T\+T\+R\+\_\+\+N\+A\+ME }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{protected}: \(\backslash\)
+    ATTR\_TYPE ATTR\_NAME \#\# \_; \(\backslash\)
+  public: \(\backslash\)
+    FI\_TYPE\& ATTR\_NAME(ATTR\_TYPE \textcolor{keyword}{const}\& value) \(\backslash\)
+    \{ \(\backslash\)
+      ATTR\_NAME \#\# \_ = value; \(\backslash\)
+      return *\textcolor{keyword}{this}; \(\backslash\)
+    \} \(\backslash\)
+    ATTR\_TYPE \textcolor{keyword}{const}\& ATTR\_NAME() const \(\backslash\)
+    \{ \(\backslash\)
+      return ATTR\_NAME \#\# \_; \(\backslash\)
+    \} \(\backslash\)
+    ATTR\_TYPE\& ATTR\_NAME() \(\backslash\)
+    \{ \(\backslash\)
+      return ATTR\_NAME \#\# \_; \(\backslash\)
+    \} \(\backslash\)
+\end{DoxyCode}
+This file is part of dvo.
+
+Copyright 2012 Christian Kerl \href{mailto:christian.kerl@in.tum.de}{\tt christian.\+kerl@in.\+tum.\+de} (Technical University of Munich) For more information see \href{http://vision.in.tum.de/data/software/dvo}{\tt http\+://vision.\+in.\+tum.\+de/data/software/dvo}.
+
+dvo is free software\+: you can redistribute it and/or modify it under the terms of the G\+NU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+dvo is distributed in the hope that it will be useful, but W\+I\+T\+H\+O\+UT A\+NY W\+A\+R\+R\+A\+N\+TY; without even the implied warranty of M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY or F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE. See the G\+NU General Public License for more details.
+
+You should have received a copy of the G\+NU General Public License along with dvo. If not, see \href{http://www.gnu.org/licenses/}{\tt http\+://www.\+gnu.\+org/licenses/}. Macro to easily define fluent interfaces. 

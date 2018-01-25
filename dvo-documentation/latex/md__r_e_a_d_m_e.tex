@@ -1,0 +1,78 @@
+These packages provide an implementation of the rigid body motion estimation of an R\+G\+B-\/D camera from consecutive images.
+
+
+\begin{DoxyItemize}
+\item {\bfseries dvo\+\_\+core}
+
+Core implementation of the motion estimation algorithm.
+\item {\bfseries \mbox{\hyperlink{namespacedvo__ros}{dvo\+\_\+ros}}}
+
+Integration of {\itshape dvo\+\_\+core} with R\+OS.
+\item {\bfseries \mbox{\hyperlink{namespacedvo__benchmark}{dvo\+\_\+benchmark}}}
+
+Integration of {\itshape dvo\+\_\+core} with T\+UM R\+G\+B-\/D benchmark, see \href{http://vision.in.tum.de/data/datasets/rgbd-dataset}{\tt http\+://vision.\+in.\+tum.\+de/data/datasets/rgbd-\/dataset}.
+\item {\bfseries sophus}
+
+R\+OS package wrapper for Hauke Strasdat\textquotesingle{}s Sophus library, see \href{https://github.com/strasdat/Sophus}{\tt https\+://github.\+com/strasdat/\+Sophus}.
+\end{DoxyItemize}
+
+\subsection*{Installation}
+
+Checkout the branch for your R\+OS version into a folder in your {\ttfamily R\+O\+S\+\_\+\+P\+A\+C\+K\+A\+G\+E\+\_\+\+P\+A\+TH} and build the packages with {\ttfamily rosmake}.
+
+
+\begin{DoxyItemize}
+\item R\+OS Fuerte\+:
+
+\`{}\`{}\`{}bash git clone -\/b fuerte git\+://github.com/tum-\/vision/dvo.\+git rosmake dvo\+\_\+core \mbox{\hyperlink{namespacedvo__ros}{dvo\+\_\+ros}} \mbox{\hyperlink{namespacedvo__benchmark}{dvo\+\_\+benchmark}} \`{}\`{}\`{}
+\item R\+OS Electric\+:
+
+You need to install {\ttfamily perception\+\_\+pcl\+\_\+unstable} with P\+CL version 1.\+5+.
+
+\`{}\`{}\`{}bash git clone -\/b electric git\+://github.com/tum-\/vision/dvo.\+git rosmake dvo\+\_\+core \mbox{\hyperlink{namespacedvo__ros}{dvo\+\_\+ros}} \mbox{\hyperlink{namespacedvo__benchmark}{dvo\+\_\+benchmark}} \`{}\`{}\`{}
+\end{DoxyItemize}
+
+\subsection*{Usage}
+
+Estimating the camera trajectory from an R\+G\+B-\/D image stream\+:
+
+
+\begin{DoxyItemize}
+\item Start the Open\+NI camera driver\+: {\ttfamily roslaunch openni\+\_\+launch openni.\+launch}
+\item Start the dvo {\itshape camera\+\_\+tracker} node\+: {\ttfamily rosrun \mbox{\hyperlink{namespacedvo__ros}{dvo\+\_\+ros}} camera\+\_\+tracker}
+\item Start dynamic\+\_\+reconfigure G\+UI
+\begin{DoxyItemize}
+\item In {\ttfamily /camera/driver} enable {\itshape depth\+\_\+registration} on
+\item In {\ttfamily /camera\+\_\+tracker} enable {\itshape reconstruction}, {\itshape use\+\_\+weighting}, {\itshape run\+\_\+dense\+\_\+tracking}, and {\itshape use\+\_\+dense\+\_\+tracking\+\_\+estimate}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+If everything works, the stdout of the {\itshape camera\+\_\+tracker} node should show {\ttfamily \mbox{[} W\+A\+RN\mbox{]} \mbox{[}1355131430.\+132265592\mbox{]}\+: R\+GB image size has changed, resetting tracker!} and the camera pose is published on the {\ttfamily /rgbd/pose} topic. You can restart the camera motion estimation by disabling and enabling the {\itshape run\+\_\+dense\+\_\+tracking} option.
+
+For visualization\+:
+
+
+\begin{DoxyItemize}
+\item Start R\+V\+IZ
+\item Set the {\itshape Target Frame} to {\ttfamily /world}
+\item Add an {\itshape Interactive Marker} display and set its {\itshape Update Topic} to {\ttfamily /dvo\+\_\+vis/update}
+\item Add a {\itshape Point\+Cloud2} display and set its {\itshape Topic} to {\ttfamily /dvo\+\_\+vis/cloud}
+\end{DoxyItemize}
+
+The red camera shows the current camera position. The blue camera displays the initial camera position.
+
+\subsection*{Publications}
+
+The following publications describe the approach\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries Robust Odometry Estimation for R\+G\+B-\/D Cameras} (C. Kerl, J. Sturm, D. Cremers), In Proc. of the I\+E\+EE Int. Conf. on Robotics and Automation (I\+C\+RA), 2013
+\item {\bfseries Real-\/\+Time Visual Odometry from Dense R\+G\+B-\/D Images} (F. Steinbruecker, J. Sturm, D. Cremers), In Workshop on Live Dense Reconstruction with Moving Cameras at the Intl. Conf. on Computer Vision (I\+C\+CV), 2011.
+\end{DoxyItemize}
+
+\subsection*{License}
+
+The packages {\itshape dvo\+\_\+core}, {\itshape \mbox{\hyperlink{namespacedvo__ros}{dvo\+\_\+ros}}}, and {\itshape \mbox{\hyperlink{namespacedvo__benchmark}{dvo\+\_\+benchmark}}} are licensed under the G\+NU General Public License Version 3 (G\+P\+Lv3), see \href{http://www.gnu.org/licenses/gpl.html}{\tt http\+://www.\+gnu.\+org/licenses/gpl.\+html}.
+
+The package {\itshape sophus} is licensed under the M\+IT License, see \href{http://opensource.org/licenses/MIT}{\tt http\+://opensource.\+org/licenses/\+M\+IT}. 

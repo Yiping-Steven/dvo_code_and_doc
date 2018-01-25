@@ -1,0 +1,85 @@
+\hypertarget{classdvo_1_1core_1_1_least_squares_interface}{}\section{dvo\+:\+:core\+:\+:Least\+Squares\+Interface Class Reference}
+\label{classdvo_1_1core_1_1_least_squares_interface}\index{dvo\+::core\+::\+Least\+Squares\+Interface@{dvo\+::core\+::\+Least\+Squares\+Interface}}
+
+
+{\ttfamily \#include $<$least\+\_\+squares.\+h$>$}
+
+Inheritance diagram for dvo\+:\+:core\+:\+:Least\+Squares\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classdvo_1_1core_1_1_least_squares_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classdvo_1_1core_1_1_least_squares_interface_afa584f0c27bbcf40a748d678b5295325}{$\sim$\+Least\+Squares\+Interface}} ()
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_least_squares_interface_a09e5784f74d7352a9550a8aa523d30d7}{initialize}} (const size\+\_\+t maxnum\+\_\+constraints)=0
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_least_squares_interface_a5f5cc1c312a01ff4e7ca91e90a73ccf3}{update}} (const \mbox{\hyperlink{namespacedvo_1_1core_a05327f3312d32a301bce9fccda9e5807}{Vector6}} \&J, const \mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}} \&res, const \mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}} \&weight=1.\+0f)=0
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_least_squares_interface_a2e580a70e96f0e7d6d70f6047891a42a}{finish}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_least_squares_interface_a3e2b3c894c5286fdee79316e6fa4d691}{solve}} (\mbox{\hyperlink{namespacedvo_1_1core_a05327f3312d32a301bce9fccda9e5807}{Vector6}} \&x)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Basic interface for algorithms solving 1 step of non-\/linear least squares. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_least_squares_interface_afa584f0c27bbcf40a748d678b5295325}\label{classdvo_1_1core_1_1_least_squares_interface_afa584f0c27bbcf40a748d678b5295325}} 
+\index{dvo\+::core\+::\+Least\+Squares\+Interface@{dvo\+::core\+::\+Least\+Squares\+Interface}!````~Least\+Squares\+Interface@{$\sim$\+Least\+Squares\+Interface}}
+\index{````~Least\+Squares\+Interface@{$\sim$\+Least\+Squares\+Interface}!dvo\+::core\+::\+Least\+Squares\+Interface@{dvo\+::core\+::\+Least\+Squares\+Interface}}
+\subsubsection{\texorpdfstring{$\sim$\+Least\+Squares\+Interface()}{~LeastSquaresInterface()}}
+{\footnotesize\ttfamily virtual dvo\+::core\+::\+Least\+Squares\+Interface\+::$\sim$\+Least\+Squares\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_least_squares_interface_a2e580a70e96f0e7d6d70f6047891a42a}\label{classdvo_1_1core_1_1_least_squares_interface_a2e580a70e96f0e7d6d70f6047891a42a}} 
+\index{dvo\+::core\+::\+Least\+Squares\+Interface@{dvo\+::core\+::\+Least\+Squares\+Interface}!finish@{finish}}
+\index{finish@{finish}!dvo\+::core\+::\+Least\+Squares\+Interface@{dvo\+::core\+::\+Least\+Squares\+Interface}}
+\subsubsection{\texorpdfstring{finish()}{finish()}}
+{\footnotesize\ttfamily virtual void dvo\+::core\+::\+Least\+Squares\+Interface\+::finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classdvo_1_1core_1_1_svd_least_squares_ac91cb5c82af6eb9d91d3ef4e85dc76a3}{dvo\+::core\+::\+Svd\+Least\+Squares}}, and \mbox{\hyperlink{classdvo_1_1core_1_1_normal_equations_least_squares_a0da5301414f684b8e3ebfa9c4794af31}{dvo\+::core\+::\+Normal\+Equations\+Least\+Squares}}.
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_least_squares_interface_a09e5784f74d7352a9550a8aa523d30d7}\label{classdvo_1_1core_1_1_least_squares_interface_a09e5784f74d7352a9550a8aa523d30d7}} 
+\index{dvo\+::core\+::\+Least\+Squares\+Interface@{dvo\+::core\+::\+Least\+Squares\+Interface}!initialize@{initialize}}
+\index{initialize@{initialize}!dvo\+::core\+::\+Least\+Squares\+Interface@{dvo\+::core\+::\+Least\+Squares\+Interface}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily virtual void dvo\+::core\+::\+Least\+Squares\+Interface\+::initialize (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{maxnum\+\_\+constraints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classdvo_1_1core_1_1_svd_least_squares_aa09756d97cb63e8dc8276a88a1a07791}{dvo\+::core\+::\+Svd\+Least\+Squares}}, and \mbox{\hyperlink{classdvo_1_1core_1_1_normal_equations_least_squares_a4799d66e3dc176ab07418fc1cfacfb53}{dvo\+::core\+::\+Normal\+Equations\+Least\+Squares}}.
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_least_squares_interface_a3e2b3c894c5286fdee79316e6fa4d691}\label{classdvo_1_1core_1_1_least_squares_interface_a3e2b3c894c5286fdee79316e6fa4d691}} 
+\index{dvo\+::core\+::\+Least\+Squares\+Interface@{dvo\+::core\+::\+Least\+Squares\+Interface}!solve@{solve}}
+\index{solve@{solve}!dvo\+::core\+::\+Least\+Squares\+Interface@{dvo\+::core\+::\+Least\+Squares\+Interface}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily virtual void dvo\+::core\+::\+Least\+Squares\+Interface\+::solve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacedvo_1_1core_a05327f3312d32a301bce9fccda9e5807}{Vector6}} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classdvo_1_1core_1_1_svd_least_squares_ae0124d7c24b90b1101bf38da59f789aa}{dvo\+::core\+::\+Svd\+Least\+Squares}}, \mbox{\hyperlink{classdvo_1_1core_1_1_evd_least_squares_a7264139b3006d803039707c4318d2451}{dvo\+::core\+::\+Evd\+Least\+Squares}}, and \mbox{\hyperlink{classdvo_1_1core_1_1_normal_equations_least_squares_a8a25d3970f6506df2066995f2f2effda}{dvo\+::core\+::\+Normal\+Equations\+Least\+Squares}}.
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_least_squares_interface_a5f5cc1c312a01ff4e7ca91e90a73ccf3}\label{classdvo_1_1core_1_1_least_squares_interface_a5f5cc1c312a01ff4e7ca91e90a73ccf3}} 
+\index{dvo\+::core\+::\+Least\+Squares\+Interface@{dvo\+::core\+::\+Least\+Squares\+Interface}!update@{update}}
+\index{update@{update}!dvo\+::core\+::\+Least\+Squares\+Interface@{dvo\+::core\+::\+Least\+Squares\+Interface}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void dvo\+::core\+::\+Least\+Squares\+Interface\+::update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacedvo_1_1core_a05327f3312d32a301bce9fccda9e5807}{Vector6}} \&}]{J,  }\item[{const \mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}} \&}]{res,  }\item[{const \mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}} \&}]{weight = {\ttfamily 1.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classdvo_1_1core_1_1_svd_least_squares_ae9d28bc58804d7e43cf461ca092b9563}{dvo\+::core\+::\+Svd\+Least\+Squares}}, and \mbox{\hyperlink{classdvo_1_1core_1_1_normal_equations_least_squares_a1ef767b22d889c99850b1b2dd8cd870d}{dvo\+::core\+::\+Normal\+Equations\+Least\+Squares}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/include/dvo/core/\mbox{\hyperlink{least__squares_8h}{least\+\_\+squares.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+\hypertarget{class_benchmark_node}{}\section{Benchmark\+Node Class Reference}
+\label{class_benchmark_node}\index{Benchmark\+Node@{Benchmark\+Node}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_benchmark_node_1_1_config}{Config}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_benchmark_node_ad4ee7b497428bce6426add3c4010200e}{Benchmark\+Node}} (ros\+::\+Node\+Handle \&nh, ros\+::\+Node\+Handle \&nh\+\_\+private)
+\item 
+bool \mbox{\hyperlink{class_benchmark_node_a6fb208304f873fb46988f6ca4ed0b9d8}{configure}} ()
+\item 
+void \mbox{\hyperlink{class_benchmark_node_a4f509351e1c61f174f64146fe3abb463}{run}} ()
+\item 
+void \mbox{\hyperlink{class_benchmark_node_ac906f068111a96dc95b289d3728df574}{create\+Reference\+Camera}} (\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface}{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}} $\ast$visualizer, const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{dvo\+::core\+::\+Rgbd\+Image}} \&img, const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{dvo\+::core\+::\+Intrinsic\+Matrix}} \&intrinsics, const Eigen\+::\+Affine3d \&pose)
+\item 
+void \mbox{\hyperlink{class_benchmark_node_aa8ac48849e2165f15af69e561ecb97e6}{render\+While\+Switch\+And\+Not\+Terminated}} (\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface}{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}} $\ast$visualizer, const \mbox{\hyperlink{structdvo_1_1visualization_1_1_switch}{dvo\+::visualization\+::\+Switch}} \&s)
+\item 
+void \mbox{\hyperlink{class_benchmark_node_a81ccf22ce05702c97803a502092090f7}{process\+Input}} (\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface}{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}} $\ast$visualizer)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_benchmark_node_ad4ee7b497428bce6426add3c4010200e}\label{class_benchmark_node_ad4ee7b497428bce6426add3c4010200e}} 
+\index{Benchmark\+Node@{Benchmark\+Node}!Benchmark\+Node@{Benchmark\+Node}}
+\index{Benchmark\+Node@{Benchmark\+Node}!Benchmark\+Node@{Benchmark\+Node}}
+\subsubsection{\texorpdfstring{Benchmark\+Node()}{BenchmarkNode()}}
+{\footnotesize\ttfamily Benchmark\+Node\+::\+Benchmark\+Node (\begin{DoxyParamCaption}\item[{ros\+::\+Node\+Handle \&}]{nh,  }\item[{ros\+::\+Node\+Handle \&}]{nh\+\_\+private }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_benchmark_node_a6fb208304f873fb46988f6ca4ed0b9d8}\label{class_benchmark_node_a6fb208304f873fb46988f6ca4ed0b9d8}} 
+\index{Benchmark\+Node@{Benchmark\+Node}!configure@{configure}}
+\index{configure@{configure}!Benchmark\+Node@{Benchmark\+Node}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily bool Benchmark\+Node\+::configure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+configure stuff like\+:
+\begin{DoxyEnumerate}
+\item rgbdpair files,
+\item trajectory estimation (if you want to use tum tools to estimate the trajectory)
+\item video rendering stuff.
+\item show ground truth. 
+\end{DoxyEnumerate}\mbox{\Hypertarget{class_benchmark_node_ac906f068111a96dc95b289d3728df574}\label{class_benchmark_node_ac906f068111a96dc95b289d3728df574}} 
+\index{Benchmark\+Node@{Benchmark\+Node}!create\+Reference\+Camera@{create\+Reference\+Camera}}
+\index{create\+Reference\+Camera@{create\+Reference\+Camera}!Benchmark\+Node@{Benchmark\+Node}}
+\subsubsection{\texorpdfstring{create\+Reference\+Camera()}{createReferenceCamera()}}
+{\footnotesize\ttfamily void Benchmark\+Node\+::create\+Reference\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface}{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}} $\ast$}]{visualizer,  }\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image}{dvo\+::core\+::\+Rgbd\+Image}} \&}]{img,  }\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{dvo\+::core\+::\+Intrinsic\+Matrix}} \&}]{intrinsics,  }\item[{const Eigen\+::\+Affine3d \&}]{pose }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_benchmark_node_a81ccf22ce05702c97803a502092090f7}\label{class_benchmark_node_a81ccf22ce05702c97803a502092090f7}} 
+\index{Benchmark\+Node@{Benchmark\+Node}!process\+Input@{process\+Input}}
+\index{process\+Input@{process\+Input}!Benchmark\+Node@{Benchmark\+Node}}
+\subsubsection{\texorpdfstring{process\+Input()}{processInput()}}
+{\footnotesize\ttfamily void Benchmark\+Node\+::process\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface}{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}} $\ast$}]{visualizer }\end{DoxyParamCaption})}
+
+
+\begin{DoxyEnumerate}
+\item saving the camera pose file to disk
+\item or load cmera pose from file 
+\end{DoxyEnumerate}\mbox{\Hypertarget{class_benchmark_node_aa8ac48849e2165f15af69e561ecb97e6}\label{class_benchmark_node_aa8ac48849e2165f15af69e561ecb97e6}} 
+\index{Benchmark\+Node@{Benchmark\+Node}!render\+While\+Switch\+And\+Not\+Terminated@{render\+While\+Switch\+And\+Not\+Terminated}}
+\index{render\+While\+Switch\+And\+Not\+Terminated@{render\+While\+Switch\+And\+Not\+Terminated}!Benchmark\+Node@{Benchmark\+Node}}
+\subsubsection{\texorpdfstring{render\+While\+Switch\+And\+Not\+Terminated()}{renderWhileSwitchAndNotTerminated()}}
+{\footnotesize\ttfamily void Benchmark\+Node\+::render\+While\+Switch\+And\+Not\+Terminated (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_trajectory_visualizer_interface}{dvo\+::visualization\+::\+Camera\+Trajectory\+Visualizer\+Interface}} $\ast$}]{visualizer,  }\item[{const \mbox{\hyperlink{structdvo_1_1visualization_1_1_switch}{dvo\+::visualization\+::\+Switch}} \&}]{s }\end{DoxyParamCaption})}
+
+continuously calling the visualizer to render, on and on... (5\+Hz) Please refer to the \mbox{\hyperlink{classdvo_1_1visualization_1_1_pcl_camera_trajectory_visualizer}{dvo\+::visualization\+::\+Pcl\+Camera\+Trajectory\+Visualizer}} to see what this function is actually doing. \mbox{\Hypertarget{class_benchmark_node_a4f509351e1c61f174f64146fe3abb463}\label{class_benchmark_node_a4f509351e1c61f174f64146fe3abb463}} 
+\index{Benchmark\+Node@{Benchmark\+Node}!run@{run}}
+\index{run@{run}!Benchmark\+Node@{Benchmark\+Node}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Benchmark\+Node\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The most important funciton in \mbox{\hyperlink{class_benchmark_node}{Benchmark\+Node}}.
+\begin{DoxyEnumerate}
+\item setup the visualizer
+\item generate id for each frame in the Video\+Folder.
+\item (configure debugging visualizer)
+\item setup camera parameters (create intrinsic\+Matrix)
+\item setup configuration for tracker node (class Camera\+Dense\+Tracker\+Config) from server, and output in R\+OS warning.
+\item initialize first pose
+\item read all rgb-\/d pair entries
+\item start iteration\+: 8.\+1 create Reference Camera and do something about visualization 8.\+2 if Estimate is Required, then call dense\+\_\+tracker.\+match($\ast$reference, $\ast$current, relative)
+\item if Show\+Estimate or Render\+Video is set in cfg\+\_\+, then do it. 
+\end{DoxyEnumerate}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+benchmark/src/\mbox{\hyperlink{benchmark_8cpp}{benchmark.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,89 @@
+\hypertarget{classdvo_1_1visualization_1_1bounded__buffer}{}\section{dvo\+:\+:visualization\+:\+:bounded\+\_\+buffer$<$ T $>$ Class Template Reference}
+\label{classdvo_1_1visualization_1_1bounded__buffer}\index{dvo\+::visualization\+::bounded\+\_\+buffer$<$ T $>$@{dvo\+::visualization\+::bounded\+\_\+buffer$<$ T $>$}}
+
+
+{\ttfamily \#include $<$bounded\+\_\+buffer.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::circular\+\_\+buffer$<$ T $>$ \mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer_aaeb9b2a645cb183a85167be95f09745b}{container\+\_\+type}}
+\item 
+typedef container\+\_\+type\+::size\+\_\+type \mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer_a0b8808bbfd4de59ebf33d5241083179c}{size\+\_\+type}}
+\item 
+typedef container\+\_\+type\+::value\+\_\+type \mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer_a69f22957276557660f1bf8b654e3a667}{value\+\_\+type}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer_a392dce467c80a3b980be50ed2f538181}{bounded\+\_\+buffer}} (\mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer_a0b8808bbfd4de59ebf33d5241083179c}{size\+\_\+type}} capacity)
+\item 
+void \mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer_a2b72854b9be8a3c4831f9f46d2c4a549}{push\+\_\+front}} (typename container\+\_\+type\+::param\+\_\+value\+\_\+type item)
+\item 
+bool \mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer_a86bb8a4d2211061d0dda2cbf9a9a82e7}{pop\+\_\+back}} (\mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer_a69f22957276557660f1bf8b654e3a667}{value\+\_\+type}} $\ast$p\+Item)
+\item 
+void \mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer_ae4afdb9c626f4f38cbc34b81fdfa8bf7}{shutdown}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1bounded__buffer_aaeb9b2a645cb183a85167be95f09745b}\label{classdvo_1_1visualization_1_1bounded__buffer_aaeb9b2a645cb183a85167be95f09745b}} 
+\index{dvo\+::visualization\+::bounded\+\_\+buffer@{dvo\+::visualization\+::bounded\+\_\+buffer}!container\+\_\+type@{container\+\_\+type}}
+\index{container\+\_\+type@{container\+\_\+type}!dvo\+::visualization\+::bounded\+\_\+buffer@{dvo\+::visualization\+::bounded\+\_\+buffer}}
+\subsubsection{\texorpdfstring{container\+\_\+type}{container\_type}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+typedef boost\+::circular\+\_\+buffer$<$T$>$ \mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer}{dvo\+::visualization\+::bounded\+\_\+buffer}}$<$ T $>$\+::\mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer_aaeb9b2a645cb183a85167be95f09745b}{container\+\_\+type}}}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1bounded__buffer_a0b8808bbfd4de59ebf33d5241083179c}\label{classdvo_1_1visualization_1_1bounded__buffer_a0b8808bbfd4de59ebf33d5241083179c}} 
+\index{dvo\+::visualization\+::bounded\+\_\+buffer@{dvo\+::visualization\+::bounded\+\_\+buffer}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!dvo\+::visualization\+::bounded\+\_\+buffer@{dvo\+::visualization\+::bounded\+\_\+buffer}}
+\subsubsection{\texorpdfstring{size\+\_\+type}{size\_type}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+typedef container\+\_\+type\+::size\+\_\+type \mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer}{dvo\+::visualization\+::bounded\+\_\+buffer}}$<$ T $>$\+::\mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer_a0b8808bbfd4de59ebf33d5241083179c}{size\+\_\+type}}}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1bounded__buffer_a69f22957276557660f1bf8b654e3a667}\label{classdvo_1_1visualization_1_1bounded__buffer_a69f22957276557660f1bf8b654e3a667}} 
+\index{dvo\+::visualization\+::bounded\+\_\+buffer@{dvo\+::visualization\+::bounded\+\_\+buffer}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!dvo\+::visualization\+::bounded\+\_\+buffer@{dvo\+::visualization\+::bounded\+\_\+buffer}}
+\subsubsection{\texorpdfstring{value\+\_\+type}{value\_type}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+typedef container\+\_\+type\+::value\+\_\+type \mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer}{dvo\+::visualization\+::bounded\+\_\+buffer}}$<$ T $>$\+::\mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer_a69f22957276557660f1bf8b654e3a667}{value\+\_\+type}}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1bounded__buffer_a392dce467c80a3b980be50ed2f538181}\label{classdvo_1_1visualization_1_1bounded__buffer_a392dce467c80a3b980be50ed2f538181}} 
+\index{dvo\+::visualization\+::bounded\+\_\+buffer@{dvo\+::visualization\+::bounded\+\_\+buffer}!bounded\+\_\+buffer@{bounded\+\_\+buffer}}
+\index{bounded\+\_\+buffer@{bounded\+\_\+buffer}!dvo\+::visualization\+::bounded\+\_\+buffer@{dvo\+::visualization\+::bounded\+\_\+buffer}}
+\subsubsection{\texorpdfstring{bounded\+\_\+buffer()}{bounded\_buffer()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer}{dvo\+::visualization\+::bounded\+\_\+buffer}}$<$ T $>$\+::\mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer}{bounded\+\_\+buffer}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer_a0b8808bbfd4de59ebf33d5241083179c}{size\+\_\+type}}}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1bounded__buffer_a86bb8a4d2211061d0dda2cbf9a9a82e7}\label{classdvo_1_1visualization_1_1bounded__buffer_a86bb8a4d2211061d0dda2cbf9a9a82e7}} 
+\index{dvo\+::visualization\+::bounded\+\_\+buffer@{dvo\+::visualization\+::bounded\+\_\+buffer}!pop\+\_\+back@{pop\+\_\+back}}
+\index{pop\+\_\+back@{pop\+\_\+back}!dvo\+::visualization\+::bounded\+\_\+buffer@{dvo\+::visualization\+::bounded\+\_\+buffer}}
+\subsubsection{\texorpdfstring{pop\+\_\+back()}{pop\_back()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer}{dvo\+::visualization\+::bounded\+\_\+buffer}}$<$ T $>$\+::pop\+\_\+back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer_a69f22957276557660f1bf8b654e3a667}{value\+\_\+type}} $\ast$}]{p\+Item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1bounded__buffer_a2b72854b9be8a3c4831f9f46d2c4a549}\label{classdvo_1_1visualization_1_1bounded__buffer_a2b72854b9be8a3c4831f9f46d2c4a549}} 
+\index{dvo\+::visualization\+::bounded\+\_\+buffer@{dvo\+::visualization\+::bounded\+\_\+buffer}!push\+\_\+front@{push\+\_\+front}}
+\index{push\+\_\+front@{push\+\_\+front}!dvo\+::visualization\+::bounded\+\_\+buffer@{dvo\+::visualization\+::bounded\+\_\+buffer}}
+\subsubsection{\texorpdfstring{push\+\_\+front()}{push\_front()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer}{dvo\+::visualization\+::bounded\+\_\+buffer}}$<$ T $>$\+::push\+\_\+front (\begin{DoxyParamCaption}\item[{typename container\+\_\+type\+::param\+\_\+value\+\_\+type}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classdvo_1_1visualization_1_1bounded__buffer_ae4afdb9c626f4f38cbc34b81fdfa8bf7}\label{classdvo_1_1visualization_1_1bounded__buffer_ae4afdb9c626f4f38cbc34b81fdfa8bf7}} 
+\index{dvo\+::visualization\+::bounded\+\_\+buffer@{dvo\+::visualization\+::bounded\+\_\+buffer}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!dvo\+::visualization\+::bounded\+\_\+buffer@{dvo\+::visualization\+::bounded\+\_\+buffer}}
+\subsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{classdvo_1_1visualization_1_1bounded__buffer}{dvo\+::visualization\+::bounded\+\_\+buffer}}$<$ T $>$\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/src/visualization/\mbox{\hyperlink{bounded__buffer_8h}{bounded\+\_\+buffer.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,98 @@
+\hypertarget{classdvo__benchmark_1_1_file_reader}{}\section{dvo\+\_\+benchmark\+:\+:File\+Reader$<$ EntryT $>$ Class Template Reference}
+\label{classdvo__benchmark_1_1_file_reader}\index{dvo\+\_\+benchmark\+::\+File\+Reader$<$ Entry\+T $>$@{dvo\+\_\+benchmark\+::\+File\+Reader$<$ Entry\+T $>$}}
+
+
+{\ttfamily \#include $<$file\+\_\+reader.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo__benchmark_1_1_file_reader_a4106b3318059b0f2a8587ee1457b0472}{File\+Reader}} (std\+::string \&file)
+\item 
+virtual \mbox{\hyperlink{classdvo__benchmark_1_1_file_reader_a1cccea52d55942eb1cbab0ae2a856914}{$\sim$\+File\+Reader}} ()
+\item 
+void \mbox{\hyperlink{classdvo__benchmark_1_1_file_reader_a2f62b338f1a1b8ffd47091e769c03f8b}{skip}} (int num\+\_\+lines)
+\item 
+void \mbox{\hyperlink{classdvo__benchmark_1_1_file_reader_abc0efc95a5f911cf75417f7777e333f4}{skip\+Comments}} ()
+\item 
+bool \mbox{\hyperlink{classdvo__benchmark_1_1_file_reader_a47866d6c871158248f3521bf496084e6}{next}} ()
+\item 
+void \mbox{\hyperlink{classdvo__benchmark_1_1_file_reader_a886900b867b838cbf964bdd8daebb772}{read\+All\+Entries}} (std\+::vector$<$ EntryT $>$ \&entries)
+\item 
+\mbox{\hyperlink{classdvo__benchmark_1_1_file_reader_af0c136260af17b315ec2761dd647e5e1}{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}} (\mbox{\hyperlink{classdvo__benchmark_1_1_file_reader}{File\+Reader}}, EntryT, entry)
+\item 
+\mbox{\hyperlink{classdvo__benchmark_1_1_file_reader_ab929f48570b38a74293fae46a6dfce2d}{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}} (\mbox{\hyperlink{classdvo__benchmark_1_1_file_reader}{File\+Reader}}, bool, has\+Entry)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class EntryT$>$\newline
+class dvo\+\_\+benchmark\+::\+File\+Reader$<$ Entry\+T $>$}
+
+EntryT has to support the following operator std\+::istream\& operator $>$$>$(std\+::istream\&, Entry\+T\&); 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo__benchmark_1_1_file_reader_a4106b3318059b0f2a8587ee1457b0472}\label{classdvo__benchmark_1_1_file_reader_a4106b3318059b0f2a8587ee1457b0472}} 
+\index{dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}!File\+Reader@{File\+Reader}}
+\index{File\+Reader@{File\+Reader}!dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}}
+\subsubsection{\texorpdfstring{File\+Reader()}{FileReader()}}
+{\footnotesize\ttfamily template$<$class EntryT$>$ \\
+\mbox{\hyperlink{classdvo__benchmark_1_1_file_reader}{dvo\+\_\+benchmark\+::\+File\+Reader}}$<$ EntryT $>$\+::\mbox{\hyperlink{classdvo__benchmark_1_1_file_reader}{File\+Reader}} (\begin{DoxyParamCaption}\item[{std\+::string \&}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classdvo__benchmark_1_1_file_reader_a1cccea52d55942eb1cbab0ae2a856914}\label{classdvo__benchmark_1_1_file_reader_a1cccea52d55942eb1cbab0ae2a856914}} 
+\index{dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}!````~File\+Reader@{$\sim$\+File\+Reader}}
+\index{````~File\+Reader@{$\sim$\+File\+Reader}!dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}}
+\subsubsection{\texorpdfstring{$\sim$\+File\+Reader()}{~FileReader()}}
+{\footnotesize\ttfamily template$<$class EntryT$>$ \\
+virtual \mbox{\hyperlink{classdvo__benchmark_1_1_file_reader}{dvo\+\_\+benchmark\+::\+File\+Reader}}$<$ EntryT $>$\+::$\sim$\mbox{\hyperlink{classdvo__benchmark_1_1_file_reader}{File\+Reader}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo__benchmark_1_1_file_reader_af0c136260af17b315ec2761dd647e5e1}\label{classdvo__benchmark_1_1_file_reader_af0c136260af17b315ec2761dd647e5e1}} 
+\index{dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}!F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}}
+\index{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}!dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}}
+\subsubsection{\texorpdfstring{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E()}{FI\_ATTRIBUTE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class EntryT$>$ \\
+\mbox{\hyperlink{classdvo__benchmark_1_1_file_reader}{dvo\+\_\+benchmark\+::\+File\+Reader}}$<$ EntryT $>$\+::F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvo__benchmark_1_1_file_reader}{File\+Reader}}$<$ EntryT $>$}]{,  }\item[{EntryT}]{,  }\item[{entry}]{ }\end{DoxyParamCaption})}
+
+Gets the current entry. \mbox{\Hypertarget{classdvo__benchmark_1_1_file_reader_ab929f48570b38a74293fae46a6dfce2d}\label{classdvo__benchmark_1_1_file_reader_ab929f48570b38a74293fae46a6dfce2d}} 
+\index{dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}!F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}}
+\index{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE@{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE}!dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}}
+\subsubsection{\texorpdfstring{F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E()}{FI\_ATTRIBUTE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class EntryT$>$ \\
+\mbox{\hyperlink{classdvo__benchmark_1_1_file_reader}{dvo\+\_\+benchmark\+::\+File\+Reader}}$<$ EntryT $>$\+::F\+I\+\_\+\+A\+T\+T\+R\+I\+B\+U\+TE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classdvo__benchmark_1_1_file_reader}{File\+Reader}}$<$ EntryT $>$}]{,  }\item[{bool}]{,  }\item[{has\+Entry}]{ }\end{DoxyParamCaption})}
+
+Determines whether the first entry was read. \mbox{\Hypertarget{classdvo__benchmark_1_1_file_reader_a47866d6c871158248f3521bf496084e6}\label{classdvo__benchmark_1_1_file_reader_a47866d6c871158248f3521bf496084e6}} 
+\index{dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}!next@{next}}
+\index{next@{next}!dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}}
+\subsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily template$<$class EntryT$>$ \\
+bool \mbox{\hyperlink{classdvo__benchmark_1_1_file_reader}{dvo\+\_\+benchmark\+::\+File\+Reader}}$<$ EntryT $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Moves to the next entry in the file. Returns true, if there was a next entry, false otherwise. \mbox{\Hypertarget{classdvo__benchmark_1_1_file_reader_a886900b867b838cbf964bdd8daebb772}\label{classdvo__benchmark_1_1_file_reader_a886900b867b838cbf964bdd8daebb772}} 
+\index{dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}!read\+All\+Entries@{read\+All\+Entries}}
+\index{read\+All\+Entries@{read\+All\+Entries}!dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}}
+\subsubsection{\texorpdfstring{read\+All\+Entries()}{readAllEntries()}}
+{\footnotesize\ttfamily template$<$class EntryT$>$ \\
+void \mbox{\hyperlink{classdvo__benchmark_1_1_file_reader}{dvo\+\_\+benchmark\+::\+File\+Reader}}$<$ EntryT $>$\+::read\+All\+Entries (\begin{DoxyParamCaption}\item[{std\+::vector$<$ EntryT $>$ \&}]{entries }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Read all entries at once. \mbox{\Hypertarget{classdvo__benchmark_1_1_file_reader_a2f62b338f1a1b8ffd47091e769c03f8b}\label{classdvo__benchmark_1_1_file_reader_a2f62b338f1a1b8ffd47091e769c03f8b}} 
+\index{dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}!skip@{skip}}
+\index{skip@{skip}!dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}}
+\subsubsection{\texorpdfstring{skip()}{skip()}}
+{\footnotesize\ttfamily template$<$class EntryT$>$ \\
+void \mbox{\hyperlink{classdvo__benchmark_1_1_file_reader}{dvo\+\_\+benchmark\+::\+File\+Reader}}$<$ EntryT $>$\+::skip (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+lines }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classdvo__benchmark_1_1_file_reader_abc0efc95a5f911cf75417f7777e333f4}\label{classdvo__benchmark_1_1_file_reader_abc0efc95a5f911cf75417f7777e333f4}} 
+\index{dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}!skip\+Comments@{skip\+Comments}}
+\index{skip\+Comments@{skip\+Comments}!dvo\+\_\+benchmark\+::\+File\+Reader@{dvo\+\_\+benchmark\+::\+File\+Reader}}
+\subsubsection{\texorpdfstring{skip\+Comments()}{skipComments()}}
+{\footnotesize\ttfamily template$<$class EntryT$>$ \\
+void \mbox{\hyperlink{classdvo__benchmark_1_1_file_reader}{dvo\+\_\+benchmark\+::\+File\+Reader}}$<$ EntryT $>$\+::skip\+Comments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+benchmark/include/dvo\+\_\+benchmark/\mbox{\hyperlink{file__reader_8h}{file\+\_\+reader.\+h}}\end{DoxyCompactItemize}

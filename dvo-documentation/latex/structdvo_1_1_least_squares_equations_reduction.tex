@@ -1,0 +1,110 @@
+\hypertarget{structdvo_1_1_least_squares_equations_reduction}{}\section{dvo\+:\+:Least\+Squares\+Equations\+Reduction Struct Reference}
+\label{structdvo_1_1_least_squares_equations_reduction}\index{dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_ae69114a4911fd35ce60a4696d15ce5a1}{Least\+Squares\+Equations\+Reduction}} (const cv\+::\+Mat \&\mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_a6140e6f4c600016951877b7f79efeec1}{residuals}}, const \mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation}{dvo\+::core\+::\+Weight\+Calculation}} \&\mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_a135763297b1e3bcee21189e0f5014fe4}{weights}}, const cv\+::\+Mat \&\mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_a513436c876416261efe1d99188f8117a}{Jix}}, const cv\+::\+Mat \&\mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_a7d8b6e08f0baf9580e0d5eb00776911f}{Jiy}}, const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{dvo\+::core\+::\+Rgbd\+Image\+::\+Point\+Cloud}} \&\mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_a31ca8e056a271c3f3c99140e679a55c1}{points}})
+\item 
+\mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_a0d615509ae3ef7176e8f9504065de1b0}{Least\+Squares\+Equations\+Reduction}} (\mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction}{Least\+Squares\+Equations\+Reduction}} \&other, tbb\+::split)
+\item 
+\mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_aebf5509fd667020911a060bb93df51c2}{$\sim$\+Least\+Squares\+Equations\+Reduction}} ()
+\item 
+void \mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_a4730c4255382ba919c088e70cbea9d44}{operator()}} (const tbb\+::blocked\+\_\+range$<$ size\+\_\+t $>$ \&r)
+\item 
+void \mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_a35553c6631e0ff25089aea292619bf6b}{join}} (\mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction}{Least\+Squares\+Equations\+Reduction}} \&other)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo_1_1core_1_1_normal_equations_least_squares}{dvo\+::core\+::\+Normal\+Equations\+Least\+Squares}} $\ast$ \mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_a3af436ffa51a579212c4e1e913a4350b}{ls}}
+\item 
+const cv\+::\+Mat \& \mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_a6140e6f4c600016951877b7f79efeec1}{residuals}}
+\item 
+const cv\+::\+Mat \mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_a513436c876416261efe1d99188f8117a}{Jix}}
+\item 
+const cv\+::\+Mat \mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_a7d8b6e08f0baf9580e0d5eb00776911f}{Jiy}}
+\item 
+const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{dvo\+::core\+::\+Rgbd\+Image\+::\+Point\+Cloud}} \& \mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_a31ca8e056a271c3f3c99140e679a55c1}{points}}
+\item 
+const \mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation}{dvo\+::core\+::\+Weight\+Calculation}} \& \mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction_a135763297b1e3bcee21189e0f5014fe4}{weights}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structdvo_1_1_least_squares_equations_reduction_ae69114a4911fd35ce60a4696d15ce5a1}\label{structdvo_1_1_least_squares_equations_reduction_ae69114a4911fd35ce60a4696d15ce5a1}} 
+\index{dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}!Least\+Squares\+Equations\+Reduction@{Least\+Squares\+Equations\+Reduction}}
+\index{Least\+Squares\+Equations\+Reduction@{Least\+Squares\+Equations\+Reduction}!dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}}
+\subsubsection{\texorpdfstring{Least\+Squares\+Equations\+Reduction()}{LeastSquaresEquationsReduction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily dvo\+::\+Least\+Squares\+Equations\+Reduction\+::\+Least\+Squares\+Equations\+Reduction (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{residuals,  }\item[{const \mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation}{dvo\+::core\+::\+Weight\+Calculation}} \&}]{weights,  }\item[{const cv\+::\+Mat \&}]{Jix,  }\item[{const cv\+::\+Mat \&}]{Jiy,  }\item[{const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{dvo\+::core\+::\+Rgbd\+Image\+::\+Point\+Cloud}} \&}]{points }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structdvo_1_1_least_squares_equations_reduction_a0d615509ae3ef7176e8f9504065de1b0}\label{structdvo_1_1_least_squares_equations_reduction_a0d615509ae3ef7176e8f9504065de1b0}} 
+\index{dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}!Least\+Squares\+Equations\+Reduction@{Least\+Squares\+Equations\+Reduction}}
+\index{Least\+Squares\+Equations\+Reduction@{Least\+Squares\+Equations\+Reduction}!dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}}
+\subsubsection{\texorpdfstring{Least\+Squares\+Equations\+Reduction()}{LeastSquaresEquationsReduction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily dvo\+::\+Least\+Squares\+Equations\+Reduction\+::\+Least\+Squares\+Equations\+Reduction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction}{Least\+Squares\+Equations\+Reduction}} \&}]{other,  }\item[{tbb\+::split}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structdvo_1_1_least_squares_equations_reduction_aebf5509fd667020911a060bb93df51c2}\label{structdvo_1_1_least_squares_equations_reduction_aebf5509fd667020911a060bb93df51c2}} 
+\index{dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}!````~Least\+Squares\+Equations\+Reduction@{$\sim$\+Least\+Squares\+Equations\+Reduction}}
+\index{````~Least\+Squares\+Equations\+Reduction@{$\sim$\+Least\+Squares\+Equations\+Reduction}!dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}}
+\subsubsection{\texorpdfstring{$\sim$\+Least\+Squares\+Equations\+Reduction()}{~LeastSquaresEquationsReduction()}}
+{\footnotesize\ttfamily dvo\+::\+Least\+Squares\+Equations\+Reduction\+::$\sim$\+Least\+Squares\+Equations\+Reduction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structdvo_1_1_least_squares_equations_reduction_a35553c6631e0ff25089aea292619bf6b}\label{structdvo_1_1_least_squares_equations_reduction_a35553c6631e0ff25089aea292619bf6b}} 
+\index{dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}!join@{join}}
+\index{join@{join}!dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}}
+\subsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily void dvo\+::\+Least\+Squares\+Equations\+Reduction\+::join (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdvo_1_1_least_squares_equations_reduction}{Least\+Squares\+Equations\+Reduction}} \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structdvo_1_1_least_squares_equations_reduction_a4730c4255382ba919c088e70cbea9d44}\label{structdvo_1_1_least_squares_equations_reduction_a4730c4255382ba919c088e70cbea9d44}} 
+\index{dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}!operator()@{operator()}}
+\index{operator()@{operator()}!dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily void dvo\+::\+Least\+Squares\+Equations\+Reduction\+::operator() (\begin{DoxyParamCaption}\item[{const tbb\+::blocked\+\_\+range$<$ size\+\_\+t $>$ \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structdvo_1_1_least_squares_equations_reduction_a513436c876416261efe1d99188f8117a}\label{structdvo_1_1_least_squares_equations_reduction_a513436c876416261efe1d99188f8117a}} 
+\index{dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}!Jix@{Jix}}
+\index{Jix@{Jix}!dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}}
+\subsubsection{\texorpdfstring{Jix}{Jix}}
+{\footnotesize\ttfamily const cv\+::\+Mat dvo\+::\+Least\+Squares\+Equations\+Reduction\+::\+Jix}
+
+\mbox{\Hypertarget{structdvo_1_1_least_squares_equations_reduction_a7d8b6e08f0baf9580e0d5eb00776911f}\label{structdvo_1_1_least_squares_equations_reduction_a7d8b6e08f0baf9580e0d5eb00776911f}} 
+\index{dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}!Jiy@{Jiy}}
+\index{Jiy@{Jiy}!dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}}
+\subsubsection{\texorpdfstring{Jiy}{Jiy}}
+{\footnotesize\ttfamily const cv\+::\+Mat dvo\+::\+Least\+Squares\+Equations\+Reduction\+::\+Jiy}
+
+\mbox{\Hypertarget{structdvo_1_1_least_squares_equations_reduction_a3af436ffa51a579212c4e1e913a4350b}\label{structdvo_1_1_least_squares_equations_reduction_a3af436ffa51a579212c4e1e913a4350b}} 
+\index{dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}!ls@{ls}}
+\index{ls@{ls}!dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}}
+\subsubsection{\texorpdfstring{ls}{ls}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdvo_1_1core_1_1_normal_equations_least_squares}{dvo\+::core\+::\+Normal\+Equations\+Least\+Squares}}$\ast$ dvo\+::\+Least\+Squares\+Equations\+Reduction\+::ls}
+
+\mbox{\Hypertarget{structdvo_1_1_least_squares_equations_reduction_a31ca8e056a271c3f3c99140e679a55c1}\label{structdvo_1_1_least_squares_equations_reduction_a31ca8e056a271c3f3c99140e679a55c1}} 
+\index{dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}!points@{points}}
+\index{points@{points}!dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}}
+\subsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_a56820965eb98427d06e6733fe333cdc5}{dvo\+::core\+::\+Rgbd\+Image\+::\+Point\+Cloud}}\& dvo\+::\+Least\+Squares\+Equations\+Reduction\+::points}
+
+\mbox{\Hypertarget{structdvo_1_1_least_squares_equations_reduction_a6140e6f4c600016951877b7f79efeec1}\label{structdvo_1_1_least_squares_equations_reduction_a6140e6f4c600016951877b7f79efeec1}} 
+\index{dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}!residuals@{residuals}}
+\index{residuals@{residuals}!dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}}
+\subsubsection{\texorpdfstring{residuals}{residuals}}
+{\footnotesize\ttfamily const cv\+::\+Mat\& dvo\+::\+Least\+Squares\+Equations\+Reduction\+::residuals}
+
+\mbox{\Hypertarget{structdvo_1_1_least_squares_equations_reduction_a135763297b1e3bcee21189e0f5014fe4}\label{structdvo_1_1_least_squares_equations_reduction_a135763297b1e3bcee21189e0f5014fe4}} 
+\index{dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}!weights@{weights}}
+\index{weights@{weights}!dvo\+::\+Least\+Squares\+Equations\+Reduction@{dvo\+::\+Least\+Squares\+Equations\+Reduction}}
+\subsubsection{\texorpdfstring{weights}{weights}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classdvo_1_1core_1_1_weight_calculation}{dvo\+::core\+::\+Weight\+Calculation}}\& dvo\+::\+Least\+Squares\+Equations\+Reduction\+::weights}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/src/\mbox{\hyperlink{dense__tracking_8cpp}{dense\+\_\+tracking.\+cpp}}\end{DoxyCompactItemize}

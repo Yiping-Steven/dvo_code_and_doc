@@ -1,0 +1,128 @@
+\hypertarget{classdvo_1_1_dense_tracker}{}\section{dvo\+:\+:Dense\+Tracker Class Reference}
+\label{classdvo_1_1_dense_tracker}\index{dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}}
+
+
+{\ttfamily \#include $<$dense\+\_\+tracking.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_config}{Config}}
+\item 
+struct \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context}{Iteration\+Context}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo_1_1_dense_tracker_a48f7e802113a0e8840cea6cae0ef580e}{Dense\+Tracker}} (\mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{dvo\+::core\+::\+Intrinsic\+Matrix}} \&\mbox{\hyperlink{classdvo_1_1_dense_tracker_a55d2374fbb13ef7846a535e1869fb880}{intrinsics}}, const \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_config}{Config}} \&cfg=\mbox{\hyperlink{classdvo_1_1_dense_tracker_a81b87df428095d10a86c996d6f2fc900}{get\+Default\+Config}}())
+\item 
+void \mbox{\hyperlink{classdvo_1_1_dense_tracker_afcffed696e4d35768123e61e2b988e53}{configure}} ()
+\item 
+const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{dvo\+::core\+::\+Intrinsic\+Matrix}} \& \mbox{\hyperlink{classdvo_1_1_dense_tracker_a55d2374fbb13ef7846a535e1869fb880}{intrinsics}} (size\+\_\+t level)
+\item 
+bool \mbox{\hyperlink{classdvo_1_1_dense_tracker_a120bade1d07eb480e7334524b3db8383}{match}} (\mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_pyramid}{dvo\+::core\+::\+Rgbd\+Image\+Pyramid}} \&reference, \mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_pyramid}{dvo\+::core\+::\+Rgbd\+Image\+Pyramid}} \&current, Eigen\+::\+Affine3d \&transformation)
+\item 
+void \mbox{\hyperlink{classdvo_1_1_dense_tracker_ae4b3faebac29274632ce464b7b016efe}{update\+Last\+Transform}} (Eigen\+::\+Affine3d \&last\+\_\+transformation)
+\item 
+void \mbox{\hyperlink{classdvo_1_1_dense_tracker_a3ba8de244b244d9bffe62b84751672ea}{get\+Covariance\+Estimate}} (Eigen\+::\+Matrix$<$ double, 6, 6 $>$ \&covariance) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_config}{Config}} \& \mbox{\hyperlink{classdvo_1_1_dense_tracker_a81b87df428095d10a86c996d6f2fc900}{get\+Default\+Config}} ()
+\item 
+static void \mbox{\hyperlink{classdvo_1_1_dense_tracker_a534e6aaf24e6526de76e97b3a73a234c}{compute\+Jacobian\+Of\+Projection\+And\+Transformation}} (const \mbox{\hyperlink{namespacedvo_1_1core_a71fd2291c4d15b2a797ec3a0959d2b6a}{dvo\+::core\+::\+Vector4}} \&p, \mbox{\hyperlink{namespacedvo_1_1core_ac6a9bb149a44f85a33be52a701abfac8}{dvo\+::core\+::\+Matrix2x6}} \&jacobian)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo_1_1_dense_tracker_a5ee11c294ea7be93c11f6b7ab202b236}{E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW}}
+\item 
+\mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context}{Iteration\+Context}} \mbox{\hyperlink{classdvo_1_1_dense_tracker_a8ce3afa309ab0f9063da110f18797ec7}{itctx\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of\+:
+
+\char`\"{}\+Robust Odometry Estimation for R\+G\+B-\/\+D Cameras\char`\"{} \char`\"{}\+Real-\/\+Time Visual Odometry from Dense R\+G\+B-\/\+D Images\char`\"{}
+
+similar to\+:
+
+\char`\"{}\+Direct Iterative Closest Point for Real-\/time Visual Odometry\char`\"{}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo_1_1_dense_tracker_a48f7e802113a0e8840cea6cae0ef580e}\label{classdvo_1_1_dense_tracker_a48f7e802113a0e8840cea6cae0ef580e}} 
+\index{dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}!Dense\+Tracker@{Dense\+Tracker}}
+\index{Dense\+Tracker@{Dense\+Tracker}!dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}}
+\subsubsection{\texorpdfstring{Dense\+Tracker()}{DenseTracker()}}
+{\footnotesize\ttfamily dvo\+::\+Dense\+Tracker\+::\+Dense\+Tracker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{dvo\+::core\+::\+Intrinsic\+Matrix}} \&}]{intrinsics,  }\item[{const \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_config}{Config}} \&}]{cfg = {\ttfamily \mbox{\hyperlink{classdvo_1_1_dense_tracker_a81b87df428095d10a86c996d6f2fc900}{get\+Default\+Config}}()} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo_1_1_dense_tracker_a534e6aaf24e6526de76e97b3a73a234c}\label{classdvo_1_1_dense_tracker_a534e6aaf24e6526de76e97b3a73a234c}} 
+\index{dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}!compute\+Jacobian\+Of\+Projection\+And\+Transformation@{compute\+Jacobian\+Of\+Projection\+And\+Transformation}}
+\index{compute\+Jacobian\+Of\+Projection\+And\+Transformation@{compute\+Jacobian\+Of\+Projection\+And\+Transformation}!dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}}
+\subsubsection{\texorpdfstring{compute\+Jacobian\+Of\+Projection\+And\+Transformation()}{computeJacobianOfProjectionAndTransformation()}}
+{\footnotesize\ttfamily void dvo\+::\+Dense\+Tracker\+::compute\+Jacobian\+Of\+Projection\+And\+Transformation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacedvo_1_1core_a71fd2291c4d15b2a797ec3a0959d2b6a}{dvo\+::core\+::\+Vector4}} \&}]{p,  }\item[{\mbox{\hyperlink{namespacedvo_1_1core_ac6a9bb149a44f85a33be52a701abfac8}{dvo\+::core\+::\+Matrix2x6}} \&}]{jacobian }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classdvo_1_1_dense_tracker_afcffed696e4d35768123e61e2b988e53}\label{classdvo_1_1_dense_tracker_afcffed696e4d35768123e61e2b988e53}} 
+\index{dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}!configure@{configure}}
+\index{configure@{configure}!dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}}
+\subsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily void dvo\+::\+Dense\+Tracker\+::configure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1_dense_tracker_a3ba8de244b244d9bffe62b84751672ea}\label{classdvo_1_1_dense_tracker_a3ba8de244b244d9bffe62b84751672ea}} 
+\index{dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}!get\+Covariance\+Estimate@{get\+Covariance\+Estimate}}
+\index{get\+Covariance\+Estimate@{get\+Covariance\+Estimate}!dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}}
+\subsubsection{\texorpdfstring{get\+Covariance\+Estimate()}{getCovarianceEstimate()}}
+{\footnotesize\ttfamily void dvo\+::\+Dense\+Tracker\+::get\+Covariance\+Estimate (\begin{DoxyParamCaption}\item[{Eigen\+::\+Matrix$<$ double, 6, 6 $>$ \&}]{covariance }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classdvo_1_1_dense_tracker_a81b87df428095d10a86c996d6f2fc900}\label{classdvo_1_1_dense_tracker_a81b87df428095d10a86c996d6f2fc900}} 
+\index{dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}!get\+Default\+Config@{get\+Default\+Config}}
+\index{get\+Default\+Config@{get\+Default\+Config}!dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}}
+\subsubsection{\texorpdfstring{get\+Default\+Config()}{getDefaultConfig()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_config}{Dense\+Tracker\+::\+Config}} \& dvo\+::\+Dense\+Tracker\+::get\+Default\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classdvo_1_1_dense_tracker_a55d2374fbb13ef7846a535e1869fb880}\label{classdvo_1_1_dense_tracker_a55d2374fbb13ef7846a535e1869fb880}} 
+\index{dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}!intrinsics@{intrinsics}}
+\index{intrinsics@{intrinsics}!dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}}
+\subsubsection{\texorpdfstring{intrinsics()}{intrinsics()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structdvo_1_1core_1_1_intrinsic_matrix}{Intrinsic\+Matrix}} \& dvo\+::\+Dense\+Tracker\+::intrinsics (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{level }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classdvo_1_1_dense_tracker_a120bade1d07eb480e7334524b3db8383}\label{classdvo_1_1_dense_tracker_a120bade1d07eb480e7334524b3db8383}} 
+\index{dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}!match@{match}}
+\index{match@{match}!dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}}
+\subsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily bool dvo\+::\+Dense\+Tracker\+::match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_pyramid}{dvo\+::core\+::\+Rgbd\+Image\+Pyramid}} \&}]{reference,  }\item[{\mbox{\hyperlink{structdvo_1_1core_1_1_rgbd_image_pyramid}{dvo\+::core\+::\+Rgbd\+Image\+Pyramid}} \&}]{current,  }\item[{Eigen\+::\+Affine3d \&}]{transformation }\end{DoxyParamCaption})}
+
+Very Important match the two Rgbd\+Image\+Pyramid and return transformation between them Eigen\+::\+Affine3d\& transformation in parameter list is passed in as a given guess and passed out as the result.
+
+use the direct method to compute the transformation, and applied the coarse to fine strategy, by passing the itctx\+\_\+.\+Level through iterations. in each iteration, rgb-\/d image pairs are converted in different resolution levels by the level() function in Rgbd\+Image class. \mbox{\Hypertarget{classdvo_1_1_dense_tracker_ae4b3faebac29274632ce464b7b016efe}\label{classdvo_1_1_dense_tracker_ae4b3faebac29274632ce464b7b016efe}} 
+\index{dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}!update\+Last\+Transform@{update\+Last\+Transform}}
+\index{update\+Last\+Transform@{update\+Last\+Transform}!dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}}
+\subsubsection{\texorpdfstring{update\+Last\+Transform()}{updateLastTransform()}}
+{\footnotesize\ttfamily void dvo\+::\+Dense\+Tracker\+::update\+Last\+Transform (\begin{DoxyParamCaption}\item[{Eigen\+::\+Affine3d \&}]{last\+\_\+transformation }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classdvo_1_1_dense_tracker_a5ee11c294ea7be93c11f6b7ab202b236}\label{classdvo_1_1_dense_tracker_a5ee11c294ea7be93c11f6b7ab202b236}} 
+\index{dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}!E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW@{E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW}}
+\index{E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW@{E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW}!dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}}
+\subsubsection{\texorpdfstring{E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW}{EIGEN\_MAKE\_ALIGNED\_OPERATOR\_NEW}}
+{\footnotesize\ttfamily dvo\+::\+Dense\+Tracker\+::\+E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW}
+
+\mbox{\Hypertarget{classdvo_1_1_dense_tracker_a8ce3afa309ab0f9063da110f18797ec7}\label{classdvo_1_1_dense_tracker_a8ce3afa309ab0f9063da110f18797ec7}} 
+\index{dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}!itctx\+\_\+@{itctx\+\_\+}}
+\index{itctx\+\_\+@{itctx\+\_\+}!dvo\+::\+Dense\+Tracker@{dvo\+::\+Dense\+Tracker}}
+\subsubsection{\texorpdfstring{itctx\+\_\+}{itctx\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structdvo_1_1_dense_tracker_1_1_iteration_context}{Iteration\+Context}} dvo\+::\+Dense\+Tracker\+::itctx\+\_\+}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/include/dvo/\mbox{\hyperlink{dense__tracking_8h}{dense\+\_\+tracking.\+h}}\item 
+dvo\+\_\+core/src/\mbox{\hyperlink{dense__tracking_8cpp}{dense\+\_\+tracking.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,54 @@
+\hypertarget{namespacedvo_1_1util}{}\section{dvo\+:\+:util Namespace Reference}
+\label{namespacedvo_1_1util}\index{dvo\+::util@{dvo\+::util}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdvo_1_1util_1_1_id_generator}{Id\+Generator}}
+\item 
+class \mbox{\hyperlink{classdvo_1_1util_1_1_revertable}{Revertable}}
+\item 
+struct \mbox{\hyperlink{structdvo_1_1util_1_1stopwatch}{stopwatch}}
+\item 
+struct \mbox{\hyperlink{structdvo_1_1util_1_1stopwatch__collection}{stopwatch\+\_\+collection}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacedvo_1_1util_a3523b38b32b8f623b5aeff6e7c4339cb}{get\+Number\+Of\+Bins}} (float min, float max, float bin\+Width)
+\item 
+void \mbox{\hyperlink{namespacedvo_1_1util_a5a690206d2cdf3f54db9e991cfebb1c1}{compute1\+D\+Histogram}} (const cv\+::\+Mat \&data, cv\+::\+Mat \&histogram, float min, float max, float bin\+Width)
+\item 
+float \mbox{\hyperlink{namespacedvo_1_1util_af0fef1368b12563b7e623482aef1725a}{compute\+Median\+From\+Histogram}} (const cv\+::\+Mat \&histogram, float min, float max)
+\item 
+int \mbox{\hyperlink{namespacedvo_1_1util_a1978d9c686a6ed8e7d373bd922b58deb}{count\+Elements\+In\+Histogram}} (const cv\+::\+Mat \&histogram)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacedvo_1_1util_a5a690206d2cdf3f54db9e991cfebb1c1}\label{namespacedvo_1_1util_a5a690206d2cdf3f54db9e991cfebb1c1}} 
+\index{dvo\+::util@{dvo\+::util}!compute1\+D\+Histogram@{compute1\+D\+Histogram}}
+\index{compute1\+D\+Histogram@{compute1\+D\+Histogram}!dvo\+::util@{dvo\+::util}}
+\subsubsection{\texorpdfstring{compute1\+D\+Histogram()}{compute1DHistogram()}}
+{\footnotesize\ttfamily void dvo\+::util\+::compute1\+D\+Histogram (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{data,  }\item[{cv\+::\+Mat \&}]{histogram,  }\item[{float}]{min,  }\item[{float}]{max,  }\item[{float}]{bin\+Width }\end{DoxyParamCaption})}
+
+Computes the one dimensional histogram of the given data. The values have to be in the range \mbox{[}min max\mbox{]}.
+
+See\+: cv\+::calc\+Hist(...) \mbox{\Hypertarget{namespacedvo_1_1util_af0fef1368b12563b7e623482aef1725a}\label{namespacedvo_1_1util_af0fef1368b12563b7e623482aef1725a}} 
+\index{dvo\+::util@{dvo\+::util}!compute\+Median\+From\+Histogram@{compute\+Median\+From\+Histogram}}
+\index{compute\+Median\+From\+Histogram@{compute\+Median\+From\+Histogram}!dvo\+::util@{dvo\+::util}}
+\subsubsection{\texorpdfstring{compute\+Median\+From\+Histogram()}{computeMedianFromHistogram()}}
+{\footnotesize\ttfamily float dvo\+::util\+::compute\+Median\+From\+Histogram (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{histogram,  }\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacedvo_1_1util_a1978d9c686a6ed8e7d373bd922b58deb}\label{namespacedvo_1_1util_a1978d9c686a6ed8e7d373bd922b58deb}} 
+\index{dvo\+::util@{dvo\+::util}!count\+Elements\+In\+Histogram@{count\+Elements\+In\+Histogram}}
+\index{count\+Elements\+In\+Histogram@{count\+Elements\+In\+Histogram}!dvo\+::util@{dvo\+::util}}
+\subsubsection{\texorpdfstring{count\+Elements\+In\+Histogram()}{countElementsInHistogram()}}
+{\footnotesize\ttfamily int dvo\+::util\+::count\+Elements\+In\+Histogram (\begin{DoxyParamCaption}\item[{const cv\+::\+Mat \&}]{histogram }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacedvo_1_1util_a3523b38b32b8f623b5aeff6e7c4339cb}\label{namespacedvo_1_1util_a3523b38b32b8f623b5aeff6e7c4339cb}} 
+\index{dvo\+::util@{dvo\+::util}!get\+Number\+Of\+Bins@{get\+Number\+Of\+Bins}}
+\index{get\+Number\+Of\+Bins@{get\+Number\+Of\+Bins}!dvo\+::util@{dvo\+::util}}
+\subsubsection{\texorpdfstring{get\+Number\+Of\+Bins()}{getNumberOfBins()}}
+{\footnotesize\ttfamily int dvo\+::util\+::get\+Number\+Of\+Bins (\begin{DoxyParamCaption}\item[{float}]{min,  }\item[{float}]{max,  }\item[{float}]{bin\+Width }\end{DoxyParamCaption})}
+
+Computes the number of bins for a histogram with values in the range of \mbox{[}min max\mbox{]} and bin\+Width values in each bin. 

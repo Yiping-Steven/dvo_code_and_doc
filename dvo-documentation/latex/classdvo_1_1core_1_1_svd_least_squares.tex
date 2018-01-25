@@ -1,0 +1,113 @@
+\hypertarget{classdvo_1_1core_1_1_svd_least_squares}{}\section{dvo\+:\+:core\+:\+:Svd\+Least\+Squares Class Reference}
+\label{classdvo_1_1core_1_1_svd_least_squares}\index{dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}}
+
+
+{\ttfamily \#include $<$least\+\_\+squares.\+h$>$}
+
+Inheritance diagram for dvo\+:\+:core\+:\+:Svd\+Least\+Squares\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classdvo_1_1core_1_1_svd_least_squares}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classdvo_1_1core_1_1_svd_least_squares_ae60699467df2eca3f9e8cc7814388d9f}{$\sim$\+Svd\+Least\+Squares}} ()
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_svd_least_squares_aa09756d97cb63e8dc8276a88a1a07791}{initialize}} (const size\+\_\+t maxnum\+\_\+constraints)
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_svd_least_squares_ae9d28bc58804d7e43cf461ca092b9563}{update}} (const \mbox{\hyperlink{namespacedvo_1_1core_a05327f3312d32a301bce9fccda9e5807}{Vector6}} \&\mbox{\hyperlink{classdvo_1_1core_1_1_svd_least_squares_a8c0eaffdf1517bb11cb3fe7425e3274e}{J}}, const \mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}} \&res, const \mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}} \&weight=1.\+0f)
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_svd_least_squares_ac91cb5c82af6eb9d91d3ef4e85dc76a3}{finish}} ()
+\item 
+virtual void \mbox{\hyperlink{classdvo_1_1core_1_1_svd_least_squares_ae0124d7c24b90b1101bf38da59f789aa}{solve}} (\mbox{\hyperlink{namespacedvo_1_1core_a05327f3312d32a301bce9fccda9e5807}{Vector6}} \&x)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdvo_1_1core_1_1_svd_least_squares_a437352a5c072b985547c122d22850da6}{E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW}}
+\item 
+Eigen\+::\+Matrix$<$ \mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}}, Eigen\+::\+Dynamic, 6 $>$ \mbox{\hyperlink{classdvo_1_1core_1_1_svd_least_squares_a8c0eaffdf1517bb11cb3fe7425e3274e}{J}}
+\item 
+Eigen\+::\+Matrix$<$ \mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}}, Eigen\+::\+Dynamic, 1 $>$ \mbox{\hyperlink{classdvo_1_1core_1_1_svd_least_squares_a8f1cb060b554d4f77da3db4e7146f96b}{residuals}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_svd_least_squares_ae60699467df2eca3f9e8cc7814388d9f}\label{classdvo_1_1core_1_1_svd_least_squares_ae60699467df2eca3f9e8cc7814388d9f}} 
+\index{dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}!````~Svd\+Least\+Squares@{$\sim$\+Svd\+Least\+Squares}}
+\index{````~Svd\+Least\+Squares@{$\sim$\+Svd\+Least\+Squares}!dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}}
+\subsubsection{\texorpdfstring{$\sim$\+Svd\+Least\+Squares()}{~SvdLeastSquares()}}
+{\footnotesize\ttfamily dvo\+::core\+::\+Svd\+Least\+Squares\+::$\sim$\+Svd\+Least\+Squares (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_svd_least_squares_ac91cb5c82af6eb9d91d3ef4e85dc76a3}\label{classdvo_1_1core_1_1_svd_least_squares_ac91cb5c82af6eb9d91d3ef4e85dc76a3}} 
+\index{dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}!finish@{finish}}
+\index{finish@{finish}!dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}}
+\subsubsection{\texorpdfstring{finish()}{finish()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Svd\+Least\+Squares\+::finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classdvo_1_1core_1_1_least_squares_interface_a2e580a70e96f0e7d6d70f6047891a42a}{dvo\+::core\+::\+Least\+Squares\+Interface}}.
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_svd_least_squares_aa09756d97cb63e8dc8276a88a1a07791}\label{classdvo_1_1core_1_1_svd_least_squares_aa09756d97cb63e8dc8276a88a1a07791}} 
+\index{dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}!initialize@{initialize}}
+\index{initialize@{initialize}!dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Svd\+Least\+Squares\+::initialize (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{maxnum\+\_\+constraints }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classdvo_1_1core_1_1_least_squares_interface_a09e5784f74d7352a9550a8aa523d30d7}{dvo\+::core\+::\+Least\+Squares\+Interface}}.
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_svd_least_squares_ae0124d7c24b90b1101bf38da59f789aa}\label{classdvo_1_1core_1_1_svd_least_squares_ae0124d7c24b90b1101bf38da59f789aa}} 
+\index{dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}!solve@{solve}}
+\index{solve@{solve}!dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}}
+\subsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Svd\+Least\+Squares\+::solve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacedvo_1_1core_a05327f3312d32a301bce9fccda9e5807}{Vector6}} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classdvo_1_1core_1_1_least_squares_interface_a3e2b3c894c5286fdee79316e6fa4d691}{dvo\+::core\+::\+Least\+Squares\+Interface}}.
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_svd_least_squares_ae9d28bc58804d7e43cf461ca092b9563}\label{classdvo_1_1core_1_1_svd_least_squares_ae9d28bc58804d7e43cf461ca092b9563}} 
+\index{dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}!update@{update}}
+\index{update@{update}!dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void dvo\+::core\+::\+Svd\+Least\+Squares\+::update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacedvo_1_1core_a05327f3312d32a301bce9fccda9e5807}{Vector6}} \&}]{J,  }\item[{const \mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}} \&}]{res,  }\item[{const \mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}} \&}]{weight = {\ttfamily 1.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classdvo_1_1core_1_1_least_squares_interface_a5f5cc1c312a01ff4e7ca91e90a73ccf3}{dvo\+::core\+::\+Least\+Squares\+Interface}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classdvo_1_1core_1_1_svd_least_squares_a437352a5c072b985547c122d22850da6}\label{classdvo_1_1core_1_1_svd_least_squares_a437352a5c072b985547c122d22850da6}} 
+\index{dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}!E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW@{E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW}}
+\index{E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW@{E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW}!dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}}
+\subsubsection{\texorpdfstring{E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW}{EIGEN\_MAKE\_ALIGNED\_OPERATOR\_NEW}}
+{\footnotesize\ttfamily dvo\+::core\+::\+Svd\+Least\+Squares\+::\+E\+I\+G\+E\+N\+\_\+\+M\+A\+K\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+O\+P\+E\+R\+A\+T\+O\+R\+\_\+\+N\+EW}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_svd_least_squares_a8c0eaffdf1517bb11cb3fe7425e3274e}\label{classdvo_1_1core_1_1_svd_least_squares_a8c0eaffdf1517bb11cb3fe7425e3274e}} 
+\index{dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}!J@{J}}
+\index{J@{J}!dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}}
+\subsubsection{\texorpdfstring{J}{J}}
+{\footnotesize\ttfamily Eigen\+::\+Matrix$<$\mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}}, Eigen\+::\+Dynamic, 6$>$ dvo\+::core\+::\+Svd\+Least\+Squares\+::J}
+
+\mbox{\Hypertarget{classdvo_1_1core_1_1_svd_least_squares_a8f1cb060b554d4f77da3db4e7146f96b}\label{classdvo_1_1core_1_1_svd_least_squares_a8f1cb060b554d4f77da3db4e7146f96b}} 
+\index{dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}!residuals@{residuals}}
+\index{residuals@{residuals}!dvo\+::core\+::\+Svd\+Least\+Squares@{dvo\+::core\+::\+Svd\+Least\+Squares}}
+\subsubsection{\texorpdfstring{residuals}{residuals}}
+{\footnotesize\ttfamily Eigen\+::\+Matrix$<$\mbox{\hyperlink{namespacedvo_1_1core_ab9c199d221775a923e2549ad7e15c323}{Num\+Type}}, Eigen\+::\+Dynamic, 1$>$ dvo\+::core\+::\+Svd\+Least\+Squares\+::residuals}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/include/dvo/core/\mbox{\hyperlink{least__squares_8h}{least\+\_\+squares.\+h}}\item 
+dvo\+\_\+core/src/core/\mbox{\hyperlink{least__squares_8cpp}{least\+\_\+squares.\+cpp}}\end{DoxyCompactItemize}

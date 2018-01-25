@@ -1,0 +1,140 @@
+\hypertarget{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl}{}\section{dvo\+:\+:visualization\+:\+:internal\+:\+:Pcl\+Camera\+Trajectory\+Visualizer\+Impl Struct Reference}
+\label{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl}\index{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classdvo_1_1visualization_1_1internal_1_1_pcl_camera_visualizer}{Pcl\+Camera\+Visualizer}} $>$ \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_ae1f73988c3445cb504978879b5abd6b2}{Pcl\+Camera\+Visualizer\+Ptr}}
+\item 
+typedef boost\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classdvo_1_1visualization_1_1internal_1_1_pcl_trajectory_visualizer}{Pcl\+Trajectory\+Visualizer}} $>$ \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_abefe7d40c9c28acf23b80fd55dc4a8bb}{Pcl\+Trajectory\+Visualizer\+Ptr}}
+\item 
+typedef std\+::map$<$ std\+::string, \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_ae1f73988c3445cb504978879b5abd6b2}{Pcl\+Camera\+Visualizer\+Ptr}} $>$ \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a7d244b61749bfd33a2170d2fc8bfa8b3}{Camera\+Visualizer\+Map}}
+\item 
+typedef std\+::map$<$ std\+::string, \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_abefe7d40c9c28acf23b80fd55dc4a8bb}{Pcl\+Trajectory\+Visualizer\+Ptr}} $>$ \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a97e643f8b8f24ab7e9b79b0961fd2af7}{Trajectory\+Visualizer\+Map}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_ac27a7fde4cc28672ebb5e65f80eb8865}{Pcl\+Camera\+Trajectory\+Visualizer\+Impl}} (bool render\+\_\+thread=true)
+\item 
+\mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a3a8627e770ee2c18d07e79f921e60d16}{$\sim$\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}} ()
+\item 
+void \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a21c3f13d2d5ccb2f2913a08a421cd7fd}{bind\+Switch\+To\+Key}} (\mbox{\hyperlink{structdvo_1_1visualization_1_1_switch}{Switch}} \&s, std\+::string \&key)
+\item 
+pcl\+::visualization\+::\+P\+C\+L\+Visualizer \& \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a28159937aa1551faf546b827eddb3f44}{visualizer}} ()
+\item 
+\mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a473ebecc62e1d4edba21027d858789a2}{Camera\+Visualizer\+::\+Ptr}} \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a1834a57c67d10cbeac37362c546d3575}{camera}} (std\+::string name)
+\item 
+\mbox{\hyperlink{classdvo_1_1visualization_1_1_trajectory_visualizer_aac33ef5979fe64ee33409f1afa977fd3}{Trajectory\+Visualizer\+::\+Ptr}} \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a603eeb0964ce83fff1e736003177661c}{trajectory}} (std\+::string name)
+\item 
+void \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a3b1dc7581be3c4e278d0a60678be494e}{reset}} ()
+\item 
+void \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a79a0458c9c30be3b18f9cbc3a0d4002f}{init\+Visualizer}} ()
+\item 
+void \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_ae2b0083367d0b2955cf2f7adb18a1acb}{render}} (int milliseconds)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::mutex \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_add80c1ad58f55ec00c2ad0d08c0aaaac}{sync\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a7d244b61749bfd33a2170d2fc8bfa8b3}\label{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a7d244b61749bfd33a2170d2fc8bfa8b3}} 
+\index{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!Camera\+Visualizer\+Map@{Camera\+Visualizer\+Map}}
+\index{Camera\+Visualizer\+Map@{Camera\+Visualizer\+Map}!dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{Camera\+Visualizer\+Map}{CameraVisualizerMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_ae1f73988c3445cb504978879b5abd6b2}{Pcl\+Camera\+Visualizer\+Ptr}}$>$ \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a7d244b61749bfd33a2170d2fc8bfa8b3}{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl\+::\+Camera\+Visualizer\+Map}}}
+
+\mbox{\Hypertarget{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_ae1f73988c3445cb504978879b5abd6b2}\label{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_ae1f73988c3445cb504978879b5abd6b2}} 
+\index{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!Pcl\+Camera\+Visualizer\+Ptr@{Pcl\+Camera\+Visualizer\+Ptr}}
+\index{Pcl\+Camera\+Visualizer\+Ptr@{Pcl\+Camera\+Visualizer\+Ptr}!dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{Pcl\+Camera\+Visualizer\+Ptr}{PclCameraVisualizerPtr}}
+{\footnotesize\ttfamily typedef boost\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classdvo_1_1visualization_1_1internal_1_1_pcl_camera_visualizer}{Pcl\+Camera\+Visualizer}}$>$ \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_ae1f73988c3445cb504978879b5abd6b2}{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl\+::\+Pcl\+Camera\+Visualizer\+Ptr}}}
+
+\mbox{\Hypertarget{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_abefe7d40c9c28acf23b80fd55dc4a8bb}\label{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_abefe7d40c9c28acf23b80fd55dc4a8bb}} 
+\index{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!Pcl\+Trajectory\+Visualizer\+Ptr@{Pcl\+Trajectory\+Visualizer\+Ptr}}
+\index{Pcl\+Trajectory\+Visualizer\+Ptr@{Pcl\+Trajectory\+Visualizer\+Ptr}!dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{Pcl\+Trajectory\+Visualizer\+Ptr}{PclTrajectoryVisualizerPtr}}
+{\footnotesize\ttfamily typedef boost\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classdvo_1_1visualization_1_1internal_1_1_pcl_trajectory_visualizer}{Pcl\+Trajectory\+Visualizer}}$>$ \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_abefe7d40c9c28acf23b80fd55dc4a8bb}{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl\+::\+Pcl\+Trajectory\+Visualizer\+Ptr}}}
+
+\mbox{\Hypertarget{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a97e643f8b8f24ab7e9b79b0961fd2af7}\label{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a97e643f8b8f24ab7e9b79b0961fd2af7}} 
+\index{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!Trajectory\+Visualizer\+Map@{Trajectory\+Visualizer\+Map}}
+\index{Trajectory\+Visualizer\+Map@{Trajectory\+Visualizer\+Map}!dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{Trajectory\+Visualizer\+Map}{TrajectoryVisualizerMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_abefe7d40c9c28acf23b80fd55dc4a8bb}{Pcl\+Trajectory\+Visualizer\+Ptr}}$>$ \mbox{\hyperlink{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a97e643f8b8f24ab7e9b79b0961fd2af7}{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl\+::\+Trajectory\+Visualizer\+Map}}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_ac27a7fde4cc28672ebb5e65f80eb8865}\label{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_ac27a7fde4cc28672ebb5e65f80eb8865}} 
+\index{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\index{Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{Pcl\+Camera\+Trajectory\+Visualizer\+Impl()}{PclCameraTrajectoryVisualizerImpl()}}
+{\footnotesize\ttfamily dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl (\begin{DoxyParamCaption}\item[{bool}]{render\+\_\+thread = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a3a8627e770ee2c18d07e79f921e60d16}\label{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a3a8627e770ee2c18d07e79f921e60d16}} 
+\index{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!````~Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{$\sim$\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\index{````~Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{$\sim$\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{$\sim$\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl()}{~PclCameraTrajectoryVisualizerImpl()}}
+{\footnotesize\ttfamily dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl\+::$\sim$\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a21c3f13d2d5ccb2f2913a08a421cd7fd}\label{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a21c3f13d2d5ccb2f2913a08a421cd7fd}} 
+\index{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!bind\+Switch\+To\+Key@{bind\+Switch\+To\+Key}}
+\index{bind\+Switch\+To\+Key@{bind\+Switch\+To\+Key}!dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{bind\+Switch\+To\+Key()}{bindSwitchToKey()}}
+{\footnotesize\ttfamily void dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl\+::bind\+Switch\+To\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdvo_1_1visualization_1_1_switch}{Switch}} \&}]{s,  }\item[{std\+::string \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a1834a57c67d10cbeac37362c546d3575}\label{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a1834a57c67d10cbeac37362c546d3575}} 
+\index{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!camera@{camera}}
+\index{camera@{camera}!dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{camera()}{camera()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdvo_1_1visualization_1_1_camera_visualizer_a473ebecc62e1d4edba21027d858789a2}{Camera\+Visualizer\+::\+Ptr}} dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl\+::camera (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a79a0458c9c30be3b18f9cbc3a0d4002f}\label{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a79a0458c9c30be3b18f9cbc3a0d4002f}} 
+\index{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!init\+Visualizer@{init\+Visualizer}}
+\index{init\+Visualizer@{init\+Visualizer}!dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{init\+Visualizer()}{initVisualizer()}}
+{\footnotesize\ttfamily void dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl\+::init\+Visualizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_ae2b0083367d0b2955cf2f7adb18a1acb}\label{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_ae2b0083367d0b2955cf2f7adb18a1acb}} 
+\index{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!render@{render}}
+\index{render@{render}!dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl\+::render (\begin{DoxyParamCaption}\item[{int}]{milliseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a3b1dc7581be3c4e278d0a60678be494e}\label{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a3b1dc7581be3c4e278d0a60678be494e}} 
+\index{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!reset@{reset}}
+\index{reset@{reset}!dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a603eeb0964ce83fff1e736003177661c}\label{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a603eeb0964ce83fff1e736003177661c}} 
+\index{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!trajectory@{trajectory}}
+\index{trajectory@{trajectory}!dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{trajectory()}{trajectory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdvo_1_1visualization_1_1_trajectory_visualizer_aac33ef5979fe64ee33409f1afa977fd3}{Trajectory\+Visualizer\+::\+Ptr}} dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl\+::trajectory (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a28159937aa1551faf546b827eddb3f44}\label{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_a28159937aa1551faf546b827eddb3f44}} 
+\index{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!visualizer@{visualizer}}
+\index{visualizer@{visualizer}!dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{visualizer()}{visualizer()}}
+{\footnotesize\ttfamily pcl\+::visualization\+::\+P\+C\+L\+Visualizer\& dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl\+::visualizer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_add80c1ad58f55ec00c2ad0d08c0aaaac}\label{structdvo_1_1visualization_1_1internal_1_1_pcl_camera_trajectory_visualizer_impl_add80c1ad58f55ec00c2ad0d08c0aaaac}} 
+\index{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}!sync\+\_\+@{sync\+\_\+}}
+\index{sync\+\_\+@{sync\+\_\+}!dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl@{dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl}}
+\subsubsection{\texorpdfstring{sync\+\_\+}{sync\_}}
+{\footnotesize\ttfamily boost\+::mutex dvo\+::visualization\+::internal\+::\+Pcl\+Camera\+Trajectory\+Visualizer\+Impl\+::sync\+\_\+}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+dvo\+\_\+core/src/visualization/\mbox{\hyperlink{pcl__camera__trajetory__visualizer_8cpp}{pcl\+\_\+camera\+\_\+trajetory\+\_\+visualizer.\+cpp}}\end{DoxyCompactItemize}
