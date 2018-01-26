@@ -100,7 +100,7 @@ bool DenseTracker::IterationContext::IterationsExceeded() const
 
 /**output DenseTracker::Config
 */
-std::ostream& operator<< (std::ostream& out, dvo::DenseTracker::Config& config)
+std::ostream& operator << (std::ostream& out, dvo::DenseTracker::Config& config)
 {
   out
   << "First Level = " << config.FirstLevel

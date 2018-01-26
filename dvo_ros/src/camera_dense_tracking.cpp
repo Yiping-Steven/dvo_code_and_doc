@@ -44,7 +44,6 @@ using namespace dvo::util;
 
 CameraDenseTracker::CameraDenseTracker(ros::NodeHandle& nh, ros::NodeHandle& nh_private) :
   CameraBase(nh, nh_private),
-
   tracker_cfg(DenseTracker::getDefaultConfig()),
   frames_since_last_success(0),
   reconfigure_server_(nh_private),
@@ -92,7 +91,10 @@ bool CameraDenseTracker::hasChanged(const sensor_msgs::CameraInfo::ConstPtr& cam
 void CameraDenseTracker::reset(const sensor_msgs::CameraInfo::ConstPtr& camera_info_msg)
 {
   //IntrinsicMatrix intrinsics = IntrinsicMatrix::create(camera_info_msg->K[0], camera_info_msg->K[4], camera_info_msg->K[2], camera_info_msg->K[5]);
-  IntrinsicMatrix intrinsics = IntrinsicMatrix::create(camera_info_msg->P[0], camera_info_msg->P[5], camera_info_msg->P[2], camera_info_msg->P[6]);
+  IntrinsicMatrix intrinsics = IntrinsicMatrix::create(camera_info_msg->P[0], 
+                                                       camera_info_msg->P[5], 
+                                                       camera_info_msg->P[2], 
+                                                       camera_info_msg->P[6]);
   tracker.reset(new DenseTracker(intrinsics, tracker_cfg));
 
   static RgbdImagePyramid* const __null__ = 0;
@@ -142,7 +144,7 @@ void CameraDenseTracker::handleConfig(dvo_ros::CameraDenseTrackerConfig& config,
     boost::mutex::scoped_lock lock(tracker_mutex_);
 
     // fix config, so we don't die by accident
-    if(config.coarsest_level < config.finest_level)
+    if(config.coarsest_level < config.finest_level) //coarsest_level should be bigger than finest_level
     {
       config.finest_level = config.coarsest_level;
     }
@@ -201,8 +203,7 @@ void CameraDenseTracker::handleImages(
     const sensor_msgs::Image::ConstPtr& rgb_image_msg,
     const sensor_msgs::Image::ConstPtr& depth_image_msg,
     const sensor_msgs::CameraInfo::ConstPtr& rgb_camera_info_msg,
-    const sensor_msgs::CameraInfo::ConstPtr& depth_camera_info_msg
-)
+    const sensor_msgs::CameraInfo::ConstPtr& depth_camera_info_msg)
 {
   static stopwatch sw_callback("callback");
   sw_callback.start();

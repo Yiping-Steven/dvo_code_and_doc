@@ -45,6 +45,7 @@ dvo::core::RgbdImagePyramid::Ptr load(std::string rgb_file, std::string depth_fi
 {
   cv::Mat rgb, grey, grey_s16, depth, depth_inpainted, depth_mask, depth_mono, depth_float;
 
+//deal with rgb image
   bool rgb_available = false;
   rgb = cv::imread(rgb_file, 1);
   depth = cv::imread(depth_file, -1);
@@ -52,24 +53,25 @@ dvo::core::RgbdImagePyramid::Ptr load(std::string rgb_file, std::string depth_fi
   if(rgb.type() != CV_32FC1)
   {
     if(rgb.type() == CV_8UC3)
-    {
+    {//rgb is CV_8UC3
       cv::cvtColor(rgb, grey, CV_BGR2GRAY);
       rgb_available = true;
     }
     else
-    {
+    {//rgb is CV_8UC1
       grey = rgb;
     }
 
     grey.convertTo(grey_s16, CV_32F);
   }
   else
-  {
+  {// rgb is CV_32FC1
     grey_s16 = rgb;
   }
 
+//deal with depth image
   if(depth.type() != CV_32FC1)
-  {
+  {// convert 
     dvo::core::SurfacePyramid::convertRawDepthImageSse(depth, depth_float, 1.0f / 5000.0f);
   }
   else
@@ -151,7 +153,7 @@ BenchmarkNode::BenchmarkNode(ros::NodeHandle& nh, ros::NodeHandle& nh_private) :
 }
 
 /**
- * configure stuff like:
+ * configure filepath like:
  * 1. rgbdpair files,
  * 2. trajectory estimation (if you want to use tum tools to estimate the trajectory)
  * 3. video rendering stuff.
@@ -160,7 +162,7 @@ BenchmarkNode::BenchmarkNode(ros::NodeHandle& nh, ros::NodeHandle& nh_private) :
 bool BenchmarkNode::configure()
 {
   // dataset files related stuff
-  if(nh_private_.getParam("rgbdpair_file", cfg_.RgbdPairFile))
+  if(nh_private_.getParam("rgbdpair_file", cfg_.RgbdPairFile))//assoc.txt
   {
     rgbdpair_reader_ = new dvo_benchmark::FileReader<dvo_benchmark::RgbdPair>(cfg_.RgbdPairFile);
     rgbdpair_reader_->skipComments();
@@ -178,7 +180,7 @@ bool BenchmarkNode::configure()
   }
 
   // trajectory estimation related stuff
-  nh_private_.param("estimate_trajectory", cfg_.EstimateTrajectory, false);
+  nh_private_.param("estimate_trajectory", cfg_.EstimateTrajectory, false);//default false
   if(cfg_.EstimateTrajectory)
   {
     if(nh_private_.getParam("trajectory_file", cfg_.TrajectoryFile) && !cfg_.TrajectoryFile.empty())
@@ -362,9 +364,9 @@ void BenchmarkNode::createReferenceCamera(dvo::visualization::CameraTrajectoryVi
 * 6. initialize first pose
 * 7. read all rgb-d pair entries
 * 8.  start iteration:
-* 8.1 create Reference Camera and do something about visualization 
-* 8.2 if Estimate is Required, then call dense_tracker.match(*reference, *current, relative)
-* 10. if ShowEstimate or RenderVideo is set in cfg_, then do it.
+*   8.1 create Reference Camera and do something about visualization 
+*   8.2 if Estimate is Required, then call dense_tracker.match(*reference, *current, relative)
+* 9. if ShowEstimate or RenderVideo is set in cfg_, then do it.
 */
 void BenchmarkNode::run()
 {

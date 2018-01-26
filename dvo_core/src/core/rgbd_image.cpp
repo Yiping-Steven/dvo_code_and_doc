@@ -124,12 +124,15 @@ static void pyrDownMedianSmooth(const cv::Mat& in, cv::Mat& out)
 }
 
 RgbdImagePyramid::RgbdImagePyramid(cv::Mat intensity, cv::Mat depth) : levels(1)
-{
+{// levels 0 is the finest level, the smaller the index is, the finer the image is. 
   levels[0].intensity = intensity;
   levels[0].depth = depth;
   levels[0].initialize();
 }
 
+/** based on the intensity and depth image stored by the constructor,
+* compute images in all levels and build the pyramid up.
+*/
 void RgbdImagePyramid::compute(const size_t num_levels)
 {
   if(levels.size() >= num_levels) return;
@@ -148,6 +151,11 @@ void RgbdImagePyramid::compute(const size_t num_levels)
   }
 }
 
+/**
+  *levels is a std::vector, 
+  *storing all the RgbdImages creating by the coarse to fine strategy, 
+  *so function level(idx) ist used to get the image in a certain level.
+*/
 RgbdImage& RgbdImagePyramid::level(size_t idx)
 {
   assert(idx < levels.size());
